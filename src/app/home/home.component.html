@@ -1,0 +1,34 @@
+
+<div class="card mb-5">
+
+    <div class="card-header">
+        <strong>{{ faellungenGesamt }} Baumfällungen - {{ nachpflanzungenGesamt }} Nachpflanzungen</strong><br>
+    </div>
+
+    <div class="card-body">
+
+        <div *ngIf="isLoading" class="fa-3x text-center">
+            <fa-icon [icon]="['fas', 'spinner']" [spin]="true" class="text-muted"></fa-icon>
+        </div>
+
+        <ngx-charts-bar-vertical-2d *ngIf="!isLoading"
+            [results]="stats"
+            [animations]="false"
+            [xAxis]="true"
+            [yAxis]="true"
+            [showXAxisLabel]="false"
+            [showYAxisLabel]="false"
+            [scheme]="colorScheme"
+            [legend]="true" legendTitle=""
+            (select)="jahrAuswaehlen($event)">
+        </ngx-charts-bar-vertical-2d>
+
+    </div>
+
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <small class="text-muted">Alle Angaben sind ohne Gewähr. Die Baumfällungen und Nachpflanzungen werden regelmäßig vom Eigenbetrieb Stadtgarten und Friedhöfe Magdeburg auf der Homepage der Stadt veröffentlicht. <a href="http://www.magdeburg.de/index.php?object=tx%7c698.85.1&ModID=10&FID=698.186.1">Mehr Informationen</a></small>
+    </div>
+</div>

@@ -1,0 +1,55 @@
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+
+    <div class="container">
+
+        <a class="navbar-brand" routerLink="/home">Baumfreunde Magdeburg</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-label="Toggle navigation" [attr.aria-expanded]="!isCollapsed" (click)="isCollapsed = !isCollapsed" [class.collapsed]="isCollapsed">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault" [class.show]="!isCollapsed">
+
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/home" routerLinkActive="active">Startseite</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/faellungen" routerLinkActive="active">Fällungen</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/nachpflanzungen" routerLinkActive="active">Nachpflanzungen</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/baumspenden" routerLinkActive="active">Baumspenden</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://twitter.com/BaumfreundeMD" target="_blank"><fa-icon [icon]="['fab', 'twitter']"></fa-icon></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.facebook.com/baumfreundemd" target="_blank"><fa-icon [icon]="['fab', 'facebook']"></fa-icon></a>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<main role="main" class="container" style="padding: 40px;">
+    <router-outlet></router-outlet>
+</main>
+
+<footer class="footer">
+    <div class="container text-center">
+        <a routerLink="/impressum"><small>Impressum</small></a>
+        <span class="text-muted">·</span>
+        <a routerLink="/datenschutz"><small>Datenschutz</small></a>
+        <!--<span class="text-muted">·</span>
+        <a routerLink="/kontakt"><small>Kontakt</small></a>-->
+    </div>
+</footer>

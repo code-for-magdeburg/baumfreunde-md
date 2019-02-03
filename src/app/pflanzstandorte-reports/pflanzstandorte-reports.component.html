@@ -1,0 +1,24 @@
+
+
+<div *ngIf="!reportId" class="list-group">
+    <a *ngFor="let report of reports" [routerLink]="['/pflanzstandorte-reports', report._id]" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Pflanzstandorte gemeldet am {{ report.reportedDate | date: 'dd.MM.yyyy' }} <span class="badge badge-primary badge-pill">{{ report.trees.length}}</span></a>
+</div>
+
+
+<div *ngIf="reportId">
+
+    <h3>Pflanzstandorte gemeldet am {{ report?.reportedDate | date: 'dd.MM.yyyy' }}</h3>
+
+    <div class="list-group mt-5">
+
+        <div *ngFor="let tree of report?.trees" class="list-group-item">
+
+            <a [href]="'https://www.magdeburg.de' + tree.documentUrl" target="_blank" class="btn btn-primary btn-sm float-right">Info-Dokument</a>
+            <span>{{ tree.title }} ({{ tree.treeIdentifier }})</span><br>
+            <small class="text-muted">{{ tree.type }}</small>
+
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,31 @@
+
+<div class="card">
+
+    <div *ngIf="isLoading" class="fa-3x text-center">
+        <fa-icon [icon]="['fas', 'spinner']" [spin]="true" class="text-muted"></fa-icon>
+    </div>
+
+    <div *ngIf="!isLoading" class="card-img">
+        <agm-map [zoom]="12" [latitude]="lat" [longitude]="lng" [style.height.px]="mapHeight">
+            <agm-marker *ngFor="let tree of trees" [latitude]="tree.latitude" [longitude]="tree.longitude" [iconUrl]="tree.iconUrl">
+                <agm-info-window>
+
+                    <span class="badge badge-danger">{{ tree.status }}</span>
+
+                    <h6>{{ tree.baumart }}<small class="text-muted"> ({{ tree.nummer }})</small></h6>
+                    <span>{{ tree.bezeichnung}}, {{ tree.stadtteil }}</span>
+
+                    <hr>
+
+                    <a class="btn btn-outline-secondary btn-block btn-sm" [href]="tree.dokumentLink" target="_blank">Info-Dokument öffnen <fa-icon [icon]="['fas', 'external-link-square-alt']"></fa-icon></a>
+
+                </agm-info-window>
+            </agm-marker>
+        </agm-map>
+    </div>
+
+    <div *ngIf="!isLoading" class="card-footer">
+        <small class="text-muted">Alle Angaben sind ohne Gewähr. Die Pflanzstandorte werden regelmäßig vom Eigenbetrieb Stadtgarten und Friedhöfe Magdeburg auf der Homepage der Stadt veröffentlicht. <a href="http://www.magdeburg.de/index.php?object=tx%7c37.14051.1&ModID=10&FID=698.180.1">Mehr Informationen</a></small>
+    </div>
+
+</div>

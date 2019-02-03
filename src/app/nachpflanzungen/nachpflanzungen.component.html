@@ -1,0 +1,51 @@
+
+<div *ngIf="!jahr">
+    <div class="card mb-5">
+
+        <div class="card-header">
+            <small class="text-muted float-right">Insgesamt: {{ nachpflanzungenGesamt }}</small>
+            <strong>Nachpflanzungen</strong><br>
+        </div>
+
+        <div class="card-body">
+
+            <ngx-charts-bar-vertical [results]="stats"
+                                     [animations]="false"
+                                     [xAxis]="true"
+                                     [yAxis]="true"
+                                     [showXAxisLabel]="false"
+                                     [showYAxisLabel]="false"
+                                     [scheme]="colorScheme"
+                                     (select)="jahrAuswaehlen($event)">
+            </ngx-charts-bar-vertical>
+
+        </div>
+
+    </div>
+</div>
+
+<div *ngIf="jahr" class="mb-5">
+    <div class="btn-group float-right">
+        <button class="btn btn-secondary" (click)="vorigesJahrWaehlen()"><fa-icon icon="arrow-left"></fa-icon></button>
+        <button class="btn btn-secondary" (click)="naechstesJahrWaehlen()"><fa-icon icon="arrow-right"></fa-icon></button>
+    </div>
+
+    <h3>Nachpflanzungen {{ jahr }}</h3>
+
+    <small class="text-muted">Bäume insgesamt: {{ anzahlNachpflanzungen }}</small>
+
+    <div class="list-group mt-3">
+
+        <div *ngFor="let nachpflanzung of nachpflanzungen" class="list-group-item">
+            <span>{{ nachpflanzung.objekt }}</span> <span *ngIf="nachpflanzung.anzahl > 1" class="text-muted">({{ nachpflanzung.anzahl }} Bäume)</span><br>
+            <small class="text-muted">{{ nachpflanzung.bezeichnungDeutsch }} ({{ nachpflanzung.bezeichnungBotanisch }})</small>
+        </div>
+
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <small class="text-muted">Alle Angaben sind ohne Gewähr. Die Nachpflanzungen werden regelmäßig vom Eigenbetrieb Stadtgarten und Friedhöfe Magdeburg auf der Homepage der Stadt veröffentlicht. <a href="http://www.magdeburg.de/index.php?object=tx%7c698.85.1&ModID=10&FID=698.186.1">Mehr Informationen</a></small>
+    </div>
+</div>
