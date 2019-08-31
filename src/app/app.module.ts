@@ -7,8 +7,7 @@ import { FaellungenComponent } from './faellungen/faellungen.component';
 import { ROUTES } from './app.routes';
 import { RouterModule } from '@angular/router';
 import { FaellungenReportsComponent } from './faellungen-reports/faellungen-reports.component';
-import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
-import { library } from '@fortawesome/fontawesome-svg-core';
+import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { far } from '@fortawesome/free-regular-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
@@ -24,8 +23,6 @@ import { AgmCoreModule } from '@agm/core';
 import { MomentModule } from 'ngx-moment';
 import { PflanzstandorteReportsComponent } from './pflanzstandorte-reports/pflanzstandorte-reports.component';
 
-
-library.add(fas, far, fab);
 
 moment.locale('de');
 
@@ -59,4 +56,11 @@ moment.locale('de');
     bootstrap: [AppComponent]
 })
 export class AppModule {
+
+
+    constructor(library: FaIconLibrary) {
+        library.addIconPacks(fas, far, fab);
+    }
+
+
 }
