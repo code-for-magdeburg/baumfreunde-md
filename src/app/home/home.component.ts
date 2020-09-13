@@ -33,6 +33,7 @@ export class HomeComponent implements OnInit {
 
     ngOnInit() {
 
+/*
         this.isLoading = true;
 
         this.stats = [];
@@ -65,6 +66,7 @@ export class HomeComponent implements OnInit {
                 this.isLoading = false;
 
             }, err => this.isLoading = false);
+*/
 
     }
 
