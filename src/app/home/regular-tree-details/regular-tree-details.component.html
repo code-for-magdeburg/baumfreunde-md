@@ -1,0 +1,36 @@
+<div class="modal-header align-items-start">
+  <div>
+    <h5 class="modal-title">{{ treeDetails.Gattung }}</h5>
+    <h6 class="text-muted mt-1 mb-0">{{ treeDetails.Baumnr }}</h6>
+  </div>
+  <button type="button" class="btn-close" aria-label="Close" (click)="modalRef?.hide()"></button>
+</div>
+
+<div class="modal-body">
+
+  <div class="mt-2">
+    <span>Gebiet</span><br>
+    <div class="fw-bold">{{ treeDetails.Gebiet }}</div>
+  </div>
+  <div class="mt-2">
+    <span>Pflanzjahr</span><br>
+    <div class="fw-bold">{{ treeDetails.Pflanzjahr ? treeDetails.Pflanzjahr : '?' }}</div>
+  </div>
+  <div class="mt-2">
+    <span>Baumhöhe</span><br>
+    <div class="fw-bold">{{ treeDetails.Baumhoehe | number: '0.2':'de' }}m</div>
+  </div>
+  <div class="mt-2">
+    <span>Kronendurchmesser</span><br>
+    <div class="fw-bold">{{ treeDetails.Kronendurc | number: '0.2':'de' }}m</div>
+  </div>
+  <div class="mt-2">
+    <span>Stammumfang</span><br>
+    <div class="fw-bold">{{ treeDetails.Stammumfan }}cm</div>
+  </div>
+
+</div>
+
+<div class="modal-footer justify-content-start">
+  <span class="small text-muted">Datenquelle: Landeshauptstadt Magdeburg – www.magdeburg.de</span>
+</div>

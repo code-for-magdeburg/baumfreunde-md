@@ -1,0 +1,16 @@
+
+#root {
+  height: 100%;
+
+  .map-container {
+    height: 100%;
+  }
+
+  .menu-toggle-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 500;
+  }
+
+}

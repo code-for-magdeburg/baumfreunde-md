@@ -1,0 +1,75 @@
+<div id="root" #root>
+
+  <div
+    class="map-container"
+    leaflet
+    [leafletOptions]="leafletOptions"
+    [leafletLayers]="leafletLayers"
+    (leafletMapReady)="mapReady($event)">
+  </div>
+
+  <button class="btn btn-light shadow-sm menu-toggle-button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas">
+    <fa-icon [icon]="faBars"></fa-icon>
+  </button>
+
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" #offcanvas>
+
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">&nbsp;</h5>
+      <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+
+    <div class="offcanvas-body">
+
+      <div class="d-grid">
+        <button class="btn btn-outline-primary" data-bs-dismiss="offcanvas" (click)="openSearchDialog()">
+          <fa-icon [icon]="faSearch" class="me-2"></fa-icon>
+          Baum suchen
+        </button>
+      </div>
+
+      <hr>
+
+      <div>
+        <span class="fw-bold">Über uns</span>
+        <p>"Baumfreunde Magdeburg" ist ein Projekt des <a href="#" target="_blank">Open Knowledge Lab Magdeburg</a>. Das OK Lab Magdeburg ist eine Gruppe von Menschen, die Magdeburg mit digitalen Mitteln besser machen wollen. Die Baumfreunde haben sich dabei auf das Stadtgrün, insbesondere die Bäume in Magdeburg, spezialisiert und wollen mit diesem Projekt aufklären, transparent machen und bilden.</p>
+        <p>Falls du Ideen, Feedback oder Anfragen hast, oder falls du überlegst bei uns mitzumachen, wende dich einfach an: <a href="mailto:jens.winter@gmail.com">jens.winter@gmail.com</a></p>
+      </div>
+
+      <hr>
+
+      <div>
+        <span class="fw-bold">Datenquellen</span>
+        <p>Auf der Karte werden in erster Linie die Bäume dargestellt, die durch die Stadt Magdeburg bewirtschaftet werden. Die Datenquellen sind:</p>
+        <ul class="list-unstyled">
+          <li><a href="https://www.magdeburg.de/Start/B%C3%BCrger-Stadt/Verwaltung-Service/Offene-Verwaltungsdaten/index.php?NavID=37.906&object=tx|37.12819.1&La=1&" target="_blank">Baumkataster 2021</a></li>
+          <li><a href="https://www.magdeburg.de/Start/B%C3%BCrger-Stadt/Verwaltung-Service/Eigenbetriebe-st%C3%A4dtische-Partner/Stadtgarten-Friedh%C3%B6fe/index.php?NavID=37.927&object=tx|698.3733.1&La=1" target="_blank">Aktuelle Baumfällarbeiten</a></li>
+          <li><a href="https://www.magdeburg.de/Start/B%C3%BCrger-Stadt/Verwaltung-Service/Eigenbetriebe-st%C3%A4dtische-Partner/Stadtgarten-Friedh%C3%B6fe/index.php?La=1&NavID=37.927&object=tx,37.9222.1&kat=&kuo=2&sub=0" target="_blank">Mein Baum für Magdeburg</a></li>
+        </ul>
+      </div>
+
+      <hr>
+
+      <div>
+        <span class="fw-bold">Links</span><br>
+        <ul class="list-unstyled">
+          <li><a href="https://twitter.com/BaumfreundeMD" target="_blank">Baumfreunde Magdeburg bei Twitter</a></li>
+          <li><a href="https://codefor.de/magdeburg" target="_blank">Open Knowledge Lab Magdeburg</a></li>
+          <li><a href="https://opendata.unser-magdeburg.de" target="_blank">Offene Daten Magdeburg</a></li>
+          <li><a href="https://ottopflanzt.de" target="_blank">Otto pflanzt! e.V.</a></li>
+        </ul>
+      </div>
+
+      <hr>
+
+      <div class="d-grid gap-2">
+        <button class="btn btn-sm btn-outline-secondary" data-bs-dismiss="offcanvas" routerLink="/privacy">Datenschutz</button>
+        <button class="btn btn-sm btn-outline-secondary" data-bs-dismiss="offcanvas" routerLink="/impressum">Impressum</button>
+        <span class="small">Dies ist ein <a href="https://github.com/code-for-magdeburg/baumfreunde-md-web" target="_blank">Open Source Projekt</a></span>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

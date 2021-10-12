@@ -1,0 +1,27 @@
+
+<form (ngSubmit)="doSearch()" novalidate>
+
+  <div class="modal-body">
+    <label for="treeNr" class="col-form-label">Baumnummer:</label>
+    <input type="text" class="form-control" id="treeNr" #treeNrInput>
+  </div>
+
+  <div *ngIf="searchResult?.length > 1" class="list-group list-group-flush">
+    <p class="text-muted ps-3 pe-3">Es wurden mehrere Einträge gefunden. Du kannst einen der Suchtreffer auswählen.</p>
+    <button
+      *ngFor="let item of searchResult"
+      type="button"
+      class="list-group-item list-group-item-action"
+      (click)="selectTreeAndClose(item)"
+    >
+      <div class="fw-bold">{{ item.Baumnr }} - {{ item.Gebiet }}</div>
+      {{ item.Gattung }}
+    </button>
+  </div>
+
+  <div class="modal-footer">
+    <button type="button" class="btn" (click)="modalRef.hide()">Abbrechen</button>
+    <button type="submit" class="btn btn-primary">Ok</button>
+  </div>
+
+</form>
