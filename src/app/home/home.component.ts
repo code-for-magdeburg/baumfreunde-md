@@ -1,13 +1,10 @@
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import * as L from 'leaflet';
 import { CircleMarker, circleMarker, latLng, MapOptions, tileLayer } from 'leaflet';
-import { HttpClient } from '@angular/common/http';
-import { parse, ParseConfig } from 'papaparse';
 import { BsModalService, ModalOptions } from 'ngx-bootstrap/modal';
 import { RegularTreeDetailsComponent } from './regular-tree-details/regular-tree-details.component';
 import 'leaflet-easybutton';
 import { SearchTreeDialogComponent } from './search-tree-dialog/search-tree-dialog.component';
-import { TreeDataPointCsvRecord } from '../model/TreeDataPointCsvRecord';
 import { faBars, faSearch } from '@fortawesome/free-solid-svg-icons';
 import { Offcanvas } from 'bootstrap';
 import { DataService } from '../services/data.service';
@@ -56,27 +53,14 @@ export class HomeComponent implements OnInit, AfterViewInit {
   private offcanvas: Offcanvas;
 
 
-  constructor(private http: HttpClient, private modalService: BsModalService, private dataService: DataService) {
+  constructor(private modalService: BsModalService, private dataService: DataService) {
   }
 
 
   async ngOnInit(): Promise<void> {
-
     this.dataPoints = await this.dataService.getAllDataPoints();
     this.leafletLayers = this.dataPoints.map(dataPoint => this.createRegularTreeMarker(dataPoint));
-
-/*
-    this.http
-      .get('/assets/data/Baumkataster-Magdeburg-2021.txt', { responseType: 'text' })
-      .subscribe(csv => {
-        const parseOptions: ParseConfig = { dynamicTyping: true, skipEmptyLines: true, header: true };
-        this.dataPoints = parse(csv, parseOptions).data;
-        this.leafletLayers = this.dataPoints.map(dataPoint => this.createRegularTreeMarker(dataPoint));
-      });
-*/
-
     this.jumpToCurrentLocation();
-
   }
 
 
