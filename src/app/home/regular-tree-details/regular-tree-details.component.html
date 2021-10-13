@@ -1,7 +1,7 @@
 <div class="modal-header align-items-start">
   <div>
-    <h5 class="modal-title">{{ treeDetails.Gattung }}</h5>
-    <h6 class="text-muted mt-1 mb-0">{{ treeDetails.Baumnr }}</h6>
+    <h5 class="modal-title">{{ treeDetails.genus }}</h5>
+    <h6 class="text-muted mt-1 mb-0">{{ treeDetails.ref }}</h6>
   </div>
   <button type="button" class="btn-close" aria-label="Close" (click)="modalRef?.hide()"></button>
 </div>
@@ -10,23 +10,23 @@
 
   <div class="mt-2">
     <span>Gebiet</span><br>
-    <div class="fw-bold">{{ treeDetails.Gebiet }}</div>
+    <div class="fw-bold">{{ treeDetails.address }}</div>
   </div>
   <div class="mt-2">
     <span>Pflanzjahr</span><br>
-    <div class="fw-bold">{{ treeDetails.Pflanzjahr ? treeDetails.Pflanzjahr : '?' }}</div>
+    <div class="fw-bold">{{ treeDetails.planted ? treeDetails.planted : '?' }}</div>
   </div>
   <div class="mt-2">
     <span>Baumhöhe</span><br>
-    <div class="fw-bold">{{ treeDetails.Baumhoehe | number: '0.2':'de' }}m</div>
+    <div class="fw-bold">{{ treeDetails.height | number: '0.2':'de' }}m</div>
   </div>
   <div class="mt-2">
     <span>Kronendurchmesser</span><br>
-    <div class="fw-bold">{{ treeDetails.Kronendurc | number: '0.2':'de' }}m</div>
+    <div class="fw-bold">{{ treeDetails.crown | number: '0.2':'de' }}m</div>
   </div>
   <div class="mt-2">
     <span>Stammumfang</span><br>
-    <div class="fw-bold">{{ treeDetails.Stammumfan }}cm</div>
+    <div class="fw-bold">{{ treeDetails.dbh }}cm</div>
   </div>
 
 </div>

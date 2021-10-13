@@ -14,8 +14,8 @@
       class="list-group-item list-group-item-action"
       (click)="selectTreeAndClose(item)"
     >
-      <div class="fw-bold">{{ item.Baumnr }} - {{ item.Gebiet }}</div>
-      {{ item.Gattung }}
+      <span class="d-block fw-bold">{{ item.ref }} - {{ item.address }}</span>
+      {{ item.genus }}
     </button>
   </div>
 

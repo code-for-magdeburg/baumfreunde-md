@@ -1,0 +1,366 @@
+Fraxinus excelsior, Gemeine Esche
+Robinia pseudoacacia, Robinie
+Carpinus betulus, Hainbuche
+Acer campestre, Feldahorn
+Acer platanoides, Spitz-Ahorn
+Corylus colurna, Baumhasel
+Crataegus monogyna, Eingriffeliger Weißdorn
+Gymnocladus dioicus, Geweihbaum
+Tilia cordata, Winterlinde
+Acer pseudoplatanus, Berg-Ahorn
+Populus canadensis Hybride, Schwarzpappel-Hybride
+Salix alba, Baum-Weide - Kopf-Weide
+Tilia Intermedia, Holländische Linde
+Tilia platyphyllos, Sommerlinde
+Betula pendula, Sandbirke
+Aesculus hippoc. Baumanii, Gefülltblühende Roßkastanie
+Ulmus Hybride "Lobel", Schmalkronige Stadt-Ulme
+Aesculus hippocastanum, Roßkastanie
+Davidia involucrata var. vilmoriniana, Taubenbaum
+Platanus acerifolia, Ahornblättrige Platane
+Acer negundo, Eschenahorn
+Acer saccharinum, Silberahorn
+Gleditsia triacanthos "Skyline", Säulen-Gleditschie
+Acer saccharinum "Wieri", Geschlitzter Silber-Ahorn
+Populus nigra, Schwarz-Pappel
+Tilia Euchlora, Krim-Linde
+Tilia tomentosa, Silberlinde
+Sophora japonica, Schnurbaum
+Alnus glutinosa, Schwarzerle
+Populus nigra "Italica", Italienische Pyramiden-Pappel
+Morus alba, Weißer Maulbeerbaum
+Liriodendron tulipifera, Tulpenbaum
+Malus sylvestris (communis), Wildapfel
+Populus canadensis, Kanadische Pappel
+Malus spec., Apfel
+Sorbus aucuparia, Eberesche (Vogelbeere)
+Prunus avium, Vogelkirsche
+Pyrus communis, Gemeine Birne
+Juglans regia, Walnuss
+Tilia Cordata "Greenspire"
+Fagus sylvatica, Rotbuche
+Catalpa bignonioides, Trompetenbaum
+Larix decidua, Europäische Lärche
+Pinus spec., Kiefer
+Pinus strobus, Weymouthskiefer
+Acer platanoides "Columnare", säulenförmiger Spitz-Ahorn
+Populus tremula, Zitterpappel
+Sorbus aria, Mehlbeere
+Quercus robur, Stieleiche
+Quercus rubra, Amerikanische Rot-Eiche
+Fraxinus excelsior "Pendula", Trauer-Esche
+Aesculus carnea, Purpurkastanie - Rotblühende Rosskastanie
+Ailanthus altissima, Götterbaum
+Malus "Floribunda", Prachtapfel
+Tilia flavescens "Glenleven", Kegel-Linde
+Populus alba, Silberpappel
+Crataegus lavallei "Carrierei", Lederbl. Weißdorn - Apfeldorn
+Euodia hupehensis, Hupeh Stinkesche
+Prunus cerasifera, Kirschpflaume - Myrobalane
+Prunus padus, Traubenkirsche
+Ulmus glabra, Bergulme
+Salix spec., Weide
+Populus simonii, Birkenpappel
+Abies nordmanniana, Nordmanntanne
+Acer platanoides Globosum, Kugelahorn
+Picea pungens, Stech-Fichte
+Castanea sativa, Eßkastanie
+Cedrus atlantica "Glauca", Blaue Atlas-Zeder
+Acer pseudoplatanus "Atropurpureum", Bergahorn Atropurpureum
+Aesculus carnea "Briotii", Scharlach-Kastanie
+Prunus spec., Kirsche, Pflaume
+Cercis siliquastrum, Gemeiner Judasbaum
+Salix Caprea Mas, Echte Sal-Weide
+Prunus serrulata Kanzan, Zierkirsche Kanzan
+Prunus domestica, Pflaume
+Carpinus betulus Fastigiata, Hainbuche, aufrechter Habitus
+Robinia pseudoacacia "Bessoniana", Kugel-Akazie
+Populus tremula "Erecta", Säulen-Zitterpappel
+Quercus coccinea, Scharlach-Eiche
+Prunus avium "Plena", Gefülltblühende Süßkirsche
+Populus alba "Nivea", Silber-Pappel
+Quercus robur Fastigiata, Pyramideneiche
+Acer monspessulanum, Französischer Ahorn
+Gleditsia triacanthos, Gleditschie
+Picea glauca "Echiniformis", Blaue Igel-Fichte
+Sorbus intermedia, Schwedische Mehlbeere
+Alnus incana, Grauerle
+Alnus cordata, Herzblättrige Erle
+Prunus tenella "Fire Hill", Russische Zwerg-Mandel
+Corylus avellana, Hasel
+Cornus Alba, Weißbeeren-Hartriegel
+Salix alba Tristis, Trauerweide
+Ulmus laevis, Flatterulme
+Crataegus laevigata, Zweigriffeliger Weißdorn
+Quercus petraea, Traubeneiche
+Picea abies, Gemeine Fichte - Rot-Fichte
+Prunus sargentii, Berg-Kirsche
+Prunus serotina, Spätblühende Traubenkirsche
+Juniperus communis, Gewoehnlicher Wacholder
+Prunus mahaleb, Weichselkirsche
+Acer tataricum, Tatarischer Steppen-Ahorn
+Pinus sylvestris, Waldkiefer
+Robinia pseudoacacia "Unifoliola", Einblattakazie
+Celtis occidentalis, Nordamerikanischer Zürgelbaum
+Fraxinus spec., Esche
+Salix "Tortuosa", Dauerwellen-Weide - Korkenzieher-Weide
+Liquidambar styraciflua, Amberbaum
+Pinus nigra ssp. nigra, Österreichische Schwarzkiefer
+Tilia spec., Linde
+Pinus nigra, Schwarzkiefer
+Ginkgo biloba, Ginkgo
+Crataegus laevigata "Pauls Scarlet", Rotdorn
+Crataegus crus-galli, Hahnensporn-Weißdorn
+Prunus cerasus, Sauerkirche/Weichsel
+Elaeagnus multiflora, Reichblütige Ölweide - Essbare Ölweide
+Fraxinus ornus, Blumenesche
+Populus spec., Pappel
+Elaeagnus angustifolia, Ölweide
+Ulmus carpinifolia "Wredei", Goldpyramiden-Ulme
+Acer plat. "Faassens Black", Spitzahorn, schwarzrotblättrig
+Prunus serrula, Mahagoni-Kirsche
+Pinus Nigra Austriaca, österreichische Schwarz-Kiefer
+Taxus Baccata, Gemeine Eibe
+Celtis australis, Europäischer Zürgelbaum
+Fagus sylvatica Purpurea, Blutbuche
+Juglans spec., Walnuß
+Abies procera "Glauca", Edeltanne
+Ulmus spec., Ulme
+Prunus cerasifera Nigra, Kirschpflaume, schwarzrotblättr.
+Magnolia kobus, Baum-Magnolie - Kobushi-Magnolie
+Fraxinus angustifolia, Schmalblättrige Esche
+Picea spec., Fichte
+Aesculus x carnea, Rotblütige Roßkastanie
+Populus canescens, Graupappel
+Nyssa sylvatica, Tupelobaum - Nymphenbaum
+Betula pendula "Tristis", Hänge-Birke
+Acer rubrum "Red Sunset", Rot-Ahorn
+Picea abies "Echiniformis", Igel-Fichte
+Paulownia tomentosa, Blauglockenbaum
+Malus "Adams", Zierapfel
+Pyrus spec., Birne
+Crataegus spec., Weißdorn
+Aesculus pavia "Atrosanguinea", Echte Pavie, Rote Rosskastanie
+Acer platanoides Schwedleri, Blutahorn
+Sorbus intermedia "Brouwers", Oxelbeere, Schwedische Mehlbeere
+Acer platanoides "Emerald Queen", Kegelförmiger Spitz-Ahorn
+Amelanchier lamarckii, Kupfer-Felsenbirne
+Ulmus Carpinifolia, Feld-Rüster - Feld-Ulme
+Populus balsamifera, Balsampappel
+unbekannt
+Salix Viminalis, Band-Weide - Hanf-Weide
+Prunus spinosa, Schlehdorn - Schwarzdorn
+Acer platanoides "Drummondii", Drummonds Spitzahorn
+Fraxinus excelsior "Diversifolia", Einblättrige Esche
+Larix kaempferi, Japanische Lärche
+Catalpa bignonioides Nana, Kugel-Trompetenbaum
+Sorbus domestica, Sperberbaum
+Prunus serrulata "Shidare-Sakura", Hänge-Nelken-Kirsche
+Betula maximowicziana, Lindenblättrige Birke
+Prunus serrulata "Kiku-Shidare-Zakura", Hänge-Nelken-Kirsche
+Pterocarya fraxinifolia, Flügelnuss
+Aesculus flava "Vestita", Gelbe Roßkastanie
+Salix Daphnoides, Pommern-Weide - Reif-Weide
+Abies spec., Tanne
+Corylus avellana "Rotblättrige Zellernuss", Blut-Hasel
+Acer rubrum, Rot-Ahorn
+Malus sargentii, Japanischer Apfel
+Malus "Liset", Zierapfel
+Pyrus calleryana "Chanticleer", Chinesische Birne
+Euonymus europaeus, Pfaffenhütchen (Spindelbaum)
+Thuja Occidentalis "Columna", Säulen-Lebensbaum
+Populus Nigra "Italica", Italienische Pyramiden-Pappel - Napoleon
+Salix Alba, Baum-Weide - Kopf-Weide
+Fagus silvatica "Atropunicea", Blut-Buche Veredelt
+Platanus occidentalis, Abendländische/Amerikanische
+Quercus cerris, Zerr-Eiche
+Aesculus spec., Kastanie
+Tilia europaea "Pallida"; Kaiser-Linde
+Crataegus prunifolia, Pflaumenblättriger Weissdorn
+Pinus silvestris, Gemeine Kiefer - Wald-Kiefer
+Sambucus spec., Holunder
+Rhus typhina, Essigbaum
+Sambucus Nigra, Fliederbeerstrauch - Schwarzer Holunder
+Parrotia persica, Eisenholzbaum
+Tilia x euchlora, Krimlinde
+Populus berolinensis, Berliner Lorbeer-Pappel
+Acer Platanoides, Spitz-Ahorn
+Malus magdeburgensis, Zierapfel
+Thuja Occidentalis, Abendländischer Lebensbaum
+Quercus frainetto, Ungarische Eiche
+Taxus Baccata "Fastigiata Robusta", Säulen-Eibe
+Acer palmatum, Fächer-Ahorn - Japanischer Ahorn
+Acer pensylvanicum, Streifen-Ahorn
+Acer ginnala, Feuerahorn
+Alnus spaethii, Purpur-Erle
+Prunus serrulata "Amanogawa", Säulen-Kirsche
+Abies koreana, Korea-Tanne  -  Zapfen-Tanne
+Cornus mas, Kornelkirsche
+Platanus x hybrida, Gewöhnliche Platane
+Fraxinus americana, Weißesche
+Tilia x vulgaris, Europäische Linde
+Pseudotsuga menziesii, Douglasie
+Cercidiphyllum japonicum, Lebkuchenbaum
+Fraxinus pennsylvanica, Rot-/Grün-Esche
+Malus "Grafensteiner"
+Quercus palustris, Sumpf-Eiche
+Quercus spec., Eiche
+Pinus leucodermis, Panzerföhre - Bosnische Kiefer
+Pinus contorta, Dreh-Kiefer - Küsten-Kiefer
+Magnolia stellata, Stern-Magnolie
+Ulmus glabra Pendula, Bergulme, hängender Habitus
+Morus nigra, Schwarzer Maulbeerbaum
+Aesculus parviflora, Strauch-Rosskastanie
+Acer japonicum, Thunbergs Fächer-Ahorn
+Populus lasiocarpa, Großblatt-Pappel
+Laburnum anagyroides, Gemeiner Goldregen
+Tilia Cordata "Rancho", Kleinkronige Winter-Linde
+Quercus imbricaria, Schindel-Eiche
+Fraxinus Excelsior, Gemeine Esche
+Metasequoia glyptostroboides, Urweltmammutbaum
+Acer cappadocicum "Rubrum", Kolchischer Blut-Ahor
+Prunus fruticosa "Globosa", Kugel-Kirsche
+Carpinus spec., Hainbuche
+Ostrya carpinifolia - Hopfenbuche
+Rhamnus cathartica, Kreuzdorn
+Populus Nigra
+Salix fragilis, Bruchweide
+Acer Pseudoplatanus, Berg-Ahorn  -  Weiss-Ahorn
+Acer pseudopl. Purpurascens, Purpurahorn
+Sorbus latifolia, Rundblättrige Mehlbeere
+Quercus turneri "Pseudoturneri", Wintergruene Eiche
+Unbekannt
+Picea omorika, Serbische Fichte
+Sorbus aucuparia Fastigiata, Eberesche, aufrechter Habitus
+Acer palmatum "Atropurpureum", Rotblättriger Fächer-Ahorn
+Pinus mugo, Berg-Kiefer - Krüppel-Kiefer
+Fagus silvatica "Purpurea Pendula", Trauerblut-Buche
+Pinus mugo "Pumilio", Legföhre - Zwerg-Latsche
+Prunus yedoensis, Yoshino-Kirsche
+Colutea arborescens, Gelber Blasenstrauch
+Pinus mugo mughus, Krummholz-Kiefer
+Acer negundo "Odessanum", Gelber Eschen-Ahorn
+Malus "Red Sentinel", Zierapfel - Hybride
+Fraxinus latifolia, Breitblättrige oder Oregon- Esche
+Acer spec., Ahorn
+Phellodendron amurense, Korkbaum
+Tsuga canadensis, Kanadische Hemlocktanne
+Crataegus monogyna "Stricta", Säulen-Weiß-Dorn
+Sorbus x thuringiaca, Thüringische Eberesche
+Crataegus coccinea, Scharlach-Weißdorn
+Betula pendula "Fastigiata", Säulen-Birke
+Koelreuteria paniculata, Blasenesche
+Ulmus minor, Feldulme
+Sorbus spec., Eberesche/Mehlbeere
+Acer opalus, Schneeballblaettriger Ahorn
+Magnolia soulangiana, Tulpen-Magnolie
+Tilia Pallida, Kaiser-Linde
+Robinia pseudoacacia "Tortuosa", Korkenzieher-Akazie
+Pinus cembra, Arve - Zirbe
+Fagus silvatica "Pendula", Hänge-Buche - Trauer-Buche
+Salix alba "Tristis Resistenta", Hänge-Weide
+Salix "Sekka", Japanische Drachen-Weide
+Acer platanoides "Royal Red", Spitzahorn Royal Red
+Betula papyrifera, Papierbirke
+Ailanthus spec., Götterbaum
+Robinia Pseudoacacia, Schein-Akazie - Silberregen
+Sophora japonica "Regent", Schnurbaum
+Robinia spec., Robinie
+Acer negundo "Aureo-Variegatum", Goldeschen-Ahorn
+Robinia pseudoacacia "Umbraculifera", Echte Kugel-Akazie
+Sorbus torminalis, Elsbeere
+Ptelea trifoliata, Kleeulme
+Abies concolor, Grau-Tanne - Kolorado-Tanne
+Juniperus communis "Meyer", Säulen-Wacholder
+Juglans nigra, Schwarznuß
+Pinus wallichiana, Himalaja-Kiefer
+Betula pubescens, Moor-Birke
+Pseudotsuga menziesii var. caesia, Douglasfichte
+Robinia "Casque Rouge", Rosarote Akazie
+Sequoiadendron giganteum, Mammutbaum
+Fraxinus excelsior "Den bosch", Kleine Einblatt-Esche
+Thuja Occidentalis "Smaragd", Säulen-Lebensbaum
+Quercus ilex, Stein-Eiche
+Cotinus coggygria, Gewöhnlicher Perückenstrauch - Perückenbaum
+Thuja spec., Lebensbaum
+Mespilus germanica, Mispel
+Tilia cordata "Roelvo"
+Malus "Van Eseltine", Zierapfel "Van Eseltine"
+Amelanchier arborea "Robin Hill", Schnee-Felsenbirne
+Salix Repens Argentea, Silber-Kriech-Weide
+Chamaecyparis lawsoniana "Columnaris", Säulen-Zypresse
+Taxodium Distichum, Sumpfzypresse
+Betula spec., Birke
+Pyrus canescens, Birne
+Juglans Regia, Walnuß
+Ulmus "Rebona", amerikanischer Hybride
+Sorbus Aucuparia Var. Edulis, Essbare Eberesche
+Sorbus Aucuparia, Gemeine Eberesche - Vogelbeerbaum
+Alnus incana "Aurea", Gold-Erle
+Malus tschonoskii, Wollapfel
+Pinus Silvestris, Gemeine Kiefer  -  Wald-Kiefer
+Aesculus Hippocastanum, Gemeine Roß-Kastanie
+Quercus Rubra, Amerikanische Rot-Eiche
+Ulmus Glabra, Berg-Ulme
+Carpinus Betulus, Gemeine Hainbuche - Gemeine Weißbuche
+Pinus Sylvestris, Gemeine Kiefer  -  Wald-Kiefer
+Abies alba, Weißtanne
+Acer pseudoplatanus "Rotterdam", Breitkegelförmiger Berg-Ahorn
+Laburnum spec., Goldregen
+Malus "Red Splendor", Zierapfel
+Acer negundo Variegatum, Eschenahorn, weißblättrig
+Sorbaria Sorbifolia, Fiederspiere - Ebereschenspiere
+Ulmus Laevis, Flatter-Ulme
+Malus "Boskop"
+Ulmus Clusius, holländische Clusius-Ulme
+Carpinus betulus "Frans Fontaine", Säulen-Hainbuche
+Malus "James Grieve", Sommerapfel
+Acer platanoides "Eurostar", Spitzahorn
+Amelanchier spec., Felsenbirne
+Betula pendula "Laciniata", Sand-Birke
+Cydonia oblonga, Quitte
+Acer pseudoplatanus "Erectum", Schmalkroninger Berg-Ahorn
+Ulmus hollandica "Groeneveld", Holländische Stadtulme
+Acer platanoides "Olmstedt", amerik säulenförmiger Spitz-Ahorn
+Acer platanoides "Deborah", rötlicher Spitz-Ahorn
+Malus "Brandy Magic", rosa-blühender Zierapfel
+Malus "Royalty", robinrot-blühender Zierapfel
+Amelanchier laevis, Hängende Felsenbirne
+Tilia Intermedia "Pallida", Kaiser-Linde
+Liquidambar styraciflua "Moraine", Amerikanischer Amberbaum
+Populus euramerica "Robusta", Holz-Pappel - Robusta-Pappel
+Tilia cordata "Erecta", Dichtkronige Winterlinde
+Syringa Josikaea, Ungarischer Flieder
+Picea abies "Acrocona", Zapfen-Fichte
+Chamaecyparis law. "Columnaris Glauca", Blaue Säulen-Zypresse
+Tilia tomentosa "Szeleste", Ungarische Silberlinde
+Robinia pseudoacacia "Nyirségi", Eiförmige Scheinakazie
+Acer pseudoplatanus "Negenia", Kegelförmiger Berg-Ahorn
+Malus Sylvestris (Communis), Wildapfel
+Zelkova carpinifolia, Kaukasische Zelkova
+Hibiscus syriacus, Straucheibisch
+Malus "David", breitkroniger Zierapfel
+Picea glauca "Conica", Zuckerhut-Fichte
+Prunus campanulata "Okame", Taiwan-Kirsche
+Salix Cinerea, Asch-Weide - Grau-Weide
+Pyrus salicifolia, Weidenblättrige Birne
+Picea abies "Pumila Glauca", Blaue Pummel-Fichte
+Sorbus Thuringiaca "Fastigiata", Thüringische Säulen-Eberesche
+Pinus sylvestris Fastigiata, Säulen-Kiefer
+Prunus domestica "Wangenheims Frühzwetschge", Pflaume
+Ilex aquifolium, Europäische Stechpalme
+Prunus Cerasifera "Nigra", Purpurpflaume - Blutpflaume
+Nothofagus antarctica, Antarktische Südbuche
+Picea pungens Glauca, Blau-Fichte
+Salix Caprea "Pendula", Hängende Kätzchen-Weide  -  Trauer-Sal-W
+Malus trilobatus, Dreilappiger Apfelbaum
+Malus domestica "Elstar", Kulturapfel
+Sophora japonica "Princeton Upright"
+Prunus padus "Schloss Tiefurt", Traubenkirsche
+Prunus hillieri "Spire", Zierkirsche "Spire"
+Robinia hispida "Macrophylla", Borsten-Akazie
+Cedrus atlantica "Aurea", Atlas-Zeder Gelb
+Robinia pseudoacacia "Monophylla", Einblattakazie
+Ilex x altaclarensis, Stechpalmenhybride
+Betula nigra, Schwarz-Birke
+Cornus spec., Hartriegel

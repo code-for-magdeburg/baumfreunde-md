@@ -1,7 +1,7 @@
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import { BsModalRef } from 'ngx-bootstrap/modal';
 import { timer } from 'rxjs';
-import { TreeDataPointCsvRecord } from '../TreeDataPointCsvRecord';
+import { TreeDataPoint } from '../../model/TreeDataPoint';
 
 
 @Component({
@@ -12,9 +12,9 @@ import { TreeDataPointCsvRecord } from '../TreeDataPointCsvRecord';
 export class SearchTreeDialogComponent implements AfterViewInit {
 
 
-  trees: TreeDataPointCsvRecord[] = [];
-  searchResult: TreeDataPointCsvRecord[] = [];
-  onConfirm: (result: TreeDataPointCsvRecord) => void;
+  trees: TreeDataPoint[] = [];
+  searchResult: TreeDataPoint[] = [];
+  onConfirm: (result: TreeDataPoint) => void;
 
   @ViewChild('treeNrInput') treeNrInputRef: ElementRef;
 
@@ -35,7 +35,7 @@ export class SearchTreeDialogComponent implements AfterViewInit {
 
     if (searchTermUpperCase.startsWith('G') || searchTermUpperCase.startsWith('S') || searchTermUpperCase.startsWith('K')) {
 
-      const tree = this.trees.find(t => t.Baumnr === searchTermUpperCase);
+      const tree = this.trees.find(t => t.ref === searchTermUpperCase);
       if (tree) {
         this.selectTreeAndClose(tree);
       } else {
@@ -48,7 +48,7 @@ export class SearchTreeDialogComponent implements AfterViewInit {
 
       const withoutLeadingZeros = searchTerm.replace(/^0+/, '');
       const candidates = [`G${withoutLeadingZeros}`, `S${withoutLeadingZeros}`, `K${withoutLeadingZeros}`];
-      this.searchResult = this.trees.filter(t => candidates.includes(t.Baumnr));
+      this.searchResult = this.trees.filter(t => candidates.includes(t.ref));
 
       switch (this.searchResult.length) {
         case 0:
@@ -68,7 +68,7 @@ export class SearchTreeDialogComponent implements AfterViewInit {
   }
 
 
-  selectTreeAndClose(item: TreeDataPointCsvRecord): void {
+  selectTreeAndClose(item: TreeDataPoint): void {
     this.modalRef.hide();
     this.onConfirm(item);
   }

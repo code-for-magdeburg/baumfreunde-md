@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { BsModalRef } from 'ngx-bootstrap/modal';
-import { TreeDataPointCsvRecord } from '../TreeDataPointCsvRecord';
+import { TreeDataPoint } from '../../model/TreeDataPoint';
 
 
 @Component({
@@ -11,7 +11,7 @@ import { TreeDataPointCsvRecord } from '../TreeDataPointCsvRecord';
 export class RegularTreeDetailsComponent {
 
 
-  treeDetails: TreeDataPointCsvRecord = null;
+  treeDetails: TreeDataPoint = null;
 
 
   constructor(public modalRef: BsModalRef) {

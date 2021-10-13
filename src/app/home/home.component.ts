@@ -7,9 +7,11 @@ import { BsModalService, ModalOptions } from 'ngx-bootstrap/modal';
 import { RegularTreeDetailsComponent } from './regular-tree-details/regular-tree-details.component';
 import 'leaflet-easybutton';
 import { SearchTreeDialogComponent } from './search-tree-dialog/search-tree-dialog.component';
-import { TreeDataPointCsvRecord } from './TreeDataPointCsvRecord';
+import { TreeDataPointCsvRecord } from '../model/TreeDataPointCsvRecord';
 import { faBars, faSearch } from '@fortawesome/free-solid-svg-icons';
 import { Offcanvas } from 'bootstrap';
+import { DataService } from '../services/data.service';
+import { TreeDataPoint } from '../model/TreeDataPoint';
 
 
 const MAX_ZOOM = 20;
@@ -44,8 +46,8 @@ export class HomeComponent implements OnInit, AfterViewInit {
     center: INITIAL_MAP_CENTER
   };
 
-  dataPoints: TreeDataPointCsvRecord[] = [];
-  leafletLayers: CircleMarker<TreeDataPointCsvRecord>[] = [];
+  dataPoints: TreeDataPoint[] = [];
+  leafletLayers: CircleMarker<TreeDataPoint>[] = [];
   selectedTreeId: number;
 
   map: L.Map;
@@ -54,12 +56,16 @@ export class HomeComponent implements OnInit, AfterViewInit {
   private offcanvas: Offcanvas;
 
 
-  constructor(private http: HttpClient, private modalService: BsModalService) {
+  constructor(private http: HttpClient, private modalService: BsModalService, private dataService: DataService) {
   }
 
 
-  ngOnInit(): void {
+  async ngOnInit(): Promise<void> {
 
+    this.dataPoints = await this.dataService.getAllDataPoints();
+    this.leafletLayers = this.dataPoints.map(dataPoint => this.createRegularTreeMarker(dataPoint));
+
+/*
     this.http
       .get('/assets/data/Baumkataster-Magdeburg-2021.txt', { responseType: 'text' })
       .subscribe(csv => {
@@ -67,6 +73,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
         this.dataPoints = parse(csv, parseOptions).data;
         this.leafletLayers = this.dataPoints.map(dataPoint => this.createRegularTreeMarker(dataPoint));
       });
+*/
 
     this.jumpToCurrentLocation();
 
@@ -107,7 +114,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
     const options: ModalOptions = { initialState: { trees: this.dataPoints } };
     const dialog = this.modalService.show(SearchTreeDialogComponent, options);
     dialog.content.onConfirm = tree => {
-      this.jumpToLocation(tree.latitude, tree.longitude);
+      this.jumpToLocation(tree.lat, tree.lon);
       this.showTreeDetails(tree);
       this.selectTree(tree);
     };
@@ -126,19 +133,19 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
 
-  private createRegularTreeMarker(dataPoint: TreeDataPointCsvRecord): CircleMarker<TreeDataPointCsvRecord> {
+  private createRegularTreeMarker(dataPoint: TreeDataPoint): CircleMarker<TreeDataPoint> {
 
     const marker = circleMarker(
-      latLng(dataPoint.latitude, dataPoint.longitude),
+      latLng(dataPoint.lat, dataPoint.lon),
       { radius: 5, fillOpacity: .5, color: '#517551', weight: 1, fillColor: '#92D292' }
     )
       .on('click', event => {
-        this.showTreeDetails(event.sourceTarget.feature.properties as TreeDataPointCsvRecord);
-        this.selectTree(event.sourceTarget.feature.properties as TreeDataPointCsvRecord);
+        this.showTreeDetails(event.sourceTarget.feature.properties as TreeDataPoint);
+        this.selectTree(event.sourceTarget.feature.properties as TreeDataPoint);
       });
     marker.feature = {
       type: 'Feature',
-      geometry: { type: 'Point', coordinates: [dataPoint.longitude, dataPoint.latitude] },
+      geometry: { type: 'Point', coordinates: [dataPoint.lon, dataPoint.lat] },
       properties: dataPoint
     };
     return marker;
@@ -146,29 +153,29 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
 
-  private showTreeDetails(dataPoint: TreeDataPointCsvRecord): void {
+  private showTreeDetails(dataPoint: TreeDataPoint): void {
     const options: ModalOptions = { initialState: { treeDetails: dataPoint } };
     this.modalService.show(RegularTreeDetailsComponent, options);
   }
 
 
-  private selectTree(treeData: TreeDataPointCsvRecord): void {
-    const marker = this.leafletLayers.find(c => c.feature.properties.gid === treeData.gid);
+  private selectTree(treeData: TreeDataPoint): void {
+    const marker = this.leafletLayers.find(c => c.feature.properties.internal_ref === treeData.internal_ref);
     if (marker) {
       this.switchSelectedTree(marker);
     }
   }
 
 
-  private switchSelectedTree(treeMarker: CircleMarker<TreeDataPointCsvRecord>): void {
+  private switchSelectedTree(treeMarker: CircleMarker<TreeDataPoint>): void {
 
-    const selectedMarker = this.leafletLayers.find(l => l.feature.properties.gid === this.selectedTreeId);
+    const selectedMarker = this.leafletLayers.find(l => l.feature.properties.internal_ref === this.selectedTreeId);
     if (selectedMarker) {
       selectedMarker.setStyle({ fillOpacity: .5, color: '#517551', weight: 1, fillColor: '#92D292' });
       selectedMarker.setRadius(5);
     }
 
-    this.selectedTreeId = treeMarker.feature.properties.gid;
+    this.selectedTreeId = treeMarker.feature.properties.internal_ref;
 
     treeMarker.setStyle({ fillOpacity: 1, color: '#75515c', weight: 2, fillColor: '#d292a5' });
     treeMarker.setRadius(10);

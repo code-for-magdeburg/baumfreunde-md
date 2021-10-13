@@ -10,7 +10,9 @@
     "build-prod": "ng build --configuration=production",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "prepare-data-files": "ts-node --project ./tsconfig.scripts.json scripts/prepare-data-files.ts",
+    "prepare-and-build-prod": "npm run prepare-data-files && npm run build-prod"
   },
   "repository": {
     "type": "git",
