@@ -61,7 +61,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {
 
     this.http
-      .get('/assets/data/Baumkataster-Magdeburg-2021.csv', { responseType: 'text' })
+      .get('/assets/data/Baumkataster-Magdeburg-2021.txt', { responseType: 'text' })
       .subscribe(csv => {
         const parseOptions: ParseConfig = { dynamicTyping: true, skipEmptyLines: true, header: true };
         this.dataPoints = parse(csv, parseOptions).data;
