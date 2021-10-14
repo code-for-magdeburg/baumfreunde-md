@@ -3,7 +3,6 @@ import * as L from 'leaflet';
 import { CircleMarker, circleMarker, latLng, MapOptions, tileLayer } from 'leaflet';
 import { BsModalService, ModalOptions } from 'ngx-bootstrap/modal';
 import { RegularTreeDetailsComponent } from './regular-tree-details/regular-tree-details.component';
-import 'leaflet-easybutton';
 import { SearchTreeDialogComponent } from './search-tree-dialog/search-tree-dialog.component';
 import { faBars, faCrosshairs, faSearch } from '@fortawesome/free-solid-svg-icons';
 import { Offcanvas } from 'bootstrap';
