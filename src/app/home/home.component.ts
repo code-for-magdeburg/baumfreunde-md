@@ -28,6 +28,8 @@ export class HomeComponent implements OnInit, AfterViewInit {
   faBars = faBars;
   faSearch = faSearch;
 
+  dataIsLoading = false;
+
 
   leafletOptions: MapOptions = {
     preferCanvas: true,
@@ -58,9 +60,16 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
 
   async ngOnInit(): Promise<void> {
-    this.dataPoints = await this.dataService.getAllDataPoints();
-    this.leafletLayers = this.dataPoints.map(dataPoint => this.createRegularTreeMarker(dataPoint));
-    this.jumpToCurrentLocation();
+
+    try {
+      this.dataIsLoading = true;
+      this.jumpToCurrentLocation();
+      this.dataPoints = await this.dataService.getAllDataPoints();
+      this.leafletLayers = this.dataPoints.map(dataPoint => this.createRegularTreeMarker(dataPoint));
+    } finally {
+      this.dataIsLoading = false;
+    }
+
   }
 
 
