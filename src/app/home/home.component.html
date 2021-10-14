@@ -5,7 +5,8 @@
     leaflet
     [leafletOptions]="leafletOptions"
     [leafletLayers]="leafletLayers"
-    (leafletMapReady)="mapReady($event)">
+    (leafletMapReady)="mapReady($event)"
+    (leafletZoomChange)="zoomChanged($event)">
   </div>
 
   <div *ngIf="dataIsLoading" class="d-flex flex-column justify-content-center align-items-center text-center position-absolute top-0 p-3 bg-white opacity-75" style="width: 100%; height: 100%; z-index: 1000;">

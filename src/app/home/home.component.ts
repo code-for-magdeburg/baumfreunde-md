@@ -105,6 +105,12 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
 
+  zoomChanged(zoom: number): void {
+    const radius = Math.max(zoom * 5 - 75, 1);
+    this.leafletLayers.forEach(l => l.setRadius(radius));
+  }
+
+
   private jumpToLocation(latitude: number, longitude: number): void {
     this.map.setView(latLng(latitude, longitude), MAX_ZOOM - 2);
   }
@@ -114,7 +120,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
     const marker = circleMarker(
       latLng(dataPoint.lat, dataPoint.lon),
-      { radius: 5, fillOpacity: .5, color: '#517551', weight: 1, fillColor: '#92D292' }
+      { radius: this.calcCircleRadiusByZoomFactor(), fillOpacity: 1, color: '#517551', weight: 2, fillColor: '#92D292' }
     )
       .on('click', event => {
         this.showTreeDetails(event.sourceTarget.feature.properties as TreeDataPoint);
@@ -148,15 +154,20 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
     const selectedMarker = this.leafletLayers.find(l => l.feature.properties.internal_ref === this.selectedTreeId);
     if (selectedMarker) {
-      selectedMarker.setStyle({ fillOpacity: .5, color: '#517551', weight: 1, fillColor: '#92D292' });
-      selectedMarker.setRadius(5);
+      selectedMarker.setStyle({ fillOpacity: 1, color: '#517551', weight: 2, fillColor: '#92D292' });
+      selectedMarker.setRadius(this.calcCircleRadiusByZoomFactor());
     }
 
     this.selectedTreeId = treeMarker.feature.properties.internal_ref;
 
-    treeMarker.setStyle({ fillOpacity: 1, color: '#75515c', weight: 2, fillColor: '#d292a5' });
-    treeMarker.setRadius(10);
+    treeMarker.setStyle({ fillOpacity: 1, color: '#9a423f', weight: 3, fillColor: '#e76561' });
+    treeMarker.setRadius(this.calcCircleRadiusByZoomFactor() + 10);
 
+  }
+
+
+  private calcCircleRadiusByZoomFactor(): number {
+    return Math.max(this.map.getZoom() * 5 - 75, 1);
   }
 
 
