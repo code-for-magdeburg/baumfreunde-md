@@ -13,9 +13,15 @@
     <div class="spinner-border"></div>
   </div>
 
-  <button class="btn btn-light shadow-sm menu-toggle-button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas">
-    <fa-icon [icon]="faBars"></fa-icon>
-  </button>
+
+  <div class="d-grid gap-1 action-buttons-container">
+    <button class="btn btn-outline-secondary bg-white shadow-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvas">
+      <fa-icon [icon]="faBars"></fa-icon>
+    </button>
+    <button class="btn btn-outline-secondary bg-white shadow-sm" (click)="jumpToCurrentLocation()">
+      <fa-icon [icon]="faCrosshairs"></fa-icon>
+    </button>
+  </div>
 
   <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" #offcanvas>
 
