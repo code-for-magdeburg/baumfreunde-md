@@ -29,6 +29,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   faCrosshairs = faCrosshairs;
 
   dataIsLoading = false;
+  hideFlyHomeButton = false;
 
 
   leafletOptions: MapOptions = {
@@ -100,7 +101,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   jumpToCurrentLocation(): void {
     navigator.geolocation.getCurrentPosition(
       resp => this.jumpToLocation(resp.coords.latitude, resp.coords.longitude),
-      positionError => console.log(positionError));
+      () => this.hideFlyHomeButton = true);
   }
 
 
