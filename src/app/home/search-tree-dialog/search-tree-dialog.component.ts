@@ -14,6 +14,7 @@ export class SearchTreeDialogComponent implements AfterViewInit {
 
   trees: TreeDataPoint[] = [];
   searchResult: TreeDataPoint[] = [];
+  searchFailed = false;
   onConfirm: (result: TreeDataPoint) => void;
 
   @ViewChild('treeNrInput') treeNrInputRef: ElementRef;
@@ -30,6 +31,8 @@ export class SearchTreeDialogComponent implements AfterViewInit {
 
   doSearch(): void {
 
+    this.searchFailed = false;
+
     const searchTerm = (this.treeNrInputRef.nativeElement.value as string).trim();
     const searchTermUpperCase = searchTerm.toUpperCase();
 
@@ -39,9 +42,8 @@ export class SearchTreeDialogComponent implements AfterViewInit {
       if (tree) {
         this.selectTreeAndClose(tree);
       } else {
-        // TODO: Handle unsuccessful search
+        this.searchFailed = true;
         this.treeNrInputRef.nativeElement.focus();
-        this.treeNrInputRef.nativeElement.select();
       }
 
     } else {
@@ -52,14 +54,14 @@ export class SearchTreeDialogComponent implements AfterViewInit {
 
       switch (this.searchResult.length) {
         case 0:
-          // TODO: Handle unsuccessful search
+          this.searchFailed = true;
+          this.treeNrInputRef.nativeElement.focus();
           break;
 
         case 1:
           return this.selectTreeAndClose(this.searchResult[0]);
 
         default:
-          // TODO: Present selection
           break;
       }
 
