@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { parse, ParseConfig } from 'papaparse';
 import { TreeDataPointCsvRecord } from '../model/TreeDataPointCsvRecord';
 import { TreeDataPoint } from '../model/TreeDataPoint';
+import { Classification } from '../model/Classification';
 
 
 @Injectable({ providedIn: 'root' })
@@ -10,7 +11,7 @@ export class DataService {
 
 
   private dataPoints: any[];
-  private genii: string[];
+  private classifications: Classification[];
   private locations: string[];
   private addresses: string[];
 
@@ -37,13 +38,13 @@ export class DataService {
   private async loadData(): Promise<void> {
 
     const p1 = this.createFetchDataPointsPromise();
-    const p2 = this.createFetchGeniiPromise();
+    const p2 = this.createFetchClassificationPromise();
     const p3 = this.createFetchLocationsPromise();
     const p4 = this.createFetchAddressesPromise();
 
     const results = await Promise.all([p1, p2, p3, p4]);
 
-    this.genii = results[1];
+    this.classifications = results[1];
     this.locations = results[2];
     this.addresses = results[3];
     this.dataPoints = results[0].map(csvRecord => this.mapCsvRecordToTreeDataPoint(csvRecord));
@@ -65,9 +66,9 @@ export class DataService {
   }
 
 
-  private createFetchGeniiPromise(): Promise<string[]> {
+  private createFetchClassificationPromise(): Promise<Classification[]> {
     return this.http
-      .get<string[]>('/assets/data/Baumkataster-Magdeburg-2021-Gattungen.json')
+      .get<Classification[]>('/assets/data/Baumkataster-Magdeburg-2021-Gattungen.json')
       .toPromise();
   }
 
@@ -87,14 +88,16 @@ export class DataService {
 
 
   private mapCsvRecordToTreeDataPoint(csvRecord: TreeDataPointCsvRecord): TreeDataPoint {
+    const classification = this.classifications[csvRecord.genusIndex];
     return {
       ...csvRecord,
       location: this.locations[csvRecord.locationIndex],
       address: this.addresses[csvRecord.addressIndex],
-      genus: this.genii[csvRecord.genusIndex],
-      species: '',
-      variety: '',
-      common: ''
+      genus: classification.genus,
+      species: classification.species,
+      variety: classification.variety,
+      common: classification.common,
+      scientific: classification.scientific
     };
   }
 
