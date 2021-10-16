@@ -1,5 +1,5 @@
 import * as fs from 'fs';
-import { parse, unparse } from 'papaparse';
+import { parse, ParseConfig, unparse } from 'papaparse';
 
 
 const LAT_LON_ACCURACY_FACTOR = 10000000;
@@ -37,7 +37,12 @@ type TargetRecord = {
 
 // Load and parse original csv data file
 const csv = fs.readFileSync('./data/Baumkataster-Magdeburg-2021.csv', 'utf-8');
-const parseOptions = { dynamicTyping: true, skipEmptyLines: true, header: true };
+const parseOptions: ParseConfig = {
+  dynamicTyping: true,
+  skipEmptyLines: true,
+  header: true,
+  transform: (value, field) => field === 'Gattung' ? value.replace(';', ',') : value
+};
 const originalCsvRecords = parse(csv, parseOptions).data as OriginalCsvRecord[];
 
 // Map to target records and save to csv file
