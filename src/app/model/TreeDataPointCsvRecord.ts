@@ -6,9 +6,6 @@ export type TreeDataPointCsvRecord = {
   lat: number;
   lon: number;
   genusIndex: number;
-  species: string;
-  variety: string;
-  common: string;
   height: number;
   crown: number;
   dbh: number;

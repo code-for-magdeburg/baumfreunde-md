@@ -104,6 +104,9 @@ export class DataService {
       location: this.locations[csvRecord.locationIndex],
       address: this.addresses[csvRecord.addressIndex],
       genus: this.genii[csvRecord.genusIndex]
+      species: '',
+      variety: '',
+      common: ''
     };
   }
 

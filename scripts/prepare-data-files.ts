@@ -29,9 +29,6 @@ type TargetRecord = {
   lat: number;
   lon: number;
   genusIndex: number;
-  species: string; // TODO: tbd
-  variety: string; // TODO: tbd
-  common: string; // TODO: tbd
   height: number;
   crown: number;
   dbh: number;
@@ -65,9 +62,6 @@ function mapToStandardTreeRecord(original: OriginalCsvRecord): TargetRecord {
     lat: Math.trunc(original.latitude * LAT_LON_ACCURACY_FACTOR) / LAT_LON_ACCURACY_FACTOR,
     lon: Math.trunc(original.longitude * LAT_LON_ACCURACY_FACTOR) / LAT_LON_ACCURACY_FACTOR,
     genusIndex: genii.indexOf(original.Gattung),
-    species: '',
-    variety: '',
-    common: '',
     height: original.Baumhoehe,
     crown: original.Kronendurc,
     dbh: original.Stammumfan,
