@@ -44,13 +44,15 @@ const parseOptions = { dynamicTyping: true, skipEmptyLines: true, header: true }
 const originalCsvRecords = parse(csv, parseOptions).data as OriginalCsvRecord[];
 
 // Map to target records and save to csv file
-const locations = [...new Set(originalCsvRecords.map(r => r.Typ))];
+const locations = [...new Set(originalCsvRecords.map(r => r.Typ))].sort();
 fs.writeFileSync('./src/assets/data/Baumkataster-Magdeburg-2021-Typen.txt', locations.join('\n'), 'utf-8');
-const genii = [...new Set(originalCsvRecords.map(r => r.Gattung))];
+const genii = [...new Set(originalCsvRecords.map(r => r.Gattung))].sort();
 fs.writeFileSync('./src/assets/data/Baumkataster-Magdeburg-2021-Gattungen.txt', genii.join('\n'), 'utf-8');
-const addresses =  [...new Set(originalCsvRecords.map(r => r.Gebiet))];
+const addresses =  [...new Set(originalCsvRecords.map(r => r.Gebiet))].sort();
 fs.writeFileSync('./src/assets/data/Baumkataster-Magdeburg-2021-Gebiete.txt', addresses.join('\n'), 'utf-8');
-const targetRecords = originalCsvRecords.map(mapToStandardTreeRecord);
+const targetRecords = originalCsvRecords
+  .map(mapToStandardTreeRecord)
+  .sort((a, b) => a.internal_ref < b.internal_ref ? -1 : 0);
 fs.writeFileSync('./src/assets/data/Baumkataster-Magdeburg-2021.txt', unparse(targetRecords), 'utf-8');
 
 
