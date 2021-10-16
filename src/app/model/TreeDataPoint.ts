@@ -8,6 +8,7 @@ export type TreeDataPoint = {
   genus: string;
   species: string;
   variety: string;
+  scientific: string;
   common: string;
   height: number;
   crown: number;

@@ -1,6 +1,6 @@
 <div class="modal-header align-items-start">
   <div>
-    <h5 class="modal-title">{{ treeDetails.genus }}</h5>
+    <h5 class="modal-title">{{ treeDetails.common }}</h5>
     <h6 class="text-muted mt-1 mb-0">{{ treeDetails.ref }}</h6>
   </div>
   <button type="button" class="btn-close" aria-label="Close" (click)="modalRef?.hide()"></button>
@@ -9,24 +9,28 @@
 <div class="modal-body">
 
   <div class="mt-2">
-    <span>Gebiet</span><br>
+    <span class="small">Gebiet</span><br>
     <div class="fw-bold">{{ treeDetails.address }}</div>
   </div>
   <div class="mt-2">
-    <span>Pflanzjahr</span><br>
+    <span class="small">Pflanzjahr</span><br>
     <div class="fw-bold">{{ treeDetails.planted ? treeDetails.planted : '?' }}</div>
   </div>
   <div class="mt-2">
-    <span>Baumhöhe</span><br>
+    <span class="small">Baumhöhe</span><br>
     <div class="fw-bold">{{ treeDetails.height | number: '0.2':'de' }}m</div>
   </div>
   <div class="mt-2">
-    <span>Kronendurchmesser</span><br>
+    <span class="small">Kronendurchmesser</span><br>
     <div class="fw-bold">{{ treeDetails.crown | number: '0.2':'de' }}m</div>
   </div>
   <div class="mt-2">
-    <span>Stammumfang</span><br>
+    <span class="small">Stammumfang</span><br>
     <div class="fw-bold">{{ treeDetails.dbh }}cm</div>
+  </div>
+  <div class="mt-2">
+    <span class="small">Wissenschaftlicher Name</span><br>
+    <div class="fw-bold">{{ treeDetails.scientific }}cm</div>
   </div>
 
 </div>
