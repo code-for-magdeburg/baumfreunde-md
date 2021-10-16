@@ -4,6 +4,38 @@ import { parse, ParseConfig, unparse } from 'papaparse';
 
 const LAT_LON_ACCURACY_FACTOR = 10000000;
 
+const IGNORED_ADDRESS_WORDS = [
+  ' (Straßenbegleitgrün)',
+  ' (Staßenbegleitgrün)',
+  ' (Straßenbegleitgün)',
+  ' (Stra0enbegleitgrün)',
+  ' (Straßenbegleitgrün) ',
+  ' ( Straßenbegleitgrün)',
+  ' (Straßenbegleitgrün )',
+  ' ( Straßenbegleitgrün )',
+  ' (Straßenbegleitgrün PB M)',
+  ' (Straßenbegleitgrün SW)',
+  ' (FB 23)',
+  ' ( FB 23)',
+  ' (FB 23 )',
+  ' (FB23 )',
+  ' (FB23)',
+  ' (FB 23 SW)',
+  ' ( PPL )',
+  ' (PPL )',
+  ' ( PPL)',
+  ' (PPL)',
+  ' (PPL 2)',
+  ' (PPL1)',
+  '/PPL',
+  ' PPL',
+  ' FND',
+  '(SBG)',
+  '/SBG',
+  '/LSG',
+  '/KGA',
+];
+
 
 type OriginalCsvRecord = {
   gid: number;
@@ -55,22 +87,28 @@ const parseOptions: ParseConfig = {
 };
 const originalCsvRecords = parse(csv, parseOptions).data as OriginalCsvRecord[];
 
-// Map to target records and save to csv file
+// Save locations to json file
 const locations = [...new Set(originalCsvRecords.map(r => r.Typ))].sort();
 const locationsJson = JSON.stringify(locations, null, 2);
 fs.writeFileSync('./src/assets/data/Baumkataster-Magdeburg-2021-Typen.json', locationsJson);
+
+// Save classification to json file
 const genii = [...new Set(originalCsvRecords.map(r => r.Gattung))]
   .sort()
   .map(mapToExtractedNames);
 const geniiJson = JSON.stringify(genii, null, 2);
 fs.writeFileSync('./src/assets/data/Baumkataster-Magdeburg-2021-Gattungen.json', geniiJson);
-const addresses = [...new Set(originalCsvRecords.map(r => r.Gebiet))].sort();
+
+// Save addresses to json file
+const addresses = [...new Set(originalCsvRecords.map(r => cleanAddress(r.Gebiet)))].sort();
 const adressesJson = JSON.stringify(addresses, null, 2);
 fs.writeFileSync('./src/assets/data/Baumkataster-Magdeburg-2021-Gebiete.json', adressesJson);
+
+// Save tree records to csv file
 const targetRecords = originalCsvRecords
   .map(mapToStandardTreeRecord)
   .sort((a, b) => a.internal_ref < b.internal_ref ? -1 : 0);
-fs.writeFileSync('./src/assets/data/Baumkataster-Magdeburg-2021.txt', unparse(targetRecords), 'utf-8');
+fs.writeFileSync('./src/assets/data/Baumkataster-Magdeburg-2021.txt', unparse(targetRecords));
 
 
 function mapToStandardTreeRecord(original: OriginalCsvRecord): TargetRecord {
@@ -78,7 +116,7 @@ function mapToStandardTreeRecord(original: OriginalCsvRecord): TargetRecord {
     internal_ref: original.gid,
     ref: original.Baumnr,
     locationIndex: locations.indexOf(original.Typ),
-    addressIndex: addresses.indexOf(original.Gebiet),
+    addressIndex: addresses.indexOf(cleanAddress(original.Gebiet)),
     lat: Math.trunc(original.latitude * LAT_LON_ACCURACY_FACTOR) / LAT_LON_ACCURACY_FACTOR,
     lon: Math.trunc(original.longitude * LAT_LON_ACCURACY_FACTOR) / LAT_LON_ACCURACY_FACTOR,
     genusIndex: genii.map(g => g.fullname).indexOf(original.Gattung),
@@ -114,4 +152,11 @@ function mapToExtractedNames(gattung: string): Classification {
     common
   };
 
+}
+
+
+function cleanAddress(gebiet: string): string {
+  let displayName = gebiet;
+  IGNORED_ADDRESS_WORDS.forEach(word => displayName = displayName.replace(word, '').trim());
+  return displayName;
 }
