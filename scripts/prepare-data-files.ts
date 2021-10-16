@@ -42,11 +42,14 @@ const originalCsvRecords = parse(csv, parseOptions).data as OriginalCsvRecord[];
 
 // Map to target records and save to csv file
 const locations = [...new Set(originalCsvRecords.map(r => r.Typ))].sort();
-fs.writeFileSync('./src/assets/data/Baumkataster-Magdeburg-2021-Typen.txt', locations.join('\n'), 'utf-8');
+const locationsJson = JSON.stringify(locations, null, 2);
+fs.writeFileSync('./src/assets/data/Baumkataster-Magdeburg-2021-Typen.json', locationsJson);
 const genii = [...new Set(originalCsvRecords.map(r => r.Gattung))].sort();
-fs.writeFileSync('./src/assets/data/Baumkataster-Magdeburg-2021-Gattungen.txt', genii.join('\n'), 'utf-8');
+const geniiJson = JSON.stringify(genii, null, 2);
+fs.writeFileSync('./src/assets/data/Baumkataster-Magdeburg-2021-Gattungen.json', geniiJson);
 const addresses =  [...new Set(originalCsvRecords.map(r => r.Gebiet))].sort();
-fs.writeFileSync('./src/assets/data/Baumkataster-Magdeburg-2021-Gebiete.txt', addresses.join('\n'), 'utf-8');
+const adressesJson = JSON.stringify(addresses, null, 2);
+fs.writeFileSync('./src/assets/data/Baumkataster-Magdeburg-2021-Gebiete.json', adressesJson);
 const targetRecords = originalCsvRecords
   .map(mapToStandardTreeRecord)
   .sort((a, b) => a.internal_ref < b.internal_ref ? -1 : 0);

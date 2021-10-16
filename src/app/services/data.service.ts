@@ -66,35 +66,23 @@ export class DataService {
 
 
   private createFetchGeniiPromise(): Promise<string[]> {
-
-    return new Promise((resolve, reject) => {
-      this.http
-        .get('/assets/data/Baumkataster-Magdeburg-2021-Gattungen.txt', { responseType: 'text' })
-        .subscribe(txt => resolve(txt.split('\n')), reject);
-    });
-
+    return this.http
+      .get<string[]>('/assets/data/Baumkataster-Magdeburg-2021-Gattungen.json')
+      .toPromise();
   }
 
 
   private createFetchLocationsPromise(): Promise<string[]> {
-
-    return new Promise((resolve, reject) => {
-      this.http
-        .get('/assets/data/Baumkataster-Magdeburg-2021-Typen.txt', { responseType: 'text' })
-        .subscribe(txt => resolve(txt.split('\n')), reject);
-    });
-
+    return this.http
+      .get<string[]>('/assets/data/Baumkataster-Magdeburg-2021-Typen.json')
+      .toPromise();
   }
 
 
   private createFetchAddressesPromise(): Promise<string[]> {
-
-    return new Promise((resolve, reject) => {
-      this.http
-        .get('/assets/data/Baumkataster-Magdeburg-2021-Gebiete.txt', { responseType: 'text' })
-        .subscribe(txt => resolve(txt.split('\n')), reject);
-    });
-
+    return this.http
+      .get<string[]>('/assets/data/Baumkataster-Magdeburg-2021-Gebiete.json')
+      .toPromise();
   }
 
 
@@ -103,7 +91,7 @@ export class DataService {
       ...csvRecord,
       location: this.locations[csvRecord.locationIndex],
       address: this.addresses[csvRecord.addressIndex],
-      genus: this.genii[csvRecord.genusIndex]
+      genus: this.genii[csvRecord.genusIndex],
       species: '',
       variety: '',
       common: ''
