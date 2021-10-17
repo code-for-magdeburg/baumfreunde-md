@@ -1,5 +1,6 @@
 import * as fs from 'fs';
 import { parse, ParseConfig, unparse } from 'papaparse';
+const axios = require('axios').default;
 
 
 const LAT_LON_ACCURACY_FACTOR = 10000000;
@@ -74,6 +75,7 @@ type Classification = {
   variety: string;
   common: string;
   scientific: string;
+  wikipediaPageUrl: string;
 };
 
 
@@ -92,26 +94,31 @@ const locations = [...new Set(originalCsvRecords.map(r => r.Typ))].sort();
 const locationsJson = JSON.stringify(locations, null, 2);
 fs.writeFileSync('./src/assets/data/Baumkataster-Magdeburg-2021-Typen.json', locationsJson);
 
-// Save classification to json file
-const genii = [...new Set(originalCsvRecords.map(r => r.Gattung))]
-  .sort()
-  .map(mapToExtractedNames);
-const geniiJson = JSON.stringify(genii, null, 2);
-fs.writeFileSync('./src/assets/data/Baumkataster-Magdeburg-2021-Gattungen.json', geniiJson);
-
 // Save addresses to json file
 const addresses = [...new Set(originalCsvRecords.map(r => cleanAddress(r.Gebiet)))].sort();
 const adressesJson = JSON.stringify(addresses, null, 2);
 fs.writeFileSync('./src/assets/data/Baumkataster-Magdeburg-2021-Gebiete.json', adressesJson);
 
-// Save tree records to csv file
-const targetRecords = originalCsvRecords
-  .map(mapToStandardTreeRecord)
-  .sort((a, b) => a.internal_ref < b.internal_ref ? -1 : 0);
-fs.writeFileSync('./src/assets/data/Baumkataster-Magdeburg-2021.txt', unparse(targetRecords));
+// Save classification to json file
+const genii = [...new Set(originalCsvRecords.map(r => r.Gattung))].sort();
+const geniiPromises = genii.map(mapToClassification);
+Promise.all(geniiPromises)
+  .then(classifications => {
+
+    const classificationsJson = JSON.stringify(classifications, null, 2);
+    fs.writeFileSync('./src/assets/data/Baumkataster-Magdeburg-2021-Gattungen.json', classificationsJson);
+
+    // Save tree records to csv file
+    const targetRecords = originalCsvRecords
+      .map(r => mapToStandardTreeRecord(r, classifications))
+      .sort((a, b) => a.internal_ref < b.internal_ref ? -1 : 0);
+    fs.writeFileSync('./src/assets/data/Baumkataster-Magdeburg-2021.txt', unparse(targetRecords));
+
+  })
+  .catch(console.error);
 
 
-function mapToStandardTreeRecord(original: OriginalCsvRecord): TargetRecord {
+function mapToStandardTreeRecord(original: OriginalCsvRecord, classifications: Classification[]): TargetRecord {
   return {
     internal_ref: original.gid,
     ref: original.Baumnr,
@@ -119,7 +126,7 @@ function mapToStandardTreeRecord(original: OriginalCsvRecord): TargetRecord {
     addressIndex: addresses.indexOf(cleanAddress(original.Gebiet)),
     lat: Math.trunc(original.latitude * LAT_LON_ACCURACY_FACTOR) / LAT_LON_ACCURACY_FACTOR,
     lon: Math.trunc(original.longitude * LAT_LON_ACCURACY_FACTOR) / LAT_LON_ACCURACY_FACTOR,
-    genusIndex: genii.map(g => g.fullname).indexOf(original.Gattung),
+    genusIndex: classifications.map(g => g.fullname).indexOf(original.Gattung),
     height: original.Baumhoehe,
     crown: original.Kronendurc,
     dbh: original.Stammumfan,
@@ -128,7 +135,7 @@ function mapToStandardTreeRecord(original: OriginalCsvRecord): TargetRecord {
 }
 
 
-function mapToExtractedNames(gattung: string): Classification {
+function mapToClassification(gattung: string): Promise<Classification> {
 
   const parts = gattung.toLowerCase() === 'unbekannt' ? [gattung] : gattung.split(',');
   const scientific = parts.length > 0 ? parts[0].trim() : '';
@@ -143,14 +150,45 @@ function mapToExtractedNames(gattung: string): Classification {
     ? ''
     : (scientificParts[1].toLowerCase() === 'x' ? scientificParts.slice(3).join(' ') : scientificParts.slice(2).join(' '));
 
-  return {
-    fullname: gattung,
-    genus,
-    species,
-    variety,
-    scientific,
-    common
-  };
+  return new Promise((resolve, reject) => {
+
+    getWikipediaPageUrl(common)
+      .then(url1 => {
+
+        if (url1 === '') {
+          getWikipediaPageUrl(`${genus} ${species}`.trim())
+            .then(url2 => resolve({ fullname: gattung, genus, species, variety, scientific, common, wikipediaPageUrl: url2 }))
+            .catch(reject);
+        } else {
+          resolve({ fullname: gattung, genus, species, variety, scientific, common, wikipediaPageUrl: url1 });
+        }
+
+      })
+      .catch(reject);
+
+  });
+
+}
+
+
+function getWikipediaPageUrl(title: string): Promise<string> {
+
+  return new Promise((resolve, reject) => {
+
+    const url = `https://de.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&redirects&titles=${encodeURIComponent(title)}`;
+    axios
+      .get(url)
+      .then(response => {
+        const pages = response.data.query.pages;
+        const key = Object.keys(pages)[0];
+        if (key === '-1') {
+          return resolve('');
+        }
+        resolve(`https://de.wikipedia.org/wiki/${encodeURIComponent(pages[key].title)}`);
+      })
+      .catch(reject);
+
+  });
 
 }
 

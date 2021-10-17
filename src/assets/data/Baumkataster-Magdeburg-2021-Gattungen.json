@@ -5,7 +5,8 @@
     "species": "alba",
     "variety": "",
     "scientific": "Abies alba",
-    "common": "Weißtanne"
+    "common": "Weißtanne",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Wei%C3%9F-Tanne"
   },
   {
     "fullname": "Abies concolor, Grau-Tanne - Kolorado-Tanne",
@@ -13,7 +14,8 @@
     "species": "concolor",
     "variety": "",
     "scientific": "Abies concolor",
-    "common": "Grau-Tanne - Kolorado-Tanne"
+    "common": "Grau-Tanne - Kolorado-Tanne",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Kolorado-Tanne"
   },
   {
     "fullname": "Abies koreana, Korea-Tanne  -  Zapfen-Tanne",
@@ -21,7 +23,8 @@
     "species": "koreana",
     "variety": "",
     "scientific": "Abies koreana",
-    "common": "Korea-Tanne  -  Zapfen-Tanne"
+    "common": "Korea-Tanne  -  Zapfen-Tanne",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Korea-Tanne"
   },
   {
     "fullname": "Abies nordmanniana, Nordmanntanne",
@@ -29,7 +32,8 @@
     "species": "nordmanniana",
     "variety": "",
     "scientific": "Abies nordmanniana",
-    "common": "Nordmanntanne"
+    "common": "Nordmanntanne",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Nordmann-Tanne"
   },
   {
     "fullname": "Abies procera \"Glauca\", Edeltanne",
@@ -37,7 +41,8 @@
     "species": "procera",
     "variety": "Glauca",
     "scientific": "Abies procera \"Glauca\"",
-    "common": "Edeltanne"
+    "common": "Edeltanne",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Edel-Tanne"
   },
   {
     "fullname": "Abies spec., Tanne",
@@ -45,7 +50,8 @@
     "species": "spec.",
     "variety": "",
     "scientific": "Abies spec.",
-    "common": "Tanne"
+    "common": "Tanne",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Tanne"
   },
   {
     "fullname": "Acer Platanoides, Spitz-Ahorn",
@@ -53,7 +59,8 @@
     "species": "Platanoides",
     "variety": "",
     "scientific": "Acer Platanoides",
-    "common": "Spitz-Ahorn"
+    "common": "Spitz-Ahorn",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Spitzahorn"
   },
   {
     "fullname": "Acer Pseudoplatanus, Berg-Ahorn  -  Weiss-Ahorn",
@@ -61,7 +68,8 @@
     "species": "Pseudoplatanus",
     "variety": "",
     "scientific": "Acer Pseudoplatanus",
-    "common": "Berg-Ahorn  -  Weiss-Ahorn"
+    "common": "Berg-Ahorn  -  Weiss-Ahorn",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Acer campestre, Feldahorn",
@@ -69,7 +77,8 @@
     "species": "campestre",
     "variety": "",
     "scientific": "Acer campestre",
-    "common": "Feldahorn"
+    "common": "Feldahorn",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Feldahorn"
   },
   {
     "fullname": "Acer cappadocicum \"Rubrum\", Kolchischer Blut-Ahor",
@@ -77,7 +86,8 @@
     "species": "cappadocicum",
     "variety": "Rubrum",
     "scientific": "Acer cappadocicum \"Rubrum\"",
-    "common": "Kolchischer Blut-Ahor"
+    "common": "Kolchischer Blut-Ahor",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Kolchischer%20Ahorn"
   },
   {
     "fullname": "Acer ginnala, Feuerahorn",
@@ -85,7 +95,8 @@
     "species": "ginnala",
     "variety": "",
     "scientific": "Acer ginnala",
-    "common": "Feuerahorn"
+    "common": "Feuerahorn",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Feuer-Ahorn"
   },
   {
     "fullname": "Acer japonicum, Thunbergs Fächer-Ahorn",
@@ -93,7 +104,8 @@
     "species": "japonicum",
     "variety": "",
     "scientific": "Acer japonicum",
-    "common": "Thunbergs Fächer-Ahorn"
+    "common": "Thunbergs Fächer-Ahorn",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Japanischer%20Ahorn"
   },
   {
     "fullname": "Acer monspessulanum, Französischer Ahorn",
@@ -101,7 +113,8 @@
     "species": "monspessulanum",
     "variety": "",
     "scientific": "Acer monspessulanum",
-    "common": "Französischer Ahorn"
+    "common": "Französischer Ahorn",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Franz%C3%B6sischer%20Ahorn"
   },
   {
     "fullname": "Acer negundo \"Aureo-Variegatum\", Goldeschen-Ahorn",
@@ -109,7 +122,8 @@
     "species": "negundo",
     "variety": "Aureo-Variegatum",
     "scientific": "Acer negundo \"Aureo-Variegatum\"",
-    "common": "Goldeschen-Ahorn"
+    "common": "Goldeschen-Ahorn",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Eschen-Ahorn"
   },
   {
     "fullname": "Acer negundo \"Odessanum\", Gelber Eschen-Ahorn",
@@ -117,7 +131,8 @@
     "species": "negundo",
     "variety": "Odessanum",
     "scientific": "Acer negundo \"Odessanum\"",
-    "common": "Gelber Eschen-Ahorn"
+    "common": "Gelber Eschen-Ahorn",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Eschen-Ahorn"
   },
   {
     "fullname": "Acer negundo Variegatum, Eschenahorn, weißblättrig",
@@ -125,7 +140,8 @@
     "species": "negundo",
     "variety": "Variegatum",
     "scientific": "Acer negundo Variegatum",
-    "common": "Eschenahorn"
+    "common": "Eschenahorn",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Eschen-Ahorn"
   },
   {
     "fullname": "Acer negundo, Eschenahorn",
@@ -133,7 +149,8 @@
     "species": "negundo",
     "variety": "",
     "scientific": "Acer negundo",
-    "common": "Eschenahorn"
+    "common": "Eschenahorn",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Eschen-Ahorn"
   },
   {
     "fullname": "Acer opalus, Schneeballblaettriger Ahorn",
@@ -141,7 +158,8 @@
     "species": "opalus",
     "variety": "",
     "scientific": "Acer opalus",
-    "common": "Schneeballblaettriger Ahorn"
+    "common": "Schneeballblaettriger Ahorn",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Schneeball-Ahorn"
   },
   {
     "fullname": "Acer palmatum \"Atropurpureum\", Rotblättriger Fächer-Ahorn",
@@ -149,7 +167,8 @@
     "species": "palmatum",
     "variety": "Atropurpureum",
     "scientific": "Acer palmatum \"Atropurpureum\"",
-    "common": "Rotblättriger Fächer-Ahorn"
+    "common": "Rotblättriger Fächer-Ahorn",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/F%C3%A4cher-Ahorn"
   },
   {
     "fullname": "Acer palmatum, Fächer-Ahorn - Japanischer Ahorn",
@@ -157,7 +176,8 @@
     "species": "palmatum",
     "variety": "",
     "scientific": "Acer palmatum",
-    "common": "Fächer-Ahorn - Japanischer Ahorn"
+    "common": "Fächer-Ahorn - Japanischer Ahorn",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/F%C3%A4cher-Ahorn"
   },
   {
     "fullname": "Acer pensylvanicum, Streifen-Ahorn",
@@ -165,7 +185,8 @@
     "species": "pensylvanicum",
     "variety": "",
     "scientific": "Acer pensylvanicum",
-    "common": "Streifen-Ahorn"
+    "common": "Streifen-Ahorn",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Streifen-Ahorn"
   },
   {
     "fullname": "Acer plat. \"Faassens Black\", Spitzahorn, schwarzrotblättrig",
@@ -173,7 +194,8 @@
     "species": "plat.",
     "variety": "Faassens Black",
     "scientific": "Acer plat. \"Faassens Black\"",
-    "common": "Spitzahorn"
+    "common": "Spitzahorn",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Spitzahorn"
   },
   {
     "fullname": "Acer platanoides \"Columnare\", säulenförmiger Spitz-Ahorn",
@@ -181,7 +203,8 @@
     "species": "platanoides",
     "variety": "Columnare",
     "scientific": "Acer platanoides \"Columnare\"",
-    "common": "säulenförmiger Spitz-Ahorn"
+    "common": "säulenförmiger Spitz-Ahorn",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Spitzahorn"
   },
   {
     "fullname": "Acer platanoides \"Deborah\", rötlicher Spitz-Ahorn",
@@ -189,7 +212,8 @@
     "species": "platanoides",
     "variety": "Deborah",
     "scientific": "Acer platanoides \"Deborah\"",
-    "common": "rötlicher Spitz-Ahorn"
+    "common": "rötlicher Spitz-Ahorn",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Spitzahorn"
   },
   {
     "fullname": "Acer platanoides \"Drummondii\", Drummonds Spitzahorn",
@@ -197,7 +221,8 @@
     "species": "platanoides",
     "variety": "Drummondii",
     "scientific": "Acer platanoides \"Drummondii\"",
-    "common": "Drummonds Spitzahorn"
+    "common": "Drummonds Spitzahorn",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Spitzahorn"
   },
   {
     "fullname": "Acer platanoides \"Emerald Queen\", Kegelförmiger Spitz-Ahorn",
@@ -205,7 +230,8 @@
     "species": "platanoides",
     "variety": "Emerald Queen",
     "scientific": "Acer platanoides \"Emerald Queen\"",
-    "common": "Kegelförmiger Spitz-Ahorn"
+    "common": "Kegelförmiger Spitz-Ahorn",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Spitzahorn"
   },
   {
     "fullname": "Acer platanoides \"Eurostar\", Spitzahorn",
@@ -213,7 +239,8 @@
     "species": "platanoides",
     "variety": "Eurostar",
     "scientific": "Acer platanoides \"Eurostar\"",
-    "common": "Spitzahorn"
+    "common": "Spitzahorn",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Spitzahorn"
   },
   {
     "fullname": "Acer platanoides \"Olmstedt\", amerik säulenförmiger Spitz-Ahorn",
@@ -221,7 +248,8 @@
     "species": "platanoides",
     "variety": "Olmstedt",
     "scientific": "Acer platanoides \"Olmstedt\"",
-    "common": "amerik säulenförmiger Spitz-Ahorn"
+    "common": "amerik säulenförmiger Spitz-Ahorn",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Spitzahorn"
   },
   {
     "fullname": "Acer platanoides \"Royal Red\", Spitzahorn Royal Red",
@@ -229,7 +257,8 @@
     "species": "platanoides",
     "variety": "Royal Red",
     "scientific": "Acer platanoides \"Royal Red\"",
-    "common": "Spitzahorn Royal Red"
+    "common": "Spitzahorn Royal Red",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Spitzahorn"
   },
   {
     "fullname": "Acer platanoides Globosum, Kugelahorn",
@@ -237,7 +266,8 @@
     "species": "platanoides",
     "variety": "Globosum",
     "scientific": "Acer platanoides Globosum",
-    "common": "Kugelahorn"
+    "common": "Kugelahorn",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Spitzahorn"
   },
   {
     "fullname": "Acer platanoides Schwedleri, Blutahorn",
@@ -245,7 +275,8 @@
     "species": "platanoides",
     "variety": "Schwedleri",
     "scientific": "Acer platanoides Schwedleri",
-    "common": "Blutahorn"
+    "common": "Blutahorn",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Berg-Ahorn"
   },
   {
     "fullname": "Acer platanoides, Spitz-Ahorn",
@@ -253,7 +284,8 @@
     "species": "platanoides",
     "variety": "",
     "scientific": "Acer platanoides",
-    "common": "Spitz-Ahorn"
+    "common": "Spitz-Ahorn",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Spitzahorn"
   },
   {
     "fullname": "Acer pseudopl. Purpurascens, Purpurahorn",
@@ -261,7 +293,8 @@
     "species": "pseudopl.",
     "variety": "Purpurascens",
     "scientific": "Acer pseudopl. Purpurascens",
-    "common": "Purpurahorn"
+    "common": "Purpurahorn",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Acer pseudoplatanus \"Atropurpureum\", Bergahorn Atropurpureum",
@@ -269,7 +302,8 @@
     "species": "pseudoplatanus",
     "variety": "Atropurpureum",
     "scientific": "Acer pseudoplatanus \"Atropurpureum\"",
-    "common": "Bergahorn Atropurpureum"
+    "common": "Bergahorn Atropurpureum",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Berg-Ahorn"
   },
   {
     "fullname": "Acer pseudoplatanus \"Erectum\", Schmalkroninger Berg-Ahorn",
@@ -277,7 +311,8 @@
     "species": "pseudoplatanus",
     "variety": "Erectum",
     "scientific": "Acer pseudoplatanus \"Erectum\"",
-    "common": "Schmalkroninger Berg-Ahorn"
+    "common": "Schmalkroninger Berg-Ahorn",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Berg-Ahorn"
   },
   {
     "fullname": "Acer pseudoplatanus \"Negenia\", Kegelförmiger Berg-Ahorn",
@@ -285,7 +320,8 @@
     "species": "pseudoplatanus",
     "variety": "Negenia",
     "scientific": "Acer pseudoplatanus \"Negenia\"",
-    "common": "Kegelförmiger Berg-Ahorn"
+    "common": "Kegelförmiger Berg-Ahorn",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Berg-Ahorn"
   },
   {
     "fullname": "Acer pseudoplatanus \"Rotterdam\", Breitkegelförmiger Berg-Ahorn",
@@ -293,7 +329,8 @@
     "species": "pseudoplatanus",
     "variety": "Rotterdam",
     "scientific": "Acer pseudoplatanus \"Rotterdam\"",
-    "common": "Breitkegelförmiger Berg-Ahorn"
+    "common": "Breitkegelförmiger Berg-Ahorn",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Berg-Ahorn"
   },
   {
     "fullname": "Acer pseudoplatanus, Berg-Ahorn",
@@ -301,7 +338,8 @@
     "species": "pseudoplatanus",
     "variety": "",
     "scientific": "Acer pseudoplatanus",
-    "common": "Berg-Ahorn"
+    "common": "Berg-Ahorn",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Berg-Ahorn"
   },
   {
     "fullname": "Acer rubrum \"Red Sunset\", Rot-Ahorn",
@@ -309,7 +347,8 @@
     "species": "rubrum",
     "variety": "Red Sunset",
     "scientific": "Acer rubrum \"Red Sunset\"",
-    "common": "Rot-Ahorn"
+    "common": "Rot-Ahorn",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Rot-Ahorn"
   },
   {
     "fullname": "Acer rubrum, Rot-Ahorn",
@@ -317,7 +356,8 @@
     "species": "rubrum",
     "variety": "",
     "scientific": "Acer rubrum",
-    "common": "Rot-Ahorn"
+    "common": "Rot-Ahorn",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Rot-Ahorn"
   },
   {
     "fullname": "Acer saccharinum \"Wieri\", Geschlitzter Silber-Ahorn",
@@ -325,7 +365,8 @@
     "species": "saccharinum",
     "variety": "Wieri",
     "scientific": "Acer saccharinum \"Wieri\"",
-    "common": "Geschlitzter Silber-Ahorn"
+    "common": "Geschlitzter Silber-Ahorn",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Silber-Ahorn"
   },
   {
     "fullname": "Acer saccharinum, Silberahorn",
@@ -333,7 +374,8 @@
     "species": "saccharinum",
     "variety": "",
     "scientific": "Acer saccharinum",
-    "common": "Silberahorn"
+    "common": "Silberahorn",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Silber-Ahorn"
   },
   {
     "fullname": "Acer spec., Ahorn",
@@ -341,7 +383,8 @@
     "species": "spec.",
     "variety": "",
     "scientific": "Acer spec.",
-    "common": "Ahorn"
+    "common": "Ahorn",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Ahorne"
   },
   {
     "fullname": "Acer tataricum, Tatarischer Steppen-Ahorn",
@@ -349,7 +392,8 @@
     "species": "tataricum",
     "variety": "",
     "scientific": "Acer tataricum",
-    "common": "Tatarischer Steppen-Ahorn"
+    "common": "Tatarischer Steppen-Ahorn",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Tatarischer%20Steppen-Ahorn"
   },
   {
     "fullname": "Aesculus Hippocastanum, Gemeine Roß-Kastanie",
@@ -357,7 +401,8 @@
     "species": "Hippocastanum",
     "variety": "",
     "scientific": "Aesculus Hippocastanum",
-    "common": "Gemeine Roß-Kastanie"
+    "common": "Gemeine Roß-Kastanie",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Aesculus carnea \"Briotii\", Scharlach-Kastanie",
@@ -365,7 +410,8 @@
     "species": "carnea",
     "variety": "Briotii",
     "scientific": "Aesculus carnea \"Briotii\"",
-    "common": "Scharlach-Kastanie"
+    "common": "Scharlach-Kastanie",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Aesculus carnea, Purpurkastanie - Rotblühende Rosskastanie",
@@ -373,7 +419,8 @@
     "species": "carnea",
     "variety": "",
     "scientific": "Aesculus carnea",
-    "common": "Purpurkastanie - Rotblühende Rosskastanie"
+    "common": "Purpurkastanie - Rotblühende Rosskastanie",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Aesculus flava \"Vestita\", Gelbe Roßkastanie",
@@ -381,7 +428,8 @@
     "species": "flava",
     "variety": "Vestita",
     "scientific": "Aesculus flava \"Vestita\"",
-    "common": "Gelbe Roßkastanie"
+    "common": "Gelbe Roßkastanie",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Gelbe%20Rosskastanie"
   },
   {
     "fullname": "Aesculus hippoc. Baumanii, Gefülltblühende Roßkastanie",
@@ -389,7 +437,8 @@
     "species": "hippoc.",
     "variety": "Baumanii",
     "scientific": "Aesculus hippoc. Baumanii",
-    "common": "Gefülltblühende Roßkastanie"
+    "common": "Gefülltblühende Roßkastanie",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Aesculus hippocastanum, Roßkastanie",
@@ -397,7 +446,8 @@
     "species": "hippocastanum",
     "variety": "",
     "scientific": "Aesculus hippocastanum",
-    "common": "Roßkastanie"
+    "common": "Roßkastanie",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Rosskastanien"
   },
   {
     "fullname": "Aesculus parviflora, Strauch-Rosskastanie",
@@ -405,7 +455,8 @@
     "species": "parviflora",
     "variety": "",
     "scientific": "Aesculus parviflora",
-    "common": "Strauch-Rosskastanie"
+    "common": "Strauch-Rosskastanie",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Strauch-Rosskastanie"
   },
   {
     "fullname": "Aesculus pavia \"Atrosanguinea\", Echte Pavie, Rote Rosskastanie",
@@ -413,7 +464,8 @@
     "species": "pavia",
     "variety": "Atrosanguinea",
     "scientific": "Aesculus pavia \"Atrosanguinea\"",
-    "common": "Echte Pavie"
+    "common": "Echte Pavie",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Rote%20Rosskastanie"
   },
   {
     "fullname": "Aesculus spec., Kastanie",
@@ -421,7 +473,8 @@
     "species": "spec.",
     "variety": "",
     "scientific": "Aesculus spec.",
-    "common": "Kastanie"
+    "common": "Kastanie",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Kastanie"
   },
   {
     "fullname": "Aesculus x carnea, Rotblütige Roßkastanie",
@@ -429,7 +482,8 @@
     "species": "x carnea",
     "variety": "",
     "scientific": "Aesculus x carnea",
-    "common": "Rotblütige Roßkastanie"
+    "common": "Rotblütige Roßkastanie",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Fleischrote%20Rosskastanie"
   },
   {
     "fullname": "Ailanthus altissima, Götterbaum",
@@ -437,7 +491,8 @@
     "species": "altissima",
     "variety": "",
     "scientific": "Ailanthus altissima",
-    "common": "Götterbaum"
+    "common": "Götterbaum",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/G%C3%B6tterbaum"
   },
   {
     "fullname": "Ailanthus spec., Götterbaum",
@@ -445,7 +500,8 @@
     "species": "spec.",
     "variety": "",
     "scientific": "Ailanthus spec.",
-    "common": "Götterbaum"
+    "common": "Götterbaum",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/G%C3%B6tterbaum"
   },
   {
     "fullname": "Alnus cordata, Herzblättrige Erle",
@@ -453,7 +509,8 @@
     "species": "cordata",
     "variety": "",
     "scientific": "Alnus cordata",
-    "common": "Herzblättrige Erle"
+    "common": "Herzblättrige Erle",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Herzbl%C3%A4ttrige%20Erle"
   },
   {
     "fullname": "Alnus glutinosa, Schwarzerle",
@@ -461,7 +518,8 @@
     "species": "glutinosa",
     "variety": "",
     "scientific": "Alnus glutinosa",
-    "common": "Schwarzerle"
+    "common": "Schwarzerle",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Schwarz-Erle"
   },
   {
     "fullname": "Alnus incana \"Aurea\", Gold-Erle",
@@ -469,7 +527,8 @@
     "species": "incana",
     "variety": "Aurea",
     "scientific": "Alnus incana \"Aurea\"",
-    "common": "Gold-Erle"
+    "common": "Gold-Erle",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Grau-Erle"
   },
   {
     "fullname": "Alnus incana, Grauerle",
@@ -477,7 +536,8 @@
     "species": "incana",
     "variety": "",
     "scientific": "Alnus incana",
-    "common": "Grauerle"
+    "common": "Grauerle",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Grau-Erle"
   },
   {
     "fullname": "Alnus spaethii, Purpur-Erle",
@@ -485,7 +545,8 @@
     "species": "spaethii",
     "variety": "",
     "scientific": "Alnus spaethii",
-    "common": "Purpur-Erle"
+    "common": "Purpur-Erle",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Amelanchier arborea \"Robin Hill\", Schnee-Felsenbirne",
@@ -493,7 +554,8 @@
     "species": "arborea",
     "variety": "Robin Hill",
     "scientific": "Amelanchier arborea \"Robin Hill\"",
-    "common": "Schnee-Felsenbirne"
+    "common": "Schnee-Felsenbirne",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Amelanchier laevis, Hängende Felsenbirne",
@@ -501,7 +563,8 @@
     "species": "laevis",
     "variety": "",
     "scientific": "Amelanchier laevis",
-    "common": "Hängende Felsenbirne"
+    "common": "Hängende Felsenbirne",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Amelanchier lamarckii, Kupfer-Felsenbirne",
@@ -509,7 +572,8 @@
     "species": "lamarckii",
     "variety": "",
     "scientific": "Amelanchier lamarckii",
-    "common": "Kupfer-Felsenbirne"
+    "common": "Kupfer-Felsenbirne",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Kupfer-Felsenbirne"
   },
   {
     "fullname": "Amelanchier spec., Felsenbirne",
@@ -517,7 +581,8 @@
     "species": "spec.",
     "variety": "",
     "scientific": "Amelanchier spec.",
-    "common": "Felsenbirne"
+    "common": "Felsenbirne",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Felsenbirnen"
   },
   {
     "fullname": "Betula maximowicziana, Lindenblättrige Birke",
@@ -525,7 +590,8 @@
     "species": "maximowicziana",
     "variety": "",
     "scientific": "Betula maximowicziana",
-    "common": "Lindenblättrige Birke"
+    "common": "Lindenblättrige Birke",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Lindenbl%C3%A4ttrige%20Birke"
   },
   {
     "fullname": "Betula nigra, Schwarz-Birke",
@@ -533,7 +599,8 @@
     "species": "nigra",
     "variety": "",
     "scientific": "Betula nigra",
-    "common": "Schwarz-Birke"
+    "common": "Schwarz-Birke",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Schwarz-Birke"
   },
   {
     "fullname": "Betula papyrifera, Papierbirke",
@@ -541,7 +608,8 @@
     "species": "papyrifera",
     "variety": "",
     "scientific": "Betula papyrifera",
-    "common": "Papierbirke"
+    "common": "Papierbirke",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Papier-Birke"
   },
   {
     "fullname": "Betula pendula \"Fastigiata\", Säulen-Birke",
@@ -549,7 +617,8 @@
     "species": "pendula",
     "variety": "Fastigiata",
     "scientific": "Betula pendula \"Fastigiata\"",
-    "common": "Säulen-Birke"
+    "common": "Säulen-Birke",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/H%C3%A4nge-Birke"
   },
   {
     "fullname": "Betula pendula \"Laciniata\", Sand-Birke",
@@ -557,7 +626,8 @@
     "species": "pendula",
     "variety": "Laciniata",
     "scientific": "Betula pendula \"Laciniata\"",
-    "common": "Sand-Birke"
+    "common": "Sand-Birke",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/H%C3%A4nge-Birke"
   },
   {
     "fullname": "Betula pendula \"Tristis\", Hänge-Birke",
@@ -565,7 +635,8 @@
     "species": "pendula",
     "variety": "Tristis",
     "scientific": "Betula pendula \"Tristis\"",
-    "common": "Hänge-Birke"
+    "common": "Hänge-Birke",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/H%C3%A4nge-Birke"
   },
   {
     "fullname": "Betula pendula, Sandbirke",
@@ -573,7 +644,8 @@
     "species": "pendula",
     "variety": "",
     "scientific": "Betula pendula",
-    "common": "Sandbirke"
+    "common": "Sandbirke",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/H%C3%A4nge-Birke"
   },
   {
     "fullname": "Betula pubescens, Moor-Birke",
@@ -581,7 +653,8 @@
     "species": "pubescens",
     "variety": "",
     "scientific": "Betula pubescens",
-    "common": "Moor-Birke"
+    "common": "Moor-Birke",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Moor-Birke"
   },
   {
     "fullname": "Betula spec., Birke",
@@ -589,7 +662,8 @@
     "species": "spec.",
     "variety": "",
     "scientific": "Betula spec.",
-    "common": "Birke"
+    "common": "Birke",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Birken"
   },
   {
     "fullname": "Carpinus Betulus, Gemeine Hainbuche - Gemeine Weißbuche",
@@ -597,7 +671,8 @@
     "species": "Betulus",
     "variety": "",
     "scientific": "Carpinus Betulus",
-    "common": "Gemeine Hainbuche - Gemeine Weißbuche"
+    "common": "Gemeine Hainbuche - Gemeine Weißbuche",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Carpinus betulus \"Frans Fontaine\", Säulen-Hainbuche",
@@ -605,7 +680,8 @@
     "species": "betulus",
     "variety": "Frans Fontaine",
     "scientific": "Carpinus betulus \"Frans Fontaine\"",
-    "common": "Säulen-Hainbuche"
+    "common": "Säulen-Hainbuche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Hainbuche"
   },
   {
     "fullname": "Carpinus betulus Fastigiata, Hainbuche, aufrechter Habitus",
@@ -613,7 +689,8 @@
     "species": "betulus",
     "variety": "Fastigiata",
     "scientific": "Carpinus betulus Fastigiata",
-    "common": "Hainbuche"
+    "common": "Hainbuche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Hainbuche"
   },
   {
     "fullname": "Carpinus betulus, Hainbuche",
@@ -621,7 +698,8 @@
     "species": "betulus",
     "variety": "",
     "scientific": "Carpinus betulus",
-    "common": "Hainbuche"
+    "common": "Hainbuche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Hainbuche"
   },
   {
     "fullname": "Carpinus spec., Hainbuche",
@@ -629,7 +707,8 @@
     "species": "spec.",
     "variety": "",
     "scientific": "Carpinus spec.",
-    "common": "Hainbuche"
+    "common": "Hainbuche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Hainbuche"
   },
   {
     "fullname": "Castanea sativa, Eßkastanie",
@@ -637,7 +716,8 @@
     "species": "sativa",
     "variety": "",
     "scientific": "Castanea sativa",
-    "common": "Eßkastanie"
+    "common": "Eßkastanie",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Edelkastanie"
   },
   {
     "fullname": "Catalpa bignonioides Nana, Kugel-Trompetenbaum",
@@ -645,7 +725,8 @@
     "species": "bignonioides",
     "variety": "Nana",
     "scientific": "Catalpa bignonioides Nana",
-    "common": "Kugel-Trompetenbaum"
+    "common": "Kugel-Trompetenbaum",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Gew%C3%B6hnlicher%20Trompetenbaum"
   },
   {
     "fullname": "Catalpa bignonioides, Trompetenbaum",
@@ -653,7 +734,8 @@
     "species": "bignonioides",
     "variety": "",
     "scientific": "Catalpa bignonioides",
-    "common": "Trompetenbaum"
+    "common": "Trompetenbaum",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Gew%C3%B6hnlicher%20Trompetenbaum"
   },
   {
     "fullname": "Cedrus atlantica \"Aurea\", Atlas-Zeder Gelb",
@@ -661,7 +743,8 @@
     "species": "atlantica",
     "variety": "Aurea",
     "scientific": "Cedrus atlantica \"Aurea\"",
-    "common": "Atlas-Zeder Gelb"
+    "common": "Atlas-Zeder Gelb",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Atlas-Zeder"
   },
   {
     "fullname": "Cedrus atlantica \"Glauca\", Blaue Atlas-Zeder",
@@ -669,7 +752,8 @@
     "species": "atlantica",
     "variety": "Glauca",
     "scientific": "Cedrus atlantica \"Glauca\"",
-    "common": "Blaue Atlas-Zeder"
+    "common": "Blaue Atlas-Zeder",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Atlas-Zeder"
   },
   {
     "fullname": "Celtis australis, Europäischer Zürgelbaum",
@@ -677,7 +761,8 @@
     "species": "australis",
     "variety": "",
     "scientific": "Celtis australis",
-    "common": "Europäischer Zürgelbaum"
+    "common": "Europäischer Zürgelbaum",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Europ%C3%A4ischer%20Z%C3%BCrgelbaum"
   },
   {
     "fullname": "Celtis occidentalis, Nordamerikanischer Zürgelbaum",
@@ -685,7 +770,8 @@
     "species": "occidentalis",
     "variety": "",
     "scientific": "Celtis occidentalis",
-    "common": "Nordamerikanischer Zürgelbaum"
+    "common": "Nordamerikanischer Zürgelbaum",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Amerikanischer%20Z%C3%BCrgelbaum"
   },
   {
     "fullname": "Cercidiphyllum japonicum, Lebkuchenbaum",
@@ -693,7 +779,8 @@
     "species": "japonicum",
     "variety": "",
     "scientific": "Cercidiphyllum japonicum",
-    "common": "Lebkuchenbaum"
+    "common": "Lebkuchenbaum",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Japanischer%20Kuchenbaum"
   },
   {
     "fullname": "Cercis siliquastrum, Gemeiner Judasbaum",
@@ -701,7 +788,8 @@
     "species": "siliquastrum",
     "variety": "",
     "scientific": "Cercis siliquastrum",
-    "common": "Gemeiner Judasbaum"
+    "common": "Gemeiner Judasbaum",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Gew%C3%B6hnlicher%20Judasbaum"
   },
   {
     "fullname": "Chamaecyparis law. \"Columnaris Glauca\", Blaue Säulen-Zypresse",
@@ -709,7 +797,8 @@
     "species": "law.",
     "variety": "Columnaris Glauca",
     "scientific": "Chamaecyparis law. \"Columnaris Glauca\"",
-    "common": "Blaue Säulen-Zypresse"
+    "common": "Blaue Säulen-Zypresse",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Chamaecyparis lawsoniana \"Columnaris\", Säulen-Zypresse",
@@ -717,7 +806,8 @@
     "species": "lawsoniana",
     "variety": "Columnaris",
     "scientific": "Chamaecyparis lawsoniana \"Columnaris\"",
-    "common": "Säulen-Zypresse"
+    "common": "Säulen-Zypresse",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Lawsons%20Scheinzypresse"
   },
   {
     "fullname": "Colutea arborescens, Gelber Blasenstrauch",
@@ -725,7 +815,8 @@
     "species": "arborescens",
     "variety": "",
     "scientific": "Colutea arborescens",
-    "common": "Gelber Blasenstrauch"
+    "common": "Gelber Blasenstrauch",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Gelber%20Blasenstrauch"
   },
   {
     "fullname": "Cornus Alba, Weißbeeren-Hartriegel",
@@ -733,7 +824,8 @@
     "species": "Alba",
     "variety": "",
     "scientific": "Cornus Alba",
-    "common": "Weißbeeren-Hartriegel"
+    "common": "Weißbeeren-Hartriegel",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Cornus mas, Kornelkirsche",
@@ -741,7 +833,8 @@
     "species": "mas",
     "variety": "",
     "scientific": "Cornus mas",
-    "common": "Kornelkirsche"
+    "common": "Kornelkirsche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Kornelkirsche"
   },
   {
     "fullname": "Cornus spec., Hartriegel",
@@ -749,7 +842,8 @@
     "species": "spec.",
     "variety": "",
     "scientific": "Cornus spec.",
-    "common": "Hartriegel"
+    "common": "Hartriegel",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Hartriegel"
   },
   {
     "fullname": "Corylus avellana \"Rotblättrige Zellernuss\", Blut-Hasel",
@@ -757,7 +851,8 @@
     "species": "avellana",
     "variety": "Rotblättrige Zellernuss",
     "scientific": "Corylus avellana \"Rotblättrige Zellernuss\"",
-    "common": "Blut-Hasel"
+    "common": "Blut-Hasel",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Gemeine%20Hasel"
   },
   {
     "fullname": "Corylus avellana, Hasel",
@@ -765,7 +860,8 @@
     "species": "avellana",
     "variety": "",
     "scientific": "Corylus avellana",
-    "common": "Hasel"
+    "common": "Hasel",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Hasel"
   },
   {
     "fullname": "Corylus colurna, Baumhasel",
@@ -773,7 +869,8 @@
     "species": "colurna",
     "variety": "",
     "scientific": "Corylus colurna",
-    "common": "Baumhasel"
+    "common": "Baumhasel",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Baum-Hasel"
   },
   {
     "fullname": "Cotinus coggygria, Gewöhnlicher Perückenstrauch - Perückenbaum",
@@ -781,7 +878,8 @@
     "species": "coggygria",
     "variety": "",
     "scientific": "Cotinus coggygria",
-    "common": "Gewöhnlicher Perückenstrauch - Perückenbaum"
+    "common": "Gewöhnlicher Perückenstrauch - Perückenbaum",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Per%C3%BCckenstrauch"
   },
   {
     "fullname": "Crataegus coccinea, Scharlach-Weißdorn",
@@ -789,7 +887,8 @@
     "species": "coccinea",
     "variety": "",
     "scientific": "Crataegus coccinea",
-    "common": "Scharlach-Weißdorn"
+    "common": "Scharlach-Weißdorn",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Scharlach-Wei%C3%9Fdorn"
   },
   {
     "fullname": "Crataegus crus-galli, Hahnensporn-Weißdorn",
@@ -797,7 +896,8 @@
     "species": "crus-galli",
     "variety": "",
     "scientific": "Crataegus crus-galli",
-    "common": "Hahnensporn-Weißdorn"
+    "common": "Hahnensporn-Weißdorn",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Hahnensporn-Wei%C3%9Fdorn"
   },
   {
     "fullname": "Crataegus laevigata \"Pauls Scarlet\", Rotdorn",
@@ -805,7 +905,8 @@
     "species": "laevigata",
     "variety": "Pauls Scarlet",
     "scientific": "Crataegus laevigata \"Pauls Scarlet\"",
-    "common": "Rotdorn"
+    "common": "Rotdorn",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Echter%20Rotdorn"
   },
   {
     "fullname": "Crataegus laevigata, Zweigriffeliger Weißdorn",
@@ -813,7 +914,8 @@
     "species": "laevigata",
     "variety": "",
     "scientific": "Crataegus laevigata",
-    "common": "Zweigriffeliger Weißdorn"
+    "common": "Zweigriffeliger Weißdorn",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Zweigriffeliger%20Wei%C3%9Fdorn"
   },
   {
     "fullname": "Crataegus lavallei \"Carrierei\", Lederbl. Weißdorn - Apfeldorn",
@@ -821,7 +923,8 @@
     "species": "lavallei",
     "variety": "Carrierei",
     "scientific": "Crataegus lavallei \"Carrierei\"",
-    "common": "Lederbl. Weißdorn - Apfeldorn"
+    "common": "Lederbl. Weißdorn - Apfeldorn",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Crataegus monogyna \"Stricta\", Säulen-Weiß-Dorn",
@@ -829,7 +932,8 @@
     "species": "monogyna",
     "variety": "Stricta",
     "scientific": "Crataegus monogyna \"Stricta\"",
-    "common": "Säulen-Weiß-Dorn"
+    "common": "Säulen-Weiß-Dorn",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Eingriffeliger%20Wei%C3%9Fdorn"
   },
   {
     "fullname": "Crataegus monogyna, Eingriffeliger Weißdorn",
@@ -837,7 +941,8 @@
     "species": "monogyna",
     "variety": "",
     "scientific": "Crataegus monogyna",
-    "common": "Eingriffeliger Weißdorn"
+    "common": "Eingriffeliger Weißdorn",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Eingriffeliger%20Wei%C3%9Fdorn"
   },
   {
     "fullname": "Crataegus prunifolia, Pflaumenblättriger Weissdorn",
@@ -845,7 +950,8 @@
     "species": "prunifolia",
     "variety": "",
     "scientific": "Crataegus prunifolia",
-    "common": "Pflaumenblättriger Weissdorn"
+    "common": "Pflaumenblättriger Weissdorn",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Crataegus spec., Weißdorn",
@@ -853,7 +959,8 @@
     "species": "spec.",
     "variety": "",
     "scientific": "Crataegus spec.",
-    "common": "Weißdorn"
+    "common": "Weißdorn",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Wei%C3%9Fdorne"
   },
   {
     "fullname": "Cydonia oblonga, Quitte",
@@ -861,7 +968,8 @@
     "species": "oblonga",
     "variety": "",
     "scientific": "Cydonia oblonga",
-    "common": "Quitte"
+    "common": "Quitte",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Quitte"
   },
   {
     "fullname": "Davidia involucrata var. vilmoriniana, Taubenbaum",
@@ -869,7 +977,8 @@
     "species": "involucrata",
     "variety": "var. vilmoriniana",
     "scientific": "Davidia involucrata var. vilmoriniana",
-    "common": "Taubenbaum"
+    "common": "Taubenbaum",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Taubenbaum"
   },
   {
     "fullname": "Elaeagnus angustifolia, Ölweide",
@@ -877,7 +986,8 @@
     "species": "angustifolia",
     "variety": "",
     "scientific": "Elaeagnus angustifolia",
-    "common": "Ölweide"
+    "common": "Ölweide",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/%C3%96lweiden"
   },
   {
     "fullname": "Elaeagnus multiflora, Reichblütige Ölweide - Essbare Ölweide",
@@ -885,7 +995,8 @@
     "species": "multiflora",
     "variety": "",
     "scientific": "Elaeagnus multiflora",
-    "common": "Reichblütige Ölweide - Essbare Ölweide"
+    "common": "Reichblütige Ölweide - Essbare Ölweide",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Reichbl%C3%BCtige%20%C3%96lweide"
   },
   {
     "fullname": "Euodia hupehensis, Hupeh Stinkesche",
@@ -893,7 +1004,8 @@
     "species": "hupehensis",
     "variety": "",
     "scientific": "Euodia hupehensis",
-    "common": "Hupeh Stinkesche"
+    "common": "Hupeh Stinkesche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Samthaarige%20Stinkesche"
   },
   {
     "fullname": "Euonymus europaeus, Pfaffenhütchen (Spindelbaum)",
@@ -901,7 +1013,8 @@
     "species": "europaeus",
     "variety": "",
     "scientific": "Euonymus europaeus",
-    "common": "Pfaffenhütchen (Spindelbaum)"
+    "common": "Pfaffenhütchen (Spindelbaum)",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Gew%C3%B6hnlicher%20Spindelstrauch"
   },
   {
     "fullname": "Fagus silvatica \"Atropunicea\", Blut-Buche Veredelt",
@@ -909,7 +1022,8 @@
     "species": "silvatica",
     "variety": "Atropunicea",
     "scientific": "Fagus silvatica \"Atropunicea\"",
-    "common": "Blut-Buche Veredelt"
+    "common": "Blut-Buche Veredelt",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Rotbuche"
   },
   {
     "fullname": "Fagus silvatica \"Pendula\", Hänge-Buche - Trauer-Buche",
@@ -917,7 +1031,8 @@
     "species": "silvatica",
     "variety": "Pendula",
     "scientific": "Fagus silvatica \"Pendula\"",
-    "common": "Hänge-Buche - Trauer-Buche"
+    "common": "Hänge-Buche - Trauer-Buche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Rotbuche"
   },
   {
     "fullname": "Fagus silvatica \"Purpurea Pendula\", Trauerblut-Buche",
@@ -925,7 +1040,8 @@
     "species": "silvatica",
     "variety": "Purpurea Pendula",
     "scientific": "Fagus silvatica \"Purpurea Pendula\"",
-    "common": "Trauerblut-Buche"
+    "common": "Trauerblut-Buche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Rotbuche"
   },
   {
     "fullname": "Fagus sylvatica Purpurea, Blutbuche",
@@ -933,7 +1049,8 @@
     "species": "sylvatica",
     "variety": "Purpurea",
     "scientific": "Fagus sylvatica Purpurea",
-    "common": "Blutbuche"
+    "common": "Blutbuche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Blutbuche"
   },
   {
     "fullname": "Fagus sylvatica, Rotbuche",
@@ -941,7 +1058,8 @@
     "species": "sylvatica",
     "variety": "",
     "scientific": "Fagus sylvatica",
-    "common": "Rotbuche"
+    "common": "Rotbuche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Rotbuche"
   },
   {
     "fullname": "Fraxinus Excelsior, Gemeine Esche",
@@ -949,7 +1067,8 @@
     "species": "Excelsior",
     "variety": "",
     "scientific": "Fraxinus Excelsior",
-    "common": "Gemeine Esche"
+    "common": "Gemeine Esche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Gemeine%20Esche"
   },
   {
     "fullname": "Fraxinus americana, Weißesche",
@@ -957,7 +1076,8 @@
     "species": "americana",
     "variety": "",
     "scientific": "Fraxinus americana",
-    "common": "Weißesche"
+    "common": "Weißesche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Wei%C3%9F-Esche"
   },
   {
     "fullname": "Fraxinus angustifolia, Schmalblättrige Esche",
@@ -965,7 +1085,8 @@
     "species": "angustifolia",
     "variety": "",
     "scientific": "Fraxinus angustifolia",
-    "common": "Schmalblättrige Esche"
+    "common": "Schmalblättrige Esche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Schmalbl%C3%A4ttrige%20Esche"
   },
   {
     "fullname": "Fraxinus excelsior \"Den bosch\", Kleine Einblatt-Esche",
@@ -973,7 +1094,8 @@
     "species": "excelsior",
     "variety": "Den bosch",
     "scientific": "Fraxinus excelsior \"Den bosch\"",
-    "common": "Kleine Einblatt-Esche"
+    "common": "Kleine Einblatt-Esche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Gemeine%20Esche"
   },
   {
     "fullname": "Fraxinus excelsior \"Diversifolia\", Einblättrige Esche",
@@ -981,7 +1103,8 @@
     "species": "excelsior",
     "variety": "Diversifolia",
     "scientific": "Fraxinus excelsior \"Diversifolia\"",
-    "common": "Einblättrige Esche"
+    "common": "Einblättrige Esche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Einbl%C3%A4ttrige%20Esche"
   },
   {
     "fullname": "Fraxinus excelsior \"Pendula\", Trauer-Esche",
@@ -989,7 +1112,8 @@
     "species": "excelsior",
     "variety": "Pendula",
     "scientific": "Fraxinus excelsior \"Pendula\"",
-    "common": "Trauer-Esche"
+    "common": "Trauer-Esche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Gemeine%20Esche"
   },
   {
     "fullname": "Fraxinus excelsior, Gemeine Esche",
@@ -997,7 +1121,8 @@
     "species": "excelsior",
     "variety": "",
     "scientific": "Fraxinus excelsior",
-    "common": "Gemeine Esche"
+    "common": "Gemeine Esche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Gemeine%20Esche"
   },
   {
     "fullname": "Fraxinus latifolia, Breitblättrige oder Oregon- Esche",
@@ -1005,7 +1130,8 @@
     "species": "latifolia",
     "variety": "",
     "scientific": "Fraxinus latifolia",
-    "common": "Breitblättrige oder Oregon- Esche"
+    "common": "Breitblättrige oder Oregon- Esche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Oregon-Esche"
   },
   {
     "fullname": "Fraxinus ornus, Blumenesche",
@@ -1013,7 +1139,8 @@
     "species": "ornus",
     "variety": "",
     "scientific": "Fraxinus ornus",
-    "common": "Blumenesche"
+    "common": "Blumenesche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Manna-Esche"
   },
   {
     "fullname": "Fraxinus pennsylvanica, Rot-/Grün-Esche",
@@ -1021,7 +1148,8 @@
     "species": "pennsylvanica",
     "variety": "",
     "scientific": "Fraxinus pennsylvanica",
-    "common": "Rot-/Grün-Esche"
+    "common": "Rot-/Grün-Esche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Rot-Esche"
   },
   {
     "fullname": "Fraxinus spec., Esche",
@@ -1029,7 +1157,8 @@
     "species": "spec.",
     "variety": "",
     "scientific": "Fraxinus spec.",
-    "common": "Esche"
+    "common": "Esche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Esche"
   },
   {
     "fullname": "Ginkgo biloba, Ginkgo",
@@ -1037,7 +1166,8 @@
     "species": "biloba",
     "variety": "",
     "scientific": "Ginkgo biloba",
-    "common": "Ginkgo"
+    "common": "Ginkgo",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Ginkgo"
   },
   {
     "fullname": "Gleditsia triacanthos \"Skyline\", Säulen-Gleditschie",
@@ -1045,7 +1175,8 @@
     "species": "triacanthos",
     "variety": "Skyline",
     "scientific": "Gleditsia triacanthos \"Skyline\"",
-    "common": "Säulen-Gleditschie"
+    "common": "Säulen-Gleditschie",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Amerikanische%20Gleditschie"
   },
   {
     "fullname": "Gleditsia triacanthos, Gleditschie",
@@ -1053,7 +1184,8 @@
     "species": "triacanthos",
     "variety": "",
     "scientific": "Gleditsia triacanthos",
-    "common": "Gleditschie"
+    "common": "Gleditschie",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Gleditschien"
   },
   {
     "fullname": "Gymnocladus dioicus, Geweihbaum",
@@ -1061,7 +1193,8 @@
     "species": "dioicus",
     "variety": "",
     "scientific": "Gymnocladus dioicus",
-    "common": "Geweihbaum"
+    "common": "Geweihbaum",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Geweihbaum"
   },
   {
     "fullname": "Hibiscus syriacus, Straucheibisch",
@@ -1069,7 +1202,8 @@
     "species": "syriacus",
     "variety": "",
     "scientific": "Hibiscus syriacus",
-    "common": "Straucheibisch"
+    "common": "Straucheibisch",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Straucheibisch"
   },
   {
     "fullname": "Ilex aquifolium, Europäische Stechpalme",
@@ -1077,7 +1211,8 @@
     "species": "aquifolium",
     "variety": "",
     "scientific": "Ilex aquifolium",
-    "common": "Europäische Stechpalme"
+    "common": "Europäische Stechpalme",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Europ%C3%A4ische%20Stechpalme"
   },
   {
     "fullname": "Ilex x altaclarensis, Stechpalmenhybride",
@@ -1085,7 +1220,8 @@
     "species": "x altaclarensis",
     "variety": "",
     "scientific": "Ilex x altaclarensis",
-    "common": "Stechpalmenhybride"
+    "common": "Stechpalmenhybride",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Juglans Regia, Walnuß",
@@ -1093,7 +1229,8 @@
     "species": "Regia",
     "variety": "",
     "scientific": "Juglans Regia",
-    "common": "Walnuß"
+    "common": "Walnuß",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Walnuss"
   },
   {
     "fullname": "Juglans nigra, Schwarznuß",
@@ -1101,7 +1238,8 @@
     "species": "nigra",
     "variety": "",
     "scientific": "Juglans nigra",
-    "common": "Schwarznuß"
+    "common": "Schwarznuß",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Schwarznuss"
   },
   {
     "fullname": "Juglans regia, Walnuss",
@@ -1109,7 +1247,8 @@
     "species": "regia",
     "variety": "",
     "scientific": "Juglans regia",
-    "common": "Walnuss"
+    "common": "Walnuss",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Walnuss"
   },
   {
     "fullname": "Juglans spec., Walnuß",
@@ -1117,7 +1256,8 @@
     "species": "spec.",
     "variety": "",
     "scientific": "Juglans spec.",
-    "common": "Walnuß"
+    "common": "Walnuß",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Walnuss"
   },
   {
     "fullname": "Juniperus communis \"Meyer\", Säulen-Wacholder",
@@ -1125,7 +1265,8 @@
     "species": "communis",
     "variety": "Meyer",
     "scientific": "Juniperus communis \"Meyer\"",
-    "common": "Säulen-Wacholder"
+    "common": "Säulen-Wacholder",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Gemeiner%20Wacholder"
   },
   {
     "fullname": "Juniperus communis, Gewoehnlicher Wacholder",
@@ -1133,7 +1274,8 @@
     "species": "communis",
     "variety": "",
     "scientific": "Juniperus communis",
-    "common": "Gewoehnlicher Wacholder"
+    "common": "Gewoehnlicher Wacholder",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Gemeiner%20Wacholder"
   },
   {
     "fullname": "Koelreuteria paniculata, Blasenesche",
@@ -1141,7 +1283,8 @@
     "species": "paniculata",
     "variety": "",
     "scientific": "Koelreuteria paniculata",
-    "common": "Blasenesche"
+    "common": "Blasenesche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Blasenesche"
   },
   {
     "fullname": "Laburnum anagyroides, Gemeiner Goldregen",
@@ -1149,7 +1292,8 @@
     "species": "anagyroides",
     "variety": "",
     "scientific": "Laburnum anagyroides",
-    "common": "Gemeiner Goldregen"
+    "common": "Gemeiner Goldregen",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Gemeiner%20Goldregen"
   },
   {
     "fullname": "Laburnum spec., Goldregen",
@@ -1157,7 +1301,8 @@
     "species": "spec.",
     "variety": "",
     "scientific": "Laburnum spec.",
-    "common": "Goldregen"
+    "common": "Goldregen",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Goldregen"
   },
   {
     "fullname": "Larix decidua, Europäische Lärche",
@@ -1165,7 +1310,8 @@
     "species": "decidua",
     "variety": "",
     "scientific": "Larix decidua",
-    "common": "Europäische Lärche"
+    "common": "Europäische Lärche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Europ%C3%A4ische%20L%C3%A4rche"
   },
   {
     "fullname": "Larix kaempferi, Japanische Lärche",
@@ -1173,7 +1319,8 @@
     "species": "kaempferi",
     "variety": "",
     "scientific": "Larix kaempferi",
-    "common": "Japanische Lärche"
+    "common": "Japanische Lärche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Japanische%20L%C3%A4rche"
   },
   {
     "fullname": "Liquidambar styraciflua \"Moraine\", Amerikanischer Amberbaum",
@@ -1181,7 +1328,8 @@
     "species": "styraciflua",
     "variety": "Moraine",
     "scientific": "Liquidambar styraciflua \"Moraine\"",
-    "common": "Amerikanischer Amberbaum"
+    "common": "Amerikanischer Amberbaum",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Amerikanischer%20Amberbaum"
   },
   {
     "fullname": "Liquidambar styraciflua, Amberbaum",
@@ -1189,7 +1337,8 @@
     "species": "styraciflua",
     "variety": "",
     "scientific": "Liquidambar styraciflua",
-    "common": "Amberbaum"
+    "common": "Amberbaum",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Amberb%C3%A4ume"
   },
   {
     "fullname": "Liriodendron tulipifera, Tulpenbaum",
@@ -1197,7 +1346,8 @@
     "species": "tulipifera",
     "variety": "",
     "scientific": "Liriodendron tulipifera",
-    "common": "Tulpenbaum"
+    "common": "Tulpenbaum",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Tulpenbaum"
   },
   {
     "fullname": "Magnolia kobus, Baum-Magnolie - Kobushi-Magnolie",
@@ -1205,7 +1355,8 @@
     "species": "kobus",
     "variety": "",
     "scientific": "Magnolia kobus",
-    "common": "Baum-Magnolie - Kobushi-Magnolie"
+    "common": "Baum-Magnolie - Kobushi-Magnolie",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Kobushi-Magnolie"
   },
   {
     "fullname": "Magnolia soulangiana, Tulpen-Magnolie",
@@ -1213,7 +1364,8 @@
     "species": "soulangiana",
     "variety": "",
     "scientific": "Magnolia soulangiana",
-    "common": "Tulpen-Magnolie"
+    "common": "Tulpen-Magnolie",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Tulpen-Magnolie"
   },
   {
     "fullname": "Magnolia stellata, Stern-Magnolie",
@@ -1221,7 +1373,8 @@
     "species": "stellata",
     "variety": "",
     "scientific": "Magnolia stellata",
-    "common": "Stern-Magnolie"
+    "common": "Stern-Magnolie",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Stern-Magnolie"
   },
   {
     "fullname": "Malus \"Adams\", Zierapfel",
@@ -1229,7 +1382,8 @@
     "species": "Adams",
     "variety": "",
     "scientific": "Malus \"Adams\"",
-    "common": "Zierapfel"
+    "common": "Zierapfel",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/%C3%84pfel"
   },
   {
     "fullname": "Malus \"Boskop\"",
@@ -1237,7 +1391,8 @@
     "species": "Boskop",
     "variety": "",
     "scientific": "Malus \"Boskop\"",
-    "common": "Malus \"Boskop\""
+    "common": "Malus \"Boskop\"",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Malus \"Brandy Magic\", rosa-blühender Zierapfel",
@@ -1245,7 +1400,8 @@
     "species": "Brandy Magic",
     "variety": "",
     "scientific": "Malus \"Brandy Magic\"",
-    "common": "rosa-blühender Zierapfel"
+    "common": "rosa-blühender Zierapfel",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Malus \"David\", breitkroniger Zierapfel",
@@ -1253,7 +1409,8 @@
     "species": "David",
     "variety": "",
     "scientific": "Malus \"David\"",
-    "common": "breitkroniger Zierapfel"
+    "common": "breitkroniger Zierapfel",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Malus \"Floribunda\", Prachtapfel",
@@ -1261,7 +1418,8 @@
     "species": "Floribunda",
     "variety": "",
     "scientific": "Malus \"Floribunda\"",
-    "common": "Prachtapfel"
+    "common": "Prachtapfel",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Malus \"Grafensteiner\"",
@@ -1269,7 +1427,8 @@
     "species": "Grafensteiner",
     "variety": "",
     "scientific": "Malus \"Grafensteiner\"",
-    "common": "Malus \"Grafensteiner\""
+    "common": "Malus \"Grafensteiner\"",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Malus \"James Grieve\", Sommerapfel",
@@ -1277,7 +1436,8 @@
     "species": "James Grieve",
     "variety": "",
     "scientific": "Malus \"James Grieve\"",
-    "common": "Sommerapfel"
+    "common": "Sommerapfel",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Apfelreifeklasse"
   },
   {
     "fullname": "Malus \"Liset\", Zierapfel",
@@ -1285,7 +1445,8 @@
     "species": "Liset",
     "variety": "",
     "scientific": "Malus \"Liset\"",
-    "common": "Zierapfel"
+    "common": "Zierapfel",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/%C3%84pfel"
   },
   {
     "fullname": "Malus \"Red Sentinel\", Zierapfel - Hybride",
@@ -1293,7 +1454,8 @@
     "species": "Red Sentinel",
     "variety": "",
     "scientific": "Malus \"Red Sentinel\"",
-    "common": "Zierapfel - Hybride"
+    "common": "Zierapfel - Hybride",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Malus \"Red Splendor\", Zierapfel",
@@ -1301,7 +1463,8 @@
     "species": "Red Splendor",
     "variety": "",
     "scientific": "Malus \"Red Splendor\"",
-    "common": "Zierapfel"
+    "common": "Zierapfel",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/%C3%84pfel"
   },
   {
     "fullname": "Malus \"Royalty\", robinrot-blühender Zierapfel",
@@ -1309,7 +1472,8 @@
     "species": "Royalty",
     "variety": "",
     "scientific": "Malus \"Royalty\"",
-    "common": "robinrot-blühender Zierapfel"
+    "common": "robinrot-blühender Zierapfel",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Malus \"Van Eseltine\", Zierapfel \"Van Eseltine\"",
@@ -1317,7 +1481,8 @@
     "species": "Van Eseltine",
     "variety": "",
     "scientific": "Malus \"Van Eseltine\"",
-    "common": "Zierapfel \"Van Eseltine\""
+    "common": "Zierapfel \"Van Eseltine\"",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Malus Sylvestris (Communis), Wildapfel",
@@ -1325,7 +1490,8 @@
     "species": "Sylvestris",
     "variety": "(Communis)",
     "scientific": "Malus Sylvestris (Communis)",
-    "common": "Wildapfel"
+    "common": "Wildapfel",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Wildapfel"
   },
   {
     "fullname": "Malus domestica \"Elstar\", Kulturapfel",
@@ -1333,7 +1499,8 @@
     "species": "domestica",
     "variety": "Elstar",
     "scientific": "Malus domestica \"Elstar\"",
-    "common": "Kulturapfel"
+    "common": "Kulturapfel",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Kulturapfel"
   },
   {
     "fullname": "Malus magdeburgensis, Zierapfel",
@@ -1341,7 +1508,8 @@
     "species": "magdeburgensis",
     "variety": "",
     "scientific": "Malus magdeburgensis",
-    "common": "Zierapfel"
+    "common": "Zierapfel",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/%C3%84pfel"
   },
   {
     "fullname": "Malus sargentii, Japanischer Apfel",
@@ -1349,7 +1517,8 @@
     "species": "sargentii",
     "variety": "",
     "scientific": "Malus sargentii",
-    "common": "Japanischer Apfel"
+    "common": "Japanischer Apfel",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Japanischer%20Wildapfel"
   },
   {
     "fullname": "Malus spec., Apfel",
@@ -1357,7 +1526,8 @@
     "species": "spec.",
     "variety": "",
     "scientific": "Malus spec.",
-    "common": "Apfel"
+    "common": "Apfel",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Apfel"
   },
   {
     "fullname": "Malus sylvestris (communis), Wildapfel",
@@ -1365,7 +1535,8 @@
     "species": "sylvestris",
     "variety": "(communis)",
     "scientific": "Malus sylvestris (communis)",
-    "common": "Wildapfel"
+    "common": "Wildapfel",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Wildapfel"
   },
   {
     "fullname": "Malus trilobatus, Dreilappiger Apfelbaum",
@@ -1373,7 +1544,8 @@
     "species": "trilobatus",
     "variety": "",
     "scientific": "Malus trilobatus",
-    "common": "Dreilappiger Apfelbaum"
+    "common": "Dreilappiger Apfelbaum",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Malus tschonoskii, Wollapfel",
@@ -1381,7 +1553,8 @@
     "species": "tschonoskii",
     "variety": "",
     "scientific": "Malus tschonoskii",
-    "common": "Wollapfel"
+    "common": "Wollapfel",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Wollapfel"
   },
   {
     "fullname": "Mespilus germanica, Mispel",
@@ -1389,7 +1562,8 @@
     "species": "germanica",
     "variety": "",
     "scientific": "Mespilus germanica",
-    "common": "Mispel"
+    "common": "Mispel",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Mispel"
   },
   {
     "fullname": "Metasequoia glyptostroboides, Urweltmammutbaum",
@@ -1397,7 +1571,8 @@
     "species": "glyptostroboides",
     "variety": "",
     "scientific": "Metasequoia glyptostroboides",
-    "common": "Urweltmammutbaum"
+    "common": "Urweltmammutbaum",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Urweltmammutbaum"
   },
   {
     "fullname": "Morus alba, Weißer Maulbeerbaum",
@@ -1405,7 +1580,8 @@
     "species": "alba",
     "variety": "",
     "scientific": "Morus alba",
-    "common": "Weißer Maulbeerbaum"
+    "common": "Weißer Maulbeerbaum",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Wei%C3%9Fe%20Maulbeere"
   },
   {
     "fullname": "Morus nigra, Schwarzer Maulbeerbaum",
@@ -1413,7 +1589,8 @@
     "species": "nigra",
     "variety": "",
     "scientific": "Morus nigra",
-    "common": "Schwarzer Maulbeerbaum"
+    "common": "Schwarzer Maulbeerbaum",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Schwarze%20Maulbeere"
   },
   {
     "fullname": "Nothofagus antarctica, Antarktische Südbuche",
@@ -1421,7 +1598,8 @@
     "species": "antarctica",
     "variety": "",
     "scientific": "Nothofagus antarctica",
-    "common": "Antarktische Südbuche"
+    "common": "Antarktische Südbuche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Antarktische%20Scheinbuche"
   },
   {
     "fullname": "Nyssa sylvatica, Tupelobaum - Nymphenbaum",
@@ -1429,7 +1607,8 @@
     "species": "sylvatica",
     "variety": "",
     "scientific": "Nyssa sylvatica",
-    "common": "Tupelobaum - Nymphenbaum"
+    "common": "Tupelobaum - Nymphenbaum",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Schwarzer%20Tupelobaum"
   },
   {
     "fullname": "Ostrya carpinifolia - Hopfenbuche",
@@ -1437,7 +1616,8 @@
     "species": "carpinifolia",
     "variety": "- Hopfenbuche",
     "scientific": "Ostrya carpinifolia - Hopfenbuche",
-    "common": "Ostrya carpinifolia - Hopfenbuche"
+    "common": "Ostrya carpinifolia - Hopfenbuche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Europ%C3%A4ische%20Hopfenbuche"
   },
   {
     "fullname": "Parrotia persica, Eisenholzbaum",
@@ -1445,7 +1625,8 @@
     "species": "persica",
     "variety": "",
     "scientific": "Parrotia persica",
-    "common": "Eisenholzbaum"
+    "common": "Eisenholzbaum",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Eisenholz"
   },
   {
     "fullname": "Paulownia tomentosa, Blauglockenbaum",
@@ -1453,7 +1634,8 @@
     "species": "tomentosa",
     "variety": "",
     "scientific": "Paulownia tomentosa",
-    "common": "Blauglockenbaum"
+    "common": "Blauglockenbaum",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Blauglockenbaum"
   },
   {
     "fullname": "Phellodendron amurense, Korkbaum",
@@ -1461,7 +1643,8 @@
     "species": "amurense",
     "variety": "",
     "scientific": "Phellodendron amurense",
-    "common": "Korkbaum"
+    "common": "Korkbaum",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Korkb%C3%A4ume"
   },
   {
     "fullname": "Picea abies \"Acrocona\", Zapfen-Fichte",
@@ -1469,7 +1652,8 @@
     "species": "abies",
     "variety": "Acrocona",
     "scientific": "Picea abies \"Acrocona\"",
-    "common": "Zapfen-Fichte"
+    "common": "Zapfen-Fichte",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Gemeine%20Fichte"
   },
   {
     "fullname": "Picea abies \"Echiniformis\", Igel-Fichte",
@@ -1477,7 +1661,8 @@
     "species": "abies",
     "variety": "Echiniformis",
     "scientific": "Picea abies \"Echiniformis\"",
-    "common": "Igel-Fichte"
+    "common": "Igel-Fichte",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Gemeine%20Fichte"
   },
   {
     "fullname": "Picea abies \"Pumila Glauca\", Blaue Pummel-Fichte",
@@ -1485,7 +1670,8 @@
     "species": "abies",
     "variety": "Pumila Glauca",
     "scientific": "Picea abies \"Pumila Glauca\"",
-    "common": "Blaue Pummel-Fichte"
+    "common": "Blaue Pummel-Fichte",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Gemeine%20Fichte"
   },
   {
     "fullname": "Picea abies, Gemeine Fichte - Rot-Fichte",
@@ -1493,7 +1679,8 @@
     "species": "abies",
     "variety": "",
     "scientific": "Picea abies",
-    "common": "Gemeine Fichte - Rot-Fichte"
+    "common": "Gemeine Fichte - Rot-Fichte",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Gemeine%20Fichte"
   },
   {
     "fullname": "Picea glauca \"Conica\", Zuckerhut-Fichte",
@@ -1501,7 +1688,8 @@
     "species": "glauca",
     "variety": "Conica",
     "scientific": "Picea glauca \"Conica\"",
-    "common": "Zuckerhut-Fichte"
+    "common": "Zuckerhut-Fichte",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Wei%C3%9F-Fichte"
   },
   {
     "fullname": "Picea glauca \"Echiniformis\", Blaue Igel-Fichte",
@@ -1509,7 +1697,8 @@
     "species": "glauca",
     "variety": "Echiniformis",
     "scientific": "Picea glauca \"Echiniformis\"",
-    "common": "Blaue Igel-Fichte"
+    "common": "Blaue Igel-Fichte",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Wei%C3%9F-Fichte"
   },
   {
     "fullname": "Picea omorika, Serbische Fichte",
@@ -1517,7 +1706,8 @@
     "species": "omorika",
     "variety": "",
     "scientific": "Picea omorika",
-    "common": "Serbische Fichte"
+    "common": "Serbische Fichte",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Serbische%20Fichte"
   },
   {
     "fullname": "Picea pungens Glauca, Blau-Fichte",
@@ -1525,7 +1715,8 @@
     "species": "pungens",
     "variety": "Glauca",
     "scientific": "Picea pungens Glauca",
-    "common": "Blau-Fichte"
+    "common": "Blau-Fichte",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Stech-Fichte"
   },
   {
     "fullname": "Picea pungens, Stech-Fichte",
@@ -1533,7 +1724,8 @@
     "species": "pungens",
     "variety": "",
     "scientific": "Picea pungens",
-    "common": "Stech-Fichte"
+    "common": "Stech-Fichte",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Stech-Fichte"
   },
   {
     "fullname": "Picea spec., Fichte",
@@ -1541,7 +1733,8 @@
     "species": "spec.",
     "variety": "",
     "scientific": "Picea spec.",
-    "common": "Fichte"
+    "common": "Fichte",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Fichte"
   },
   {
     "fullname": "Pinus Nigra Austriaca, österreichische Schwarz-Kiefer",
@@ -1549,7 +1742,8 @@
     "species": "Nigra",
     "variety": "Austriaca",
     "scientific": "Pinus Nigra Austriaca",
-    "common": "österreichische Schwarz-Kiefer"
+    "common": "österreichische Schwarz-Kiefer",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Pinus Silvestris, Gemeine Kiefer  -  Wald-Kiefer",
@@ -1557,7 +1751,8 @@
     "species": "Silvestris",
     "variety": "",
     "scientific": "Pinus Silvestris",
-    "common": "Gemeine Kiefer  -  Wald-Kiefer"
+    "common": "Gemeine Kiefer  -  Wald-Kiefer",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Pinus Sylvestris, Gemeine Kiefer  -  Wald-Kiefer",
@@ -1565,7 +1760,8 @@
     "species": "Sylvestris",
     "variety": "",
     "scientific": "Pinus Sylvestris",
-    "common": "Gemeine Kiefer  -  Wald-Kiefer"
+    "common": "Gemeine Kiefer  -  Wald-Kiefer",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Pinus cembra, Arve - Zirbe",
@@ -1573,7 +1769,8 @@
     "species": "cembra",
     "variety": "",
     "scientific": "Pinus cembra",
-    "common": "Arve - Zirbe"
+    "common": "Arve - Zirbe",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Zirbelkiefer"
   },
   {
     "fullname": "Pinus contorta, Dreh-Kiefer - Küsten-Kiefer",
@@ -1581,7 +1778,8 @@
     "species": "contorta",
     "variety": "",
     "scientific": "Pinus contorta",
-    "common": "Dreh-Kiefer - Küsten-Kiefer"
+    "common": "Dreh-Kiefer - Küsten-Kiefer",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/K%C3%BCsten-Kiefer"
   },
   {
     "fullname": "Pinus leucodermis, Panzerföhre - Bosnische Kiefer",
@@ -1589,7 +1787,8 @@
     "species": "leucodermis",
     "variety": "",
     "scientific": "Pinus leucodermis",
-    "common": "Panzerföhre - Bosnische Kiefer"
+    "common": "Panzerföhre - Bosnische Kiefer",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Schlangenhaut-Kiefer"
   },
   {
     "fullname": "Pinus mugo \"Pumilio\", Legföhre - Zwerg-Latsche",
@@ -1597,7 +1796,8 @@
     "species": "mugo",
     "variety": "Pumilio",
     "scientific": "Pinus mugo \"Pumilio\"",
-    "common": "Legföhre - Zwerg-Latsche"
+    "common": "Legföhre - Zwerg-Latsche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Bergkiefer"
   },
   {
     "fullname": "Pinus mugo mughus, Krummholz-Kiefer",
@@ -1605,7 +1805,8 @@
     "species": "mugo",
     "variety": "mughus",
     "scientific": "Pinus mugo mughus",
-    "common": "Krummholz-Kiefer"
+    "common": "Krummholz-Kiefer",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Bergkiefer"
   },
   {
     "fullname": "Pinus mugo, Berg-Kiefer - Krüppel-Kiefer",
@@ -1613,7 +1814,8 @@
     "species": "mugo",
     "variety": "",
     "scientific": "Pinus mugo",
-    "common": "Berg-Kiefer - Krüppel-Kiefer"
+    "common": "Berg-Kiefer - Krüppel-Kiefer",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Bergkiefer"
   },
   {
     "fullname": "Pinus nigra ssp. nigra, Österreichische Schwarzkiefer",
@@ -1621,7 +1823,8 @@
     "species": "nigra",
     "variety": "ssp. nigra",
     "scientific": "Pinus nigra ssp. nigra",
-    "common": "Österreichische Schwarzkiefer"
+    "common": "Österreichische Schwarzkiefer",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Schwarzkiefer"
   },
   {
     "fullname": "Pinus nigra, Schwarzkiefer",
@@ -1629,7 +1832,8 @@
     "species": "nigra",
     "variety": "",
     "scientific": "Pinus nigra",
-    "common": "Schwarzkiefer"
+    "common": "Schwarzkiefer",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Schwarzkiefer"
   },
   {
     "fullname": "Pinus silvestris, Gemeine Kiefer - Wald-Kiefer",
@@ -1637,7 +1841,8 @@
     "species": "silvestris",
     "variety": "",
     "scientific": "Pinus silvestris",
-    "common": "Gemeine Kiefer - Wald-Kiefer"
+    "common": "Gemeine Kiefer - Wald-Kiefer",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Pinus spec., Kiefer",
@@ -1645,7 +1850,8 @@
     "species": "spec.",
     "variety": "",
     "scientific": "Pinus spec.",
-    "common": "Kiefer"
+    "common": "Kiefer",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Kiefer"
   },
   {
     "fullname": "Pinus strobus, Weymouthskiefer",
@@ -1653,7 +1859,8 @@
     "species": "strobus",
     "variety": "",
     "scientific": "Pinus strobus",
-    "common": "Weymouthskiefer"
+    "common": "Weymouthskiefer",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Weymouth-Kiefer"
   },
   {
     "fullname": "Pinus sylvestris Fastigiata, Säulen-Kiefer",
@@ -1661,7 +1868,8 @@
     "species": "sylvestris",
     "variety": "Fastigiata",
     "scientific": "Pinus sylvestris Fastigiata",
-    "common": "Säulen-Kiefer"
+    "common": "Säulen-Kiefer",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Waldkiefer"
   },
   {
     "fullname": "Pinus sylvestris, Waldkiefer",
@@ -1669,7 +1877,8 @@
     "species": "sylvestris",
     "variety": "",
     "scientific": "Pinus sylvestris",
-    "common": "Waldkiefer"
+    "common": "Waldkiefer",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Waldkiefer"
   },
   {
     "fullname": "Pinus wallichiana, Himalaja-Kiefer",
@@ -1677,7 +1886,8 @@
     "species": "wallichiana",
     "variety": "",
     "scientific": "Pinus wallichiana",
-    "common": "Himalaja-Kiefer"
+    "common": "Himalaja-Kiefer",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Tr%C3%A4nen-Kiefer"
   },
   {
     "fullname": "Platanus acerifolia, Ahornblättrige Platane",
@@ -1685,7 +1895,8 @@
     "species": "acerifolia",
     "variety": "",
     "scientific": "Platanus acerifolia",
-    "common": "Ahornblättrige Platane"
+    "common": "Ahornblättrige Platane",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Ahornbl%C3%A4ttrige%20Platane"
   },
   {
     "fullname": "Platanus occidentalis, Abendländische/Amerikanische",
@@ -1693,7 +1904,8 @@
     "species": "occidentalis",
     "variety": "",
     "scientific": "Platanus occidentalis",
-    "common": "Abendländische/Amerikanische"
+    "common": "Abendländische/Amerikanische",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Amerikanische%20Platane"
   },
   {
     "fullname": "Platanus x hybrida, Gewöhnliche Platane",
@@ -1701,7 +1913,8 @@
     "species": "x hybrida",
     "variety": "",
     "scientific": "Platanus x hybrida",
-    "common": "Gewöhnliche Platane"
+    "common": "Gewöhnliche Platane",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Ahornbl%C3%A4ttrige%20Platane"
   },
   {
     "fullname": "Populus Nigra",
@@ -1709,7 +1922,8 @@
     "species": "Nigra",
     "variety": "",
     "scientific": "Populus Nigra",
-    "common": "Populus Nigra"
+    "common": "Populus Nigra",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Populus Nigra \"Italica\", Italienische Pyramiden-Pappel - Napoleon",
@@ -1717,7 +1931,8 @@
     "species": "Nigra",
     "variety": "Italica",
     "scientific": "Populus Nigra \"Italica\"",
-    "common": "Italienische Pyramiden-Pappel - Napoleon"
+    "common": "Italienische Pyramiden-Pappel - Napoleon",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Populus alba \"Nivea\", Silber-Pappel",
@@ -1725,7 +1940,8 @@
     "species": "alba",
     "variety": "Nivea",
     "scientific": "Populus alba \"Nivea\"",
-    "common": "Silber-Pappel"
+    "common": "Silber-Pappel",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Silber-Pappel"
   },
   {
     "fullname": "Populus alba, Silberpappel",
@@ -1733,7 +1949,8 @@
     "species": "alba",
     "variety": "",
     "scientific": "Populus alba",
-    "common": "Silberpappel"
+    "common": "Silberpappel",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Silber-Pappel"
   },
   {
     "fullname": "Populus balsamifera, Balsampappel",
@@ -1741,7 +1958,8 @@
     "species": "balsamifera",
     "variety": "",
     "scientific": "Populus balsamifera",
-    "common": "Balsampappel"
+    "common": "Balsampappel",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Balsam-Pappel"
   },
   {
     "fullname": "Populus berolinensis, Berliner Lorbeer-Pappel",
@@ -1749,7 +1967,8 @@
     "species": "berolinensis",
     "variety": "",
     "scientific": "Populus berolinensis",
-    "common": "Berliner Lorbeer-Pappel"
+    "common": "Berliner Lorbeer-Pappel",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Populus canadensis Hybride, Schwarzpappel-Hybride",
@@ -1757,7 +1976,8 @@
     "species": "canadensis",
     "variety": "Hybride",
     "scientific": "Populus canadensis Hybride",
-    "common": "Schwarzpappel-Hybride"
+    "common": "Schwarzpappel-Hybride",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Bastard-Schwarz-Pappel"
   },
   {
     "fullname": "Populus canadensis, Kanadische Pappel",
@@ -1765,7 +1985,8 @@
     "species": "canadensis",
     "variety": "",
     "scientific": "Populus canadensis",
-    "common": "Kanadische Pappel"
+    "common": "Kanadische Pappel",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Bastard-Schwarz-Pappel"
   },
   {
     "fullname": "Populus canescens, Graupappel",
@@ -1773,7 +1994,8 @@
     "species": "canescens",
     "variety": "",
     "scientific": "Populus canescens",
-    "common": "Graupappel"
+    "common": "Graupappel",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Grau-Pappel"
   },
   {
     "fullname": "Populus euramerica \"Robusta\", Holz-Pappel - Robusta-Pappel",
@@ -1781,7 +2003,8 @@
     "species": "euramerica",
     "variety": "Robusta",
     "scientific": "Populus euramerica \"Robusta\"",
-    "common": "Holz-Pappel - Robusta-Pappel"
+    "common": "Holz-Pappel - Robusta-Pappel",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Populus lasiocarpa, Großblatt-Pappel",
@@ -1789,7 +2012,8 @@
     "species": "lasiocarpa",
     "variety": "",
     "scientific": "Populus lasiocarpa",
-    "common": "Großblatt-Pappel"
+    "common": "Großblatt-Pappel",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Gro%C3%9Fblatt-Pappel"
   },
   {
     "fullname": "Populus nigra \"Italica\", Italienische Pyramiden-Pappel",
@@ -1797,7 +2021,8 @@
     "species": "nigra",
     "variety": "Italica",
     "scientific": "Populus nigra \"Italica\"",
-    "common": "Italienische Pyramiden-Pappel"
+    "common": "Italienische Pyramiden-Pappel",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Schwarz-Pappel"
   },
   {
     "fullname": "Populus nigra, Schwarz-Pappel",
@@ -1805,7 +2030,8 @@
     "species": "nigra",
     "variety": "",
     "scientific": "Populus nigra",
-    "common": "Schwarz-Pappel"
+    "common": "Schwarz-Pappel",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Schwarz-Pappel"
   },
   {
     "fullname": "Populus simonii, Birkenpappel",
@@ -1813,7 +2039,8 @@
     "species": "simonii",
     "variety": "",
     "scientific": "Populus simonii",
-    "common": "Birkenpappel"
+    "common": "Birkenpappel",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Birken-Pappel"
   },
   {
     "fullname": "Populus spec., Pappel",
@@ -1821,7 +2048,8 @@
     "species": "spec.",
     "variety": "",
     "scientific": "Populus spec.",
-    "common": "Pappel"
+    "common": "Pappel",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Pappeln"
   },
   {
     "fullname": "Populus tremula \"Erecta\", Säulen-Zitterpappel",
@@ -1829,7 +2057,8 @@
     "species": "tremula",
     "variety": "Erecta",
     "scientific": "Populus tremula \"Erecta\"",
-    "common": "Säulen-Zitterpappel"
+    "common": "Säulen-Zitterpappel",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Espe"
   },
   {
     "fullname": "Populus tremula, Zitterpappel",
@@ -1837,7 +2066,8 @@
     "species": "tremula",
     "variety": "",
     "scientific": "Populus tremula",
-    "common": "Zitterpappel"
+    "common": "Zitterpappel",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Espe"
   },
   {
     "fullname": "Prunus Cerasifera \"Nigra\", Purpurpflaume - Blutpflaume",
@@ -1845,7 +2075,8 @@
     "species": "Cerasifera",
     "variety": "Nigra",
     "scientific": "Prunus Cerasifera \"Nigra\"",
-    "common": "Purpurpflaume - Blutpflaume"
+    "common": "Purpurpflaume - Blutpflaume",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Prunus avium \"Plena\", Gefülltblühende Süßkirsche",
@@ -1853,7 +2084,8 @@
     "species": "avium",
     "variety": "Plena",
     "scientific": "Prunus avium \"Plena\"",
-    "common": "Gefülltblühende Süßkirsche"
+    "common": "Gefülltblühende Süßkirsche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Vogel-Kirsche"
   },
   {
     "fullname": "Prunus avium, Vogelkirsche",
@@ -1861,7 +2093,8 @@
     "species": "avium",
     "variety": "",
     "scientific": "Prunus avium",
-    "common": "Vogelkirsche"
+    "common": "Vogelkirsche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Vogelkirsche"
   },
   {
     "fullname": "Prunus campanulata \"Okame\", Taiwan-Kirsche",
@@ -1869,7 +2102,8 @@
     "species": "campanulata",
     "variety": "Okame",
     "scientific": "Prunus campanulata \"Okame\"",
-    "common": "Taiwan-Kirsche"
+    "common": "Taiwan-Kirsche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Taiwan-Kirsche"
   },
   {
     "fullname": "Prunus cerasifera Nigra, Kirschpflaume, schwarzrotblättr.",
@@ -1877,7 +2111,8 @@
     "species": "cerasifera",
     "variety": "Nigra",
     "scientific": "Prunus cerasifera Nigra",
-    "common": "Kirschpflaume"
+    "common": "Kirschpflaume",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Kirschpflaume"
   },
   {
     "fullname": "Prunus cerasifera, Kirschpflaume - Myrobalane",
@@ -1885,7 +2120,8 @@
     "species": "cerasifera",
     "variety": "",
     "scientific": "Prunus cerasifera",
-    "common": "Kirschpflaume - Myrobalane"
+    "common": "Kirschpflaume - Myrobalane",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Kirschpflaume"
   },
   {
     "fullname": "Prunus cerasus, Sauerkirche/Weichsel",
@@ -1893,7 +2129,8 @@
     "species": "cerasus",
     "variety": "",
     "scientific": "Prunus cerasus",
-    "common": "Sauerkirche/Weichsel"
+    "common": "Sauerkirche/Weichsel",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Sauerkirsche"
   },
   {
     "fullname": "Prunus domestica \"Wangenheims Frühzwetschge\", Pflaume",
@@ -1901,7 +2138,8 @@
     "species": "domestica",
     "variety": "Wangenheims Frühzwetschge",
     "scientific": "Prunus domestica \"Wangenheims Frühzwetschge\"",
-    "common": "Pflaume"
+    "common": "Pflaume",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Pflaume"
   },
   {
     "fullname": "Prunus domestica, Pflaume",
@@ -1909,7 +2147,8 @@
     "species": "domestica",
     "variety": "",
     "scientific": "Prunus domestica",
-    "common": "Pflaume"
+    "common": "Pflaume",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Pflaume"
   },
   {
     "fullname": "Prunus fruticosa \"Globosa\", Kugel-Kirsche",
@@ -1917,7 +2156,8 @@
     "species": "fruticosa",
     "variety": "Globosa",
     "scientific": "Prunus fruticosa \"Globosa\"",
-    "common": "Kugel-Kirsche"
+    "common": "Kugel-Kirsche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Zwerg-Kirsche"
   },
   {
     "fullname": "Prunus hillieri \"Spire\", Zierkirsche \"Spire\"",
@@ -1925,7 +2165,8 @@
     "species": "hillieri",
     "variety": "Spire",
     "scientific": "Prunus hillieri \"Spire\"",
-    "common": "Zierkirsche \"Spire\""
+    "common": "Zierkirsche \"Spire\"",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Prunus mahaleb, Weichselkirsche",
@@ -1933,7 +2174,8 @@
     "species": "mahaleb",
     "variety": "",
     "scientific": "Prunus mahaleb",
-    "common": "Weichselkirsche"
+    "common": "Weichselkirsche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Sauerkirsche"
   },
   {
     "fullname": "Prunus padus \"Schloss Tiefurt\", Traubenkirsche",
@@ -1941,7 +2183,8 @@
     "species": "padus",
     "variety": "Schloss Tiefurt",
     "scientific": "Prunus padus \"Schloss Tiefurt\"",
-    "common": "Traubenkirsche"
+    "common": "Traubenkirsche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Traubenkirsche"
   },
   {
     "fullname": "Prunus padus, Traubenkirsche",
@@ -1949,7 +2192,8 @@
     "species": "padus",
     "variety": "",
     "scientific": "Prunus padus",
-    "common": "Traubenkirsche"
+    "common": "Traubenkirsche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Traubenkirsche"
   },
   {
     "fullname": "Prunus sargentii, Berg-Kirsche",
@@ -1957,7 +2201,8 @@
     "species": "sargentii",
     "variety": "",
     "scientific": "Prunus sargentii",
-    "common": "Berg-Kirsche"
+    "common": "Berg-Kirsche",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Prunus serotina, Spätblühende Traubenkirsche",
@@ -1965,7 +2210,8 @@
     "species": "serotina",
     "variety": "",
     "scientific": "Prunus serotina",
-    "common": "Spätblühende Traubenkirsche"
+    "common": "Spätblühende Traubenkirsche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Sp%C3%A4tbl%C3%BChende%20Traubenkirsche"
   },
   {
     "fullname": "Prunus serrula, Mahagoni-Kirsche",
@@ -1973,7 +2219,8 @@
     "species": "serrula",
     "variety": "",
     "scientific": "Prunus serrula",
-    "common": "Mahagoni-Kirsche"
+    "common": "Mahagoni-Kirsche",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Prunus serrulata \"Amanogawa\", Säulen-Kirsche",
@@ -1981,7 +2228,8 @@
     "species": "serrulata",
     "variety": "Amanogawa",
     "scientific": "Prunus serrulata \"Amanogawa\"",
-    "common": "Säulen-Kirsche"
+    "common": "Säulen-Kirsche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Japanische%20Bl%C3%BCtenkirsche"
   },
   {
     "fullname": "Prunus serrulata \"Kiku-Shidare-Zakura\", Hänge-Nelken-Kirsche",
@@ -1989,7 +2237,8 @@
     "species": "serrulata",
     "variety": "Kiku-Shidare-Zakura",
     "scientific": "Prunus serrulata \"Kiku-Shidare-Zakura\"",
-    "common": "Hänge-Nelken-Kirsche"
+    "common": "Hänge-Nelken-Kirsche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Japanische%20Bl%C3%BCtenkirsche"
   },
   {
     "fullname": "Prunus serrulata \"Shidare-Sakura\", Hänge-Nelken-Kirsche",
@@ -1997,7 +2246,8 @@
     "species": "serrulata",
     "variety": "Shidare-Sakura",
     "scientific": "Prunus serrulata \"Shidare-Sakura\"",
-    "common": "Hänge-Nelken-Kirsche"
+    "common": "Hänge-Nelken-Kirsche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Japanische%20Bl%C3%BCtenkirsche"
   },
   {
     "fullname": "Prunus serrulata Kanzan, Zierkirsche Kanzan",
@@ -2005,7 +2255,8 @@
     "species": "serrulata",
     "variety": "Kanzan",
     "scientific": "Prunus serrulata Kanzan",
-    "common": "Zierkirsche Kanzan"
+    "common": "Zierkirsche Kanzan",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Japanische%20Bl%C3%BCtenkirsche"
   },
   {
     "fullname": "Prunus spec., Kirsche, Pflaume",
@@ -2013,7 +2264,8 @@
     "species": "spec.",
     "variety": "",
     "scientific": "Prunus spec.",
-    "common": "Kirsche"
+    "common": "Kirsche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Kirsche"
   },
   {
     "fullname": "Prunus spinosa, Schlehdorn - Schwarzdorn",
@@ -2021,7 +2273,8 @@
     "species": "spinosa",
     "variety": "",
     "scientific": "Prunus spinosa",
-    "common": "Schlehdorn - Schwarzdorn"
+    "common": "Schlehdorn - Schwarzdorn",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Schlehdorn"
   },
   {
     "fullname": "Prunus tenella \"Fire Hill\", Russische Zwerg-Mandel",
@@ -2029,7 +2282,8 @@
     "species": "tenella",
     "variety": "Fire Hill",
     "scientific": "Prunus tenella \"Fire Hill\"",
-    "common": "Russische Zwerg-Mandel"
+    "common": "Russische Zwerg-Mandel",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Zwerg-Mandel"
   },
   {
     "fullname": "Prunus yedoensis, Yoshino-Kirsche",
@@ -2037,7 +2291,8 @@
     "species": "yedoensis",
     "variety": "",
     "scientific": "Prunus yedoensis",
-    "common": "Yoshino-Kirsche"
+    "common": "Yoshino-Kirsche",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Pseudotsuga menziesii var. caesia, Douglasfichte",
@@ -2045,7 +2300,8 @@
     "species": "menziesii",
     "variety": "var. caesia",
     "scientific": "Pseudotsuga menziesii var. caesia",
-    "common": "Douglasfichte"
+    "common": "Douglasfichte",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Gew%C3%B6hnliche%20Douglasie"
   },
   {
     "fullname": "Pseudotsuga menziesii, Douglasie",
@@ -2053,7 +2309,8 @@
     "species": "menziesii",
     "variety": "",
     "scientific": "Pseudotsuga menziesii",
-    "common": "Douglasie"
+    "common": "Douglasie",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Gew%C3%B6hnliche%20Douglasie"
   },
   {
     "fullname": "Ptelea trifoliata, Kleeulme",
@@ -2061,7 +2318,8 @@
     "species": "trifoliata",
     "variety": "",
     "scientific": "Ptelea trifoliata",
-    "common": "Kleeulme"
+    "common": "Kleeulme",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Kleeulme"
   },
   {
     "fullname": "Pterocarya fraxinifolia, Flügelnuss",
@@ -2069,7 +2327,8 @@
     "species": "fraxinifolia",
     "variety": "",
     "scientific": "Pterocarya fraxinifolia",
-    "common": "Flügelnuss"
+    "common": "Flügelnuss",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Fl%C3%BCgelnuss"
   },
   {
     "fullname": "Pyrus calleryana \"Chanticleer\", Chinesische Birne",
@@ -2077,7 +2336,8 @@
     "species": "calleryana",
     "variety": "Chanticleer",
     "scientific": "Pyrus calleryana \"Chanticleer\"",
-    "common": "Chinesische Birne"
+    "common": "Chinesische Birne",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Nashi-Birne"
   },
   {
     "fullname": "Pyrus canescens, Birne",
@@ -2085,7 +2345,8 @@
     "species": "canescens",
     "variety": "",
     "scientific": "Pyrus canescens",
-    "common": "Birne"
+    "common": "Birne",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Birnen"
   },
   {
     "fullname": "Pyrus communis, Gemeine Birne",
@@ -2093,7 +2354,8 @@
     "species": "communis",
     "variety": "",
     "scientific": "Pyrus communis",
-    "common": "Gemeine Birne"
+    "common": "Gemeine Birne",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Kultur-Birne"
   },
   {
     "fullname": "Pyrus salicifolia, Weidenblättrige Birne",
@@ -2101,7 +2363,8 @@
     "species": "salicifolia",
     "variety": "",
     "scientific": "Pyrus salicifolia",
-    "common": "Weidenblättrige Birne"
+    "common": "Weidenblättrige Birne",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Weidenbl%C3%A4ttrige%20Birne"
   },
   {
     "fullname": "Pyrus spec., Birne",
@@ -2109,7 +2372,8 @@
     "species": "spec.",
     "variety": "",
     "scientific": "Pyrus spec.",
-    "common": "Birne"
+    "common": "Birne",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Birnen"
   },
   {
     "fullname": "Quercus Rubra, Amerikanische Rot-Eiche",
@@ -2117,7 +2381,8 @@
     "species": "Rubra",
     "variety": "",
     "scientific": "Quercus Rubra",
-    "common": "Amerikanische Rot-Eiche"
+    "common": "Amerikanische Rot-Eiche",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Quercus cerris, Zerr-Eiche",
@@ -2125,7 +2390,8 @@
     "species": "cerris",
     "variety": "",
     "scientific": "Quercus cerris",
-    "common": "Zerr-Eiche"
+    "common": "Zerr-Eiche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Zerreiche"
   },
   {
     "fullname": "Quercus coccinea, Scharlach-Eiche",
@@ -2133,7 +2399,8 @@
     "species": "coccinea",
     "variety": "",
     "scientific": "Quercus coccinea",
-    "common": "Scharlach-Eiche"
+    "common": "Scharlach-Eiche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Scharlach-Eiche"
   },
   {
     "fullname": "Quercus frainetto, Ungarische Eiche",
@@ -2141,7 +2408,8 @@
     "species": "frainetto",
     "variety": "",
     "scientific": "Quercus frainetto",
-    "common": "Ungarische Eiche"
+    "common": "Ungarische Eiche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Ungarische%20Eiche"
   },
   {
     "fullname": "Quercus ilex, Stein-Eiche",
@@ -2149,7 +2417,8 @@
     "species": "ilex",
     "variety": "",
     "scientific": "Quercus ilex",
-    "common": "Stein-Eiche"
+    "common": "Stein-Eiche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Steineiche"
   },
   {
     "fullname": "Quercus imbricaria, Schindel-Eiche",
@@ -2157,7 +2426,8 @@
     "species": "imbricaria",
     "variety": "",
     "scientific": "Quercus imbricaria",
-    "common": "Schindel-Eiche"
+    "common": "Schindel-Eiche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Schindel-Eiche"
   },
   {
     "fullname": "Quercus palustris, Sumpf-Eiche",
@@ -2165,7 +2435,8 @@
     "species": "palustris",
     "variety": "",
     "scientific": "Quercus palustris",
-    "common": "Sumpf-Eiche"
+    "common": "Sumpf-Eiche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Sumpf-Eiche"
   },
   {
     "fullname": "Quercus petraea, Traubeneiche",
@@ -2173,7 +2444,8 @@
     "species": "petraea",
     "variety": "",
     "scientific": "Quercus petraea",
-    "common": "Traubeneiche"
+    "common": "Traubeneiche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Traubeneiche"
   },
   {
     "fullname": "Quercus robur Fastigiata, Pyramideneiche",
@@ -2181,7 +2453,8 @@
     "species": "robur",
     "variety": "Fastigiata",
     "scientific": "Quercus robur Fastigiata",
-    "common": "Pyramideneiche"
+    "common": "Pyramideneiche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/S%C3%A4uleneiche"
   },
   {
     "fullname": "Quercus robur, Stieleiche",
@@ -2189,7 +2462,8 @@
     "species": "robur",
     "variety": "",
     "scientific": "Quercus robur",
-    "common": "Stieleiche"
+    "common": "Stieleiche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Stieleiche"
   },
   {
     "fullname": "Quercus rubra, Amerikanische Rot-Eiche",
@@ -2197,7 +2471,8 @@
     "species": "rubra",
     "variety": "",
     "scientific": "Quercus rubra",
-    "common": "Amerikanische Rot-Eiche"
+    "common": "Amerikanische Rot-Eiche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Roteiche"
   },
   {
     "fullname": "Quercus spec., Eiche",
@@ -2205,7 +2480,8 @@
     "species": "spec.",
     "variety": "",
     "scientific": "Quercus spec.",
-    "common": "Eiche"
+    "common": "Eiche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Eichen"
   },
   {
     "fullname": "Quercus turneri \"Pseudoturneri\", Wintergruene Eiche",
@@ -2213,7 +2489,8 @@
     "species": "turneri",
     "variety": "Pseudoturneri",
     "scientific": "Quercus turneri \"Pseudoturneri\"",
-    "common": "Wintergruene Eiche"
+    "common": "Wintergruene Eiche",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Rhamnus cathartica, Kreuzdorn",
@@ -2221,7 +2498,8 @@
     "species": "cathartica",
     "variety": "",
     "scientific": "Rhamnus cathartica",
-    "common": "Kreuzdorn"
+    "common": "Kreuzdorn",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Kreuzdorn"
   },
   {
     "fullname": "Rhus typhina, Essigbaum",
@@ -2229,7 +2507,8 @@
     "species": "typhina",
     "variety": "",
     "scientific": "Rhus typhina",
-    "common": "Essigbaum"
+    "common": "Essigbaum",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Essigbaum"
   },
   {
     "fullname": "Robinia \"Casque Rouge\", Rosarote Akazie",
@@ -2237,7 +2516,8 @@
     "species": "Casque Rouge",
     "variety": "",
     "scientific": "Robinia \"Casque Rouge\"",
-    "common": "Rosarote Akazie"
+    "common": "Rosarote Akazie",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Robinia Pseudoacacia, Schein-Akazie - Silberregen",
@@ -2245,7 +2525,8 @@
     "species": "Pseudoacacia",
     "variety": "",
     "scientific": "Robinia Pseudoacacia",
-    "common": "Schein-Akazie - Silberregen"
+    "common": "Schein-Akazie - Silberregen",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Robinia hispida \"Macrophylla\", Borsten-Akazie",
@@ -2253,7 +2534,8 @@
     "species": "hispida",
     "variety": "Macrophylla",
     "scientific": "Robinia hispida \"Macrophylla\"",
-    "common": "Borsten-Akazie"
+    "common": "Borsten-Akazie",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Borstige%20Robinie"
   },
   {
     "fullname": "Robinia pseudoacacia \"Bessoniana\", Kugel-Akazie",
@@ -2261,7 +2543,8 @@
     "species": "pseudoacacia",
     "variety": "Bessoniana",
     "scientific": "Robinia pseudoacacia \"Bessoniana\"",
-    "common": "Kugel-Akazie"
+    "common": "Kugel-Akazie",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Gew%C3%B6hnliche%20Robinie"
   },
   {
     "fullname": "Robinia pseudoacacia \"Monophylla\", Einblattakazie",
@@ -2269,7 +2552,8 @@
     "species": "pseudoacacia",
     "variety": "Monophylla",
     "scientific": "Robinia pseudoacacia \"Monophylla\"",
-    "common": "Einblattakazie"
+    "common": "Einblattakazie",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Gew%C3%B6hnliche%20Robinie"
   },
   {
     "fullname": "Robinia pseudoacacia \"Nyirségi\", Eiförmige Scheinakazie",
@@ -2277,7 +2561,8 @@
     "species": "pseudoacacia",
     "variety": "Nyirségi",
     "scientific": "Robinia pseudoacacia \"Nyirségi\"",
-    "common": "Eiförmige Scheinakazie"
+    "common": "Eiförmige Scheinakazie",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Gew%C3%B6hnliche%20Robinie"
   },
   {
     "fullname": "Robinia pseudoacacia \"Tortuosa\", Korkenzieher-Akazie",
@@ -2285,7 +2570,8 @@
     "species": "pseudoacacia",
     "variety": "Tortuosa",
     "scientific": "Robinia pseudoacacia \"Tortuosa\"",
-    "common": "Korkenzieher-Akazie"
+    "common": "Korkenzieher-Akazie",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Gew%C3%B6hnliche%20Robinie"
   },
   {
     "fullname": "Robinia pseudoacacia \"Umbraculifera\", Echte Kugel-Akazie",
@@ -2293,7 +2579,8 @@
     "species": "pseudoacacia",
     "variety": "Umbraculifera",
     "scientific": "Robinia pseudoacacia \"Umbraculifera\"",
-    "common": "Echte Kugel-Akazie"
+    "common": "Echte Kugel-Akazie",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Gew%C3%B6hnliche%20Robinie"
   },
   {
     "fullname": "Robinia pseudoacacia \"Unifoliola\", Einblattakazie",
@@ -2301,7 +2588,8 @@
     "species": "pseudoacacia",
     "variety": "Unifoliola",
     "scientific": "Robinia pseudoacacia \"Unifoliola\"",
-    "common": "Einblattakazie"
+    "common": "Einblattakazie",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Gew%C3%B6hnliche%20Robinie"
   },
   {
     "fullname": "Robinia pseudoacacia, Robinie",
@@ -2309,7 +2597,8 @@
     "species": "pseudoacacia",
     "variety": "",
     "scientific": "Robinia pseudoacacia",
-    "common": "Robinie"
+    "common": "Robinie",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Gew%C3%B6hnliche%20Robinie"
   },
   {
     "fullname": "Robinia spec., Robinie",
@@ -2317,7 +2606,8 @@
     "species": "spec.",
     "variety": "",
     "scientific": "Robinia spec.",
-    "common": "Robinie"
+    "common": "Robinie",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Gew%C3%B6hnliche%20Robinie"
   },
   {
     "fullname": "Salix \"Sekka\", Japanische Drachen-Weide",
@@ -2325,7 +2615,8 @@
     "species": "Sekka",
     "variety": "",
     "scientific": "Salix \"Sekka\"",
-    "common": "Japanische Drachen-Weide"
+    "common": "Japanische Drachen-Weide",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Salix \"Tortuosa\", Dauerwellen-Weide - Korkenzieher-Weide",
@@ -2333,7 +2624,8 @@
     "species": "Tortuosa",
     "variety": "",
     "scientific": "Salix \"Tortuosa\"",
-    "common": "Dauerwellen-Weide - Korkenzieher-Weide"
+    "common": "Dauerwellen-Weide - Korkenzieher-Weide",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Salix Alba, Baum-Weide - Kopf-Weide",
@@ -2341,7 +2633,8 @@
     "species": "Alba",
     "variety": "",
     "scientific": "Salix Alba",
-    "common": "Baum-Weide - Kopf-Weide"
+    "common": "Baum-Weide - Kopf-Weide",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Salix Caprea \"Pendula\", Hängende Kätzchen-Weide  -  Trauer-Sal-W",
@@ -2349,7 +2642,8 @@
     "species": "Caprea",
     "variety": "Pendula",
     "scientific": "Salix Caprea \"Pendula\"",
-    "common": "Hängende Kätzchen-Weide  -  Trauer-Sal-W"
+    "common": "Hängende Kätzchen-Weide  -  Trauer-Sal-W",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Salix Caprea Mas, Echte Sal-Weide",
@@ -2357,7 +2651,8 @@
     "species": "Caprea",
     "variety": "Mas",
     "scientific": "Salix Caprea Mas",
-    "common": "Echte Sal-Weide"
+    "common": "Echte Sal-Weide",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Salix Cinerea, Asch-Weide - Grau-Weide",
@@ -2365,7 +2660,8 @@
     "species": "Cinerea",
     "variety": "",
     "scientific": "Salix Cinerea",
-    "common": "Asch-Weide - Grau-Weide"
+    "common": "Asch-Weide - Grau-Weide",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Salix Daphnoides, Pommern-Weide - Reif-Weide",
@@ -2373,7 +2669,8 @@
     "species": "Daphnoides",
     "variety": "",
     "scientific": "Salix Daphnoides",
-    "common": "Pommern-Weide - Reif-Weide"
+    "common": "Pommern-Weide - Reif-Weide",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Salix Repens Argentea, Silber-Kriech-Weide",
@@ -2381,7 +2678,8 @@
     "species": "Repens",
     "variety": "Argentea",
     "scientific": "Salix Repens Argentea",
-    "common": "Silber-Kriech-Weide"
+    "common": "Silber-Kriech-Weide",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Salix Viminalis, Band-Weide - Hanf-Weide",
@@ -2389,7 +2687,8 @@
     "species": "Viminalis",
     "variety": "",
     "scientific": "Salix Viminalis",
-    "common": "Band-Weide - Hanf-Weide"
+    "common": "Band-Weide - Hanf-Weide",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Salix alba \"Tristis Resistenta\", Hänge-Weide",
@@ -2397,7 +2696,8 @@
     "species": "alba",
     "variety": "Tristis Resistenta",
     "scientific": "Salix alba \"Tristis Resistenta\"",
-    "common": "Hänge-Weide"
+    "common": "Hänge-Weide",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Silber-Weide"
   },
   {
     "fullname": "Salix alba Tristis, Trauerweide",
@@ -2405,7 +2705,8 @@
     "species": "alba",
     "variety": "Tristis",
     "scientific": "Salix alba Tristis",
-    "common": "Trauerweide"
+    "common": "Trauerweide",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Trauerweide"
   },
   {
     "fullname": "Salix alba, Baum-Weide - Kopf-Weide",
@@ -2413,7 +2714,8 @@
     "species": "alba",
     "variety": "",
     "scientific": "Salix alba",
-    "common": "Baum-Weide - Kopf-Weide"
+    "common": "Baum-Weide - Kopf-Weide",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Silber-Weide"
   },
   {
     "fullname": "Salix fragilis, Bruchweide",
@@ -2421,7 +2723,8 @@
     "species": "fragilis",
     "variety": "",
     "scientific": "Salix fragilis",
-    "common": "Bruchweide"
+    "common": "Bruchweide",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Bruch-Weide"
   },
   {
     "fullname": "Salix spec., Weide",
@@ -2429,7 +2732,8 @@
     "species": "spec.",
     "variety": "",
     "scientific": "Salix spec.",
-    "common": "Weide"
+    "common": "Weide",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Weide"
   },
   {
     "fullname": "Sambucus Nigra, Fliederbeerstrauch - Schwarzer Holunder",
@@ -2437,7 +2741,8 @@
     "species": "Nigra",
     "variety": "",
     "scientific": "Sambucus Nigra",
-    "common": "Fliederbeerstrauch - Schwarzer Holunder"
+    "common": "Fliederbeerstrauch - Schwarzer Holunder",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Sambucus spec., Holunder",
@@ -2445,7 +2750,8 @@
     "species": "spec.",
     "variety": "",
     "scientific": "Sambucus spec.",
-    "common": "Holunder"
+    "common": "Holunder",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Holunder"
   },
   {
     "fullname": "Sequoiadendron giganteum, Mammutbaum",
@@ -2453,7 +2759,8 @@
     "species": "giganteum",
     "variety": "",
     "scientific": "Sequoiadendron giganteum",
-    "common": "Mammutbaum"
+    "common": "Mammutbaum",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Mammutb%C3%A4ume"
   },
   {
     "fullname": "Sophora japonica \"Princeton Upright\"",
@@ -2461,7 +2768,8 @@
     "species": "japonica",
     "variety": "Princeton Upright",
     "scientific": "Sophora japonica \"Princeton Upright\"",
-    "common": "Sophora japonica \"Princeton Upright\""
+    "common": "Sophora japonica \"Princeton Upright\"",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Japanischer%20Schnurbaum"
   },
   {
     "fullname": "Sophora japonica \"Regent\", Schnurbaum",
@@ -2469,7 +2777,8 @@
     "species": "japonica",
     "variety": "Regent",
     "scientific": "Sophora japonica \"Regent\"",
-    "common": "Schnurbaum"
+    "common": "Schnurbaum",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Japanischer%20Schnurbaum"
   },
   {
     "fullname": "Sophora japonica, Schnurbaum",
@@ -2477,7 +2786,8 @@
     "species": "japonica",
     "variety": "",
     "scientific": "Sophora japonica",
-    "common": "Schnurbaum"
+    "common": "Schnurbaum",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Japanischer%20Schnurbaum"
   },
   {
     "fullname": "Sorbaria Sorbifolia, Fiederspiere - Ebereschenspiere",
@@ -2485,7 +2795,8 @@
     "species": "Sorbifolia",
     "variety": "",
     "scientific": "Sorbaria Sorbifolia",
-    "common": "Fiederspiere - Ebereschenspiere"
+    "common": "Fiederspiere - Ebereschenspiere",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Sorbus Aucuparia Var. Edulis, Essbare Eberesche",
@@ -2493,7 +2804,8 @@
     "species": "Aucuparia",
     "variety": "Var. Edulis",
     "scientific": "Sorbus Aucuparia Var. Edulis",
-    "common": "Essbare Eberesche"
+    "common": "Essbare Eberesche",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Sorbus Aucuparia, Gemeine Eberesche - Vogelbeerbaum",
@@ -2501,7 +2813,8 @@
     "species": "Aucuparia",
     "variety": "",
     "scientific": "Sorbus Aucuparia",
-    "common": "Gemeine Eberesche - Vogelbeerbaum"
+    "common": "Gemeine Eberesche - Vogelbeerbaum",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Sorbus Thuringiaca \"Fastigiata\", Thüringische Säulen-Eberesche",
@@ -2509,7 +2822,8 @@
     "species": "Thuringiaca",
     "variety": "Fastigiata",
     "scientific": "Sorbus Thuringiaca \"Fastigiata\"",
-    "common": "Thüringische Säulen-Eberesche"
+    "common": "Thüringische Säulen-Eberesche",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Sorbus aria, Mehlbeere",
@@ -2517,7 +2831,8 @@
     "species": "aria",
     "variety": "",
     "scientific": "Sorbus aria",
-    "common": "Mehlbeere"
+    "common": "Mehlbeere",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Mehlbeere"
   },
   {
     "fullname": "Sorbus aucuparia Fastigiata, Eberesche, aufrechter Habitus",
@@ -2525,7 +2840,8 @@
     "species": "aucuparia",
     "variety": "Fastigiata",
     "scientific": "Sorbus aucuparia Fastigiata",
-    "common": "Eberesche"
+    "common": "Eberesche",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Vogelbeere"
   },
   {
     "fullname": "Sorbus aucuparia, Eberesche (Vogelbeere)",
@@ -2533,7 +2849,8 @@
     "species": "aucuparia",
     "variety": "",
     "scientific": "Sorbus aucuparia",
-    "common": "Eberesche (Vogelbeere)"
+    "common": "Eberesche (Vogelbeere)",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Vogelbeere"
   },
   {
     "fullname": "Sorbus domestica, Sperberbaum",
@@ -2541,7 +2858,8 @@
     "species": "domestica",
     "variety": "",
     "scientific": "Sorbus domestica",
-    "common": "Sperberbaum"
+    "common": "Sperberbaum",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Speierling"
   },
   {
     "fullname": "Sorbus intermedia \"Brouwers\", Oxelbeere, Schwedische Mehlbeere",
@@ -2549,7 +2867,8 @@
     "species": "intermedia",
     "variety": "Brouwers",
     "scientific": "Sorbus intermedia \"Brouwers\"",
-    "common": "Oxelbeere"
+    "common": "Oxelbeere",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Schwedische%20Mehlbeere"
   },
   {
     "fullname": "Sorbus intermedia, Schwedische Mehlbeere",
@@ -2557,7 +2876,8 @@
     "species": "intermedia",
     "variety": "",
     "scientific": "Sorbus intermedia",
-    "common": "Schwedische Mehlbeere"
+    "common": "Schwedische Mehlbeere",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Schwedische%20Mehlbeere"
   },
   {
     "fullname": "Sorbus latifolia, Rundblättrige Mehlbeere",
@@ -2565,7 +2885,8 @@
     "species": "latifolia",
     "variety": "",
     "scientific": "Sorbus latifolia",
-    "common": "Rundblättrige Mehlbeere"
+    "common": "Rundblättrige Mehlbeere",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Breitbl%C3%A4ttrige%20Mehlbeere"
   },
   {
     "fullname": "Sorbus spec., Eberesche/Mehlbeere",
@@ -2573,7 +2894,8 @@
     "species": "spec.",
     "variety": "",
     "scientific": "Sorbus spec.",
-    "common": "Eberesche/Mehlbeere"
+    "common": "Eberesche/Mehlbeere",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Sorbus torminalis, Elsbeere",
@@ -2581,7 +2903,8 @@
     "species": "torminalis",
     "variety": "",
     "scientific": "Sorbus torminalis",
-    "common": "Elsbeere"
+    "common": "Elsbeere",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Elsbeere"
   },
   {
     "fullname": "Sorbus x thuringiaca, Thüringische Eberesche",
@@ -2589,7 +2912,8 @@
     "species": "x thuringiaca",
     "variety": "",
     "scientific": "Sorbus x thuringiaca",
-    "common": "Thüringische Eberesche"
+    "common": "Thüringische Eberesche",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Syringa Josikaea, Ungarischer Flieder",
@@ -2597,7 +2921,8 @@
     "species": "Josikaea",
     "variety": "",
     "scientific": "Syringa Josikaea",
-    "common": "Ungarischer Flieder"
+    "common": "Ungarischer Flieder",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Ungarischer%20Flieder"
   },
   {
     "fullname": "Taxodium Distichum, Sumpfzypresse",
@@ -2605,7 +2930,8 @@
     "species": "Distichum",
     "variety": "",
     "scientific": "Taxodium Distichum",
-    "common": "Sumpfzypresse"
+    "common": "Sumpfzypresse",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Sumpfzypressen"
   },
   {
     "fullname": "Taxus Baccata \"Fastigiata Robusta\", Säulen-Eibe",
@@ -2613,7 +2939,8 @@
     "species": "Baccata",
     "variety": "Fastigiata Robusta",
     "scientific": "Taxus Baccata \"Fastigiata Robusta\"",
-    "common": "Säulen-Eibe"
+    "common": "Säulen-Eibe",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Taxus Baccata, Gemeine Eibe",
@@ -2621,7 +2948,8 @@
     "species": "Baccata",
     "variety": "",
     "scientific": "Taxus Baccata",
-    "common": "Gemeine Eibe"
+    "common": "Gemeine Eibe",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Europ%C3%A4ische%20Eibe"
   },
   {
     "fullname": "Thuja Occidentalis \"Columna\", Säulen-Lebensbaum",
@@ -2629,7 +2957,8 @@
     "species": "Occidentalis",
     "variety": "Columna",
     "scientific": "Thuja Occidentalis \"Columna\"",
-    "common": "Säulen-Lebensbaum"
+    "common": "Säulen-Lebensbaum",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Thuja Occidentalis \"Smaragd\", Säulen-Lebensbaum",
@@ -2637,7 +2966,8 @@
     "species": "Occidentalis",
     "variety": "Smaragd",
     "scientific": "Thuja Occidentalis \"Smaragd\"",
-    "common": "Säulen-Lebensbaum"
+    "common": "Säulen-Lebensbaum",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Thuja Occidentalis, Abendländischer Lebensbaum",
@@ -2645,7 +2975,8 @@
     "species": "Occidentalis",
     "variety": "",
     "scientific": "Thuja Occidentalis",
-    "common": "Abendländischer Lebensbaum"
+    "common": "Abendländischer Lebensbaum",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Abendl%C3%A4ndischer%20Lebensbaum"
   },
   {
     "fullname": "Thuja spec., Lebensbaum",
@@ -2653,7 +2984,8 @@
     "species": "spec.",
     "variety": "",
     "scientific": "Thuja spec.",
-    "common": "Lebensbaum"
+    "common": "Lebensbaum",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Lebensbaum"
   },
   {
     "fullname": "Tilia Cordata \"Greenspire\"",
@@ -2661,7 +2993,8 @@
     "species": "Cordata",
     "variety": "Greenspire",
     "scientific": "Tilia Cordata \"Greenspire\"",
-    "common": "Tilia Cordata \"Greenspire\""
+    "common": "Tilia Cordata \"Greenspire\"",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Tilia Cordata \"Rancho\", Kleinkronige Winter-Linde",
@@ -2669,7 +3002,8 @@
     "species": "Cordata",
     "variety": "Rancho",
     "scientific": "Tilia Cordata \"Rancho\"",
-    "common": "Kleinkronige Winter-Linde"
+    "common": "Kleinkronige Winter-Linde",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Tilia Euchlora, Krim-Linde",
@@ -2677,7 +3011,8 @@
     "species": "Euchlora",
     "variety": "",
     "scientific": "Tilia Euchlora",
-    "common": "Krim-Linde"
+    "common": "Krim-Linde",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Krim-Linde"
   },
   {
     "fullname": "Tilia Intermedia \"Pallida\", Kaiser-Linde",
@@ -2685,7 +3020,8 @@
     "species": "Intermedia",
     "variety": "Pallida",
     "scientific": "Tilia Intermedia \"Pallida\"",
-    "common": "Kaiser-Linde"
+    "common": "Kaiser-Linde",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Tilia Intermedia, Holländische Linde",
@@ -2693,7 +3029,8 @@
     "species": "Intermedia",
     "variety": "",
     "scientific": "Tilia Intermedia",
-    "common": "Holländische Linde"
+    "common": "Holländische Linde",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Holl%C3%A4ndische%20Linde"
   },
   {
     "fullname": "Tilia Pallida, Kaiser-Linde",
@@ -2701,7 +3038,8 @@
     "species": "Pallida",
     "variety": "",
     "scientific": "Tilia Pallida",
-    "common": "Kaiser-Linde"
+    "common": "Kaiser-Linde",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Tilia cordata \"Erecta\", Dichtkronige Winterlinde",
@@ -2709,7 +3047,8 @@
     "species": "cordata",
     "variety": "Erecta",
     "scientific": "Tilia cordata \"Erecta\"",
-    "common": "Dichtkronige Winterlinde"
+    "common": "Dichtkronige Winterlinde",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Winterlinde"
   },
   {
     "fullname": "Tilia cordata \"Roelvo\"",
@@ -2717,7 +3056,8 @@
     "species": "cordata",
     "variety": "Roelvo",
     "scientific": "Tilia cordata \"Roelvo\"",
-    "common": "Tilia cordata \"Roelvo\""
+    "common": "Tilia cordata \"Roelvo\"",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Winterlinde"
   },
   {
     "fullname": "Tilia cordata, Winterlinde",
@@ -2725,7 +3065,8 @@
     "species": "cordata",
     "variety": "",
     "scientific": "Tilia cordata",
-    "common": "Winterlinde"
+    "common": "Winterlinde",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Winterlinde"
   },
   {
     "fullname": "Tilia europaea \"Pallida\", Kaiser-Linde",
@@ -2733,7 +3074,8 @@
     "species": "europaea",
     "variety": "Pallida",
     "scientific": "Tilia europaea \"Pallida\"",
-    "common": "Kaiser-Linde"
+    "common": "Kaiser-Linde",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Holl%C3%A4ndische%20Linde"
   },
   {
     "fullname": "Tilia flavescens \"Glenleven\", Kegel-Linde",
@@ -2741,7 +3083,8 @@
     "species": "flavescens",
     "variety": "Glenleven",
     "scientific": "Tilia flavescens \"Glenleven\"",
-    "common": "Kegel-Linde"
+    "common": "Kegel-Linde",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Tilia platyphyllos, Sommerlinde",
@@ -2749,7 +3092,8 @@
     "species": "platyphyllos",
     "variety": "",
     "scientific": "Tilia platyphyllos",
-    "common": "Sommerlinde"
+    "common": "Sommerlinde",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Sommerlinde"
   },
   {
     "fullname": "Tilia spec., Linde",
@@ -2757,7 +3101,8 @@
     "species": "spec.",
     "variety": "",
     "scientific": "Tilia spec.",
-    "common": "Linde"
+    "common": "Linde",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Linde"
   },
   {
     "fullname": "Tilia tomentosa \"Szeleste\", Ungarische Silberlinde",
@@ -2765,7 +3110,8 @@
     "species": "tomentosa",
     "variety": "Szeleste",
     "scientific": "Tilia tomentosa \"Szeleste\"",
-    "common": "Ungarische Silberlinde"
+    "common": "Ungarische Silberlinde",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Silber-Linde"
   },
   {
     "fullname": "Tilia tomentosa, Silberlinde",
@@ -2773,7 +3119,8 @@
     "species": "tomentosa",
     "variety": "",
     "scientific": "Tilia tomentosa",
-    "common": "Silberlinde"
+    "common": "Silberlinde",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Silber-Linde"
   },
   {
     "fullname": "Tilia x euchlora, Krimlinde",
@@ -2781,7 +3128,8 @@
     "species": "x euchlora",
     "variety": "",
     "scientific": "Tilia x euchlora",
-    "common": "Krimlinde"
+    "common": "Krimlinde",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Krim-Linde"
   },
   {
     "fullname": "Tilia x vulgaris, Europäische Linde",
@@ -2789,7 +3137,8 @@
     "species": "x vulgaris",
     "variety": "",
     "scientific": "Tilia x vulgaris",
-    "common": "Europäische Linde"
+    "common": "Europäische Linde",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Holl%C3%A4ndische%20Linde"
   },
   {
     "fullname": "Tsuga canadensis, Kanadische Hemlocktanne",
@@ -2797,7 +3146,8 @@
     "species": "canadensis",
     "variety": "",
     "scientific": "Tsuga canadensis",
-    "common": "Kanadische Hemlocktanne"
+    "common": "Kanadische Hemlocktanne",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Kanadische%20Hemlocktanne"
   },
   {
     "fullname": "Ulmus \"Rebona\", amerikanischer Hybride",
@@ -2805,7 +3155,8 @@
     "species": "Rebona",
     "variety": "",
     "scientific": "Ulmus \"Rebona\"",
-    "common": "amerikanischer Hybride"
+    "common": "amerikanischer Hybride",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Ulmus Carpinifolia, Feld-Rüster - Feld-Ulme",
@@ -2813,7 +3164,8 @@
     "species": "Carpinifolia",
     "variety": "",
     "scientific": "Ulmus Carpinifolia",
-    "common": "Feld-Rüster - Feld-Ulme"
+    "common": "Feld-Rüster - Feld-Ulme",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Ulmus Clusius, holländische Clusius-Ulme",
@@ -2821,7 +3173,8 @@
     "species": "Clusius",
     "variety": "",
     "scientific": "Ulmus Clusius",
-    "common": "holländische Clusius-Ulme"
+    "common": "holländische Clusius-Ulme",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Ulmus Glabra, Berg-Ulme",
@@ -2829,7 +3182,8 @@
     "species": "Glabra",
     "variety": "",
     "scientific": "Ulmus Glabra",
-    "common": "Berg-Ulme"
+    "common": "Berg-Ulme",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Bergulme"
   },
   {
     "fullname": "Ulmus Hybride \"Lobel\", Schmalkronige Stadt-Ulme",
@@ -2837,7 +3191,8 @@
     "species": "Hybride",
     "variety": "Lobel",
     "scientific": "Ulmus Hybride \"Lobel\"",
-    "common": "Schmalkronige Stadt-Ulme"
+    "common": "Schmalkronige Stadt-Ulme",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Ulmus Laevis, Flatter-Ulme",
@@ -2845,7 +3200,8 @@
     "species": "Laevis",
     "variety": "",
     "scientific": "Ulmus Laevis",
-    "common": "Flatter-Ulme"
+    "common": "Flatter-Ulme",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Flatterulme"
   },
   {
     "fullname": "Ulmus carpinifolia \"Wredei\", Goldpyramiden-Ulme",
@@ -2853,7 +3209,8 @@
     "species": "carpinifolia",
     "variety": "Wredei",
     "scientific": "Ulmus carpinifolia \"Wredei\"",
-    "common": "Goldpyramiden-Ulme"
+    "common": "Goldpyramiden-Ulme",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Feldulme"
   },
   {
     "fullname": "Ulmus glabra Pendula, Bergulme, hängender Habitus",
@@ -2861,7 +3218,8 @@
     "species": "glabra",
     "variety": "Pendula",
     "scientific": "Ulmus glabra Pendula",
-    "common": "Bergulme"
+    "common": "Bergulme",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Bergulme"
   },
   {
     "fullname": "Ulmus glabra, Bergulme",
@@ -2869,7 +3227,8 @@
     "species": "glabra",
     "variety": "",
     "scientific": "Ulmus glabra",
-    "common": "Bergulme"
+    "common": "Bergulme",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Bergulme"
   },
   {
     "fullname": "Ulmus hollandica \"Groeneveld\", Holländische Stadtulme",
@@ -2877,7 +3236,8 @@
     "species": "hollandica",
     "variety": "Groeneveld",
     "scientific": "Ulmus hollandica \"Groeneveld\"",
-    "common": "Holländische Stadtulme"
+    "common": "Holländische Stadtulme",
+    "wikipediaPageUrl": ""
   },
   {
     "fullname": "Ulmus laevis, Flatterulme",
@@ -2885,7 +3245,8 @@
     "species": "laevis",
     "variety": "",
     "scientific": "Ulmus laevis",
-    "common": "Flatterulme"
+    "common": "Flatterulme",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Flatterulme"
   },
   {
     "fullname": "Ulmus minor, Feldulme",
@@ -2893,7 +3254,8 @@
     "species": "minor",
     "variety": "",
     "scientific": "Ulmus minor",
-    "common": "Feldulme"
+    "common": "Feldulme",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Feldulme"
   },
   {
     "fullname": "Ulmus spec., Ulme",
@@ -2901,7 +3263,8 @@
     "species": "spec.",
     "variety": "",
     "scientific": "Ulmus spec.",
-    "common": "Ulme"
+    "common": "Ulme",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Ulmen"
   },
   {
     "fullname": "Unbekannt",
@@ -2909,7 +3272,8 @@
     "species": "",
     "variety": "",
     "scientific": "Unbekannt",
-    "common": "Unbekannt"
+    "common": "Unbekannt",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Unbekannte"
   },
   {
     "fullname": "Zelkova carpinifolia, Kaukasische Zelkova",
@@ -2917,7 +3281,8 @@
     "species": "carpinifolia",
     "variety": "",
     "scientific": "Zelkova carpinifolia",
-    "common": "Kaukasische Zelkova"
+    "common": "Kaukasische Zelkova",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Kaukasische%20Zelkove"
   },
   {
     "fullname": "unbekannt",
@@ -2925,6 +3290,7 @@
     "species": "",
     "variety": "",
     "scientific": "unbekannt",
-    "common": "unbekannt"
+    "common": "unbekannt",
+    "wikipediaPageUrl": "https://de.wikipedia.org/wiki/Unbekannte"
   }
 ]
