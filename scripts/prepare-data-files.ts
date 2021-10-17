@@ -37,6 +37,77 @@ const IGNORED_ADDRESS_WORDS = [
   '/KGA',
 ];
 
+// TODO: Add missing urls
+const FIXED_WIKIPEDIA_PAGE_URLS = [
+  { title: 'Berg-Ahorn  -  Weiss-Ahorn', url: '' },
+  { title: 'Purpurahorn', url: '' },
+  { title: 'Gemeine Roß-Kastanie', url: '' },
+  { title: 'Scharlach-Kastanie', url: '' },
+  { title: 'Purpurkastanie - Rotblühende Rosskastanie', url: '' },
+  { title: 'Gefülltblühende Roßkastanie', url: '' },
+  { title: 'Purpur-Erle', url: '' },
+  { title: 'Schnee-Felsenbirne', url: '' },
+  { title: 'Hängende Felsenbirne', url: '' },
+  { title: 'Gemeine Hainbuche - Gemeine Weißbuche', url: '' },
+  { title: 'Blaue Säulen-Zypresse', url: '' },
+  { title: 'Weißbeeren-Hartriegel', url: '' },
+  { title: 'Lederbl. Weißdorn - Apfeldorn', url: '' },
+  { title: 'Pflaumenblättriger Weissdorn', url: '' },
+  { title: 'Stechpalmenhybride', url: '' },
+  { title: 'Malus \"Boskop\"', url: '' },
+  { title: 'rosa-blühender Zierapfel', url: '' },
+  { title: 'breitkroniger Zierapfel', url: '' },
+  { title: 'Prachtapfel', url: '' },
+  { title: 'Malus \"Grafensteiner\"', url: '' },
+  { title: 'Zierapfel - Hybride', url: '' },
+  { title: 'robinrot-blühender Zierapfel', url: '' },
+  { title: 'Zierapfel \"Van Eseltine\"', url: '' },
+  { title: 'Dreilappiger Apfelbaum', url: '' },
+  { title: 'österreichische Schwarz-Kiefer', url: '' },
+  { title: 'Gemeine Kiefer  -  Wald-Kiefer', url: '' },
+  { title: 'Gemeine Kiefer - Wald-Kiefer', url: '' },
+  { title: 'Populus Nigra', url: '' },
+  { title: 'Italienische Pyramiden-Pappel - Napoleon', url: '' },
+  { title: 'Berliner Lorbeer-Pappel', url: '' },
+  { title: 'Holz-Pappel - Robusta-Pappel', url: '' },
+  { title: 'Purpurpflaume - Blutpflaume', url: '' },
+  { title: 'Zierkirsche \"Spire\"', url: '' },
+  { title: 'Berg-Kirsche', url: '' },
+  { title: 'Mahagoni-Kirsche', url: '' },
+  { title: 'Yoshino-Kirsche', url: '' },
+  { title: 'Amerikanische Rot-Eiche', url: '' },
+  { title: 'Wintergruene Eiche', url: '' },
+  { title: 'Rosarote Akazie', url: '' },
+  { title: 'Schein-Akazie - Silberregen', url: '' },
+  { title: 'Japanische Drachen-Weide', url: '' },
+  { title: 'Dauerwellen-Weide - Korkenzieher-Weide', url: '' },
+  { title: 'Baum-Weide - Kopf-Weide', url: '' },
+  { title: 'Hängende Kätzchen-Weide  -  Trauer-Sal-W', url: '' },
+  { title: 'Echte Sal-Weide', url: '' },
+  { title: 'Asch-Weide - Grau-Weide', url: '' },
+  { title: 'Pommern-Weide - Reif-Weide', url: '' },
+  { title: 'Silber-Kriech-Weide', url: '' },
+  { title: 'Band-Weide - Hanf-Weide', url: '' },
+  { title: 'Fliederbeerstrauch - Schwarzer Holunder', url: '' },
+  { title: 'Fiederspiere - Ebereschenspiere', url: '' },
+  { title: 'Essbare Eberesche', url: '' },
+  { title: 'Gemeine Eberesche - Vogelbeerbaum', url: '' },
+  { title: 'Thüringische Säulen-Eberesche', url: '' },
+  { title: 'Eberesche/Mehlbeere', url: '' },
+  { title: 'Thüringische Eberesche', url: '' },
+  { title: 'Säulen-Eibe', url: '' },
+  { title: 'Säulen-Lebensbaum', url: '' },
+  { title: 'Tilia Cordata \"Greenspire\"', url: '' },
+  { title: 'Kleinkronige Winter-Linde', url: '' },
+  { title: 'Kaiser-Linde', url: '' },
+  { title: 'Kegel-Linde', url: '' },
+  { title: 'amerikanischer Hybride', url: '' },
+  { title: 'Feld-Rüster - Feld-Ulme', url: '' },
+  { title: 'holländische Clusius-Ulme', url: '' },
+  { title: 'Schmalkronige Stadt-Ulme', url: '' },
+  { title: 'Holländische Stadtulme', url: '' },
+];
+
 
 type OriginalCsvRecord = {
   gid: number;
@@ -152,11 +223,11 @@ function mapToClassification(gattung: string): Promise<Classification> {
 
   return new Promise((resolve, reject) => {
 
-    getWikipediaPageUrl(common)
+    fetchWikipediaPageUrl(common)
       .then(url1 => {
 
         if (url1 === '') {
-          getWikipediaPageUrl(`${genus} ${species}`.trim())
+          fetchWikipediaPageUrl(`${genus} ${species}`.trim())
             .then(url2 => resolve({ fullname: gattung, genus, species, variety, scientific, common, wikipediaPageUrl: url2 }))
             .catch(reject);
         } else {
@@ -171,9 +242,14 @@ function mapToClassification(gattung: string): Promise<Classification> {
 }
 
 
-function getWikipediaPageUrl(title: string): Promise<string> {
+function fetchWikipediaPageUrl(title: string): Promise<string> {
 
   return new Promise((resolve, reject) => {
+
+    const fixedUrl = FIXED_WIKIPEDIA_PAGE_URLS.find(p => p.title === title);
+    if (fixedUrl) {
+      return resolve(fixedUrl.url);
+    }
 
     const url = `https://de.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&redirects&titles=${encodeURIComponent(title)}`;
     axios
