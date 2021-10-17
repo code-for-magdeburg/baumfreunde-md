@@ -62,6 +62,11 @@ export class HomeComponent implements OnInit, AfterViewInit {
   private offcanvas: Offcanvas;
 
 
+  public get isFilterActive(): boolean {
+    return this.currentGenusFilter !== '' || this.currentMinHeightFilter > 0 || this.currentMinCrownFilter > 0 || this.currentMinDbhFilter > 0;
+  }
+
+
   constructor(private modalService: BsModalService, private dataService: DataService) {
   }
 
