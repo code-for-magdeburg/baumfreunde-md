@@ -54,6 +54,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   currentGenusFilter = '';
   currentMinHeightFilter = 0;
   currentMinCrownFilter = 0;
+  currentMinDbhFilter = 0;
 
   map: L.Map;
   @ViewChild('root') rootElement!: ElementRef;
@@ -108,11 +109,12 @@ export class HomeComponent implements OnInit, AfterViewInit {
       initialState: {
         selectedGenus: this.currentGenusFilter,
         minHeight: this.currentMinHeightFilter,
-        minCrown: this.currentMinCrownFilter
+        minCrown: this.currentMinCrownFilter,
+        minDbh: this.currentMinDbhFilter
       }
     };
     const dialog = this.modalService.show(FilterDialogComponent, options);
-    dialog.content.onConfirm = (selectedGenus, minHeight, minCrown) => this.applyGenusFilter(selectedGenus, minHeight, minCrown);
+    dialog.content.onConfirm = (selectedGenus, minHeight, minCrown, minDbh) => this.applyGenusFilter(selectedGenus, minHeight, minCrown, minDbh);
   }
 
 
@@ -189,12 +191,13 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
 
-  private applyGenusFilter(genus: string, minHeight: number, minCrown: number): void {
+  private applyGenusFilter(genus: string, minHeight: number, minCrown: number, minDbh: number): void {
     this.currentGenusFilter = genus;
     this.currentMinHeightFilter = minHeight;
     this.currentMinCrownFilter = minCrown;
+    this.currentMinDbhFilter = minDbh;
     this.leafletLayers = this.dataPoints
-      .filter(d => (genus === '' || d.genus === genus) && (d.height >= minHeight) && (d.crown >= minCrown))
+      .filter(d => (genus === '' || d.genus === genus) && (d.height >= minHeight) && (d.crown >= minCrown) && (d.dbh >= minDbh))
       .map(dataPoint => this.createRegularTreeMarker(dataPoint));
   }
 
