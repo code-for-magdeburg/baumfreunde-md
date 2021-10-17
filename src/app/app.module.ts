@@ -16,6 +16,7 @@ import de from '@angular/common/locales/de';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { FaellungenReportsComponent } from './faellungen-reports/faellungen-reports.component';
+import { FilterDialogComponent } from './home/filter-dialog/filter-dialog.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { FaellungenReportsComponent } from './faellungen-reports/faellungen-repo
     SearchTreeDialogComponent,
     ImpressumComponent,
     PrivacyComponent,
-    FaellungenReportsComponent
+    FaellungenReportsComponent,
+    FilterDialogComponent
   ],
   imports: [
     BrowserModule,

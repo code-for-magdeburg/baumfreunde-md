@@ -1,0 +1,19 @@
+<div class="modal-header align-items-start">
+  <h5 class="modal-title">Anzeige-Einstellungen</h5>
+  <button type="button" class="btn-close" aria-label="Close" (click)="modalRef?.hide()"></button>
+</div>
+
+<div class="modal-body">
+
+  <label for="genusSelect" class="form-label">Gattungen</label>
+  <select class="form-select" id="genusSelect" [(ngModel)]="selectedGenus">
+    <option value="">Alle</option>
+    <option *ngFor="let genus of genera" [value]="genus.genus">{{ genus.displayNamePlural }}</option>
+  </select>
+
+</div>
+
+<div class="modal-footer">
+  <button type="button" class="btn" (click)="modalRef.hide()">Abbrechen</button>
+  <button type="submit" class="btn btn-primary" (click)="submit()">Übernehmen</button>
+</div>

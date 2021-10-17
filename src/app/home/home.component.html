@@ -14,10 +14,12 @@
     <div class="spinner-border"></div>
   </div>
 
-
   <div class="d-grid gap-1 action-buttons-container">
     <button class="btn btn-light shadow" data-bs-toggle="offcanvas" data-bs-target="#offcanvas">
       <fa-icon [icon]="faBars"></fa-icon>
+    </button>
+    <button class="btn btn-light shadow" (click)="openViewConfigurationDialog()">
+      <fa-icon [icon]="faFilter"></fa-icon>
     </button>
     <button class="btn btn-light shadow" [hidden]="hideFlyHomeButton" (click)="jumpToCurrentLocation()">
       <fa-icon [icon]="faCrosshairs"></fa-icon>

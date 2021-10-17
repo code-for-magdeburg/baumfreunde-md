@@ -10,7 +10,7 @@ import { Classification } from '../model/Classification';
 export class DataService {
 
 
-  private dataPoints: any[];
+  private dataPoints: TreeDataPoint[];
   private classifications: Classification[];
   private locations: string[];
   private addresses: string[];

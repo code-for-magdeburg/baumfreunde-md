@@ -4,10 +4,11 @@ import { CircleMarker, circleMarker, latLng, MapOptions, tileLayer } from 'leafl
 import { BsModalService, ModalOptions } from 'ngx-bootstrap/modal';
 import { RegularTreeDetailsComponent } from './regular-tree-details/regular-tree-details.component';
 import { SearchTreeDialogComponent } from './search-tree-dialog/search-tree-dialog.component';
-import { faBars, faCrosshairs, faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faCrosshairs, faFilter, faSearch } from '@fortawesome/free-solid-svg-icons';
 import { Offcanvas } from 'bootstrap';
 import { DataService } from '../services/data.service';
 import { TreeDataPoint } from '../model/TreeDataPoint';
+import { FilterDialogComponent } from './filter-dialog/filter-dialog.component';
 
 
 const MAX_ZOOM = 20;
@@ -27,6 +28,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   faBars = faBars;
   faSearch = faSearch;
   faCrosshairs = faCrosshairs;
+  faFilter = faFilter;
 
   dataIsLoading = false;
   hideFlyHomeButton = false;
@@ -49,6 +51,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   dataPoints: TreeDataPoint[] = [];
   leafletLayers: CircleMarker<TreeDataPoint>[] = [];
   selectedTreeId: number;
+  currentGenusFilter = '';
 
   map: L.Map;
   @ViewChild('root') rootElement!: ElementRef;
@@ -95,6 +98,13 @@ export class HomeComponent implements OnInit, AfterViewInit {
       this.showTreeDetails(tree);
       this.selectTree(tree);
     };
+  }
+
+
+  openViewConfigurationDialog(): void {
+    const options: ModalOptions = { initialState: { selectedGenus: this.currentGenusFilter } };
+    const dialog = this.modalService.show(FilterDialogComponent, options);
+    dialog.content.onConfirm = selectedGenus => this.applyGenusFilter(selectedGenus);
   }
 
 
@@ -168,6 +178,14 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   private calcCircleRadiusByZoomFactor(): number {
     return Math.max(this.map.getZoom() * 5 - 75, 1);
+  }
+
+
+  private applyGenusFilter(genus: string): void {
+    this.currentGenusFilter = genus;
+    this.leafletLayers = this.dataPoints
+      .filter(d => genus === '' || d.genus === genus)
+      .map(dataPoint => this.createRegularTreeMarker(dataPoint));
   }
 
 
