@@ -16,6 +16,11 @@
     <input type="range" class="form-range" min="0" max="100" id="higherThanInput" [(ngModel)]="minHeight">
   </div>
 
+  <div class="mt-3">
+    <label for="crownBiggerThanInput" class="form-label">Kronendurchmesser größer als <strong>{{ minCrown}}m</strong></label>
+    <input type="range" class="form-range" min="0" max="50" id="crownBiggerThanInput" [(ngModel)]="minCrown">
+  </div>
+
 </div>
 
 <div class="modal-footer">
