@@ -23,6 +23,14 @@ export class FilterDialogComponent {
   }
 
 
+  resetFilter(): void {
+    this.selectedGenus = '';
+    this.minHeight = 0;
+    this.minCrown = 0;
+    this.minDbh = 0;
+  }
+
+
   submit(): void {
     this.onConfirm(this.selectedGenus, this.minHeight, this.minCrown, this.minDbh);
     this.modalRef.hide();
