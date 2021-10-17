@@ -15,8 +15,9 @@ export class FilterDialogComponent {
   minHeight = 0;
   minCrown = 0;
   minDbh = 0;
+  minAge = 0;
   genera = GENUS_DICTIONARY;
-  onConfirm: (genus: string, minHeight: number, minCrown: number, minDbh: number) => void;
+  onConfirm: (genus: string, minHeight: number, minCrown: number, minDbh: number, minAge: number) => void;
 
   constructor(public modalRef: BsModalRef) {
     this.genera.sort((g1, g2) => g1.displayNamePlural < g2.displayNamePlural ? -1 : 0);
@@ -28,11 +29,12 @@ export class FilterDialogComponent {
     this.minHeight = 0;
     this.minCrown = 0;
     this.minDbh = 0;
+    this.minAge = 0;
   }
 
 
   submit(): void {
-    this.onConfirm(this.selectedGenus, this.minHeight, this.minCrown, this.minDbh);
+    this.onConfirm(this.selectedGenus, this.minHeight, this.minCrown, this.minDbh, this.minAge);
     this.modalRef.hide();
   }
 

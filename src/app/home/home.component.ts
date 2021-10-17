@@ -55,6 +55,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   currentMinHeightFilter = 0;
   currentMinCrownFilter = 0;
   currentMinDbhFilter = 0;
+  currentMinAgeFilter = 0;
 
   map: L.Map;
   @ViewChild('root') rootElement!: ElementRef;
@@ -63,7 +64,11 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
 
   public get isFilterActive(): boolean {
-    return this.currentGenusFilter !== '' || this.currentMinHeightFilter > 0 || this.currentMinCrownFilter > 0 || this.currentMinDbhFilter > 0;
+    return this.currentGenusFilter !== ''
+      || this.currentMinHeightFilter > 0
+      || this.currentMinCrownFilter > 0
+      || this.currentMinDbhFilter > 0
+      || this.currentMinAgeFilter > 0;
   }
 
 
@@ -115,11 +120,13 @@ export class HomeComponent implements OnInit, AfterViewInit {
         selectedGenus: this.currentGenusFilter,
         minHeight: this.currentMinHeightFilter,
         minCrown: this.currentMinCrownFilter,
-        minDbh: this.currentMinDbhFilter
+        minDbh: this.currentMinDbhFilter,
+        minAge: this.currentMinAgeFilter
       }
     };
     const dialog = this.modalService.show(FilterDialogComponent, options);
-    dialog.content.onConfirm = (selectedGenus, minHeight, minCrown, minDbh) => this.applyGenusFilter(selectedGenus, minHeight, minCrown, minDbh);
+    dialog.content.onConfirm = (selectedGenus, minHeight, minCrown, minDbh, minAge) =>
+      this.applyGenusFilter(selectedGenus, minHeight, minCrown, minDbh, minAge);
   }
 
 
@@ -196,13 +203,20 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
 
-  private applyGenusFilter(genus: string, minHeight: number, minCrown: number, minDbh: number): void {
+  private applyGenusFilter(genus: string, minHeight: number, minCrown: number, minDbh: number, minAge: number): void {
     this.currentGenusFilter = genus;
     this.currentMinHeightFilter = minHeight;
     this.currentMinCrownFilter = minCrown;
     this.currentMinDbhFilter = minDbh;
+    this.currentMinAgeFilter = minAge;
+    const currentYear = new Date().getFullYear();
     this.leafletLayers = this.dataPoints
-      .filter(d => (genus === '' || d.genus === genus) && (d.height >= minHeight) && (d.crown >= minCrown) && (d.dbh >= minDbh))
+      .filter(d =>
+        (genus === '' || d.genus === genus)
+        && (d.height >= minHeight)
+        && (d.crown >= minCrown)
+        && (d.dbh >= minDbh)
+        && (minAge === 0 || (d.planted && d.planted <= currentYear - minAge)))
       .map(dataPoint => this.createRegularTreeMarker(dataPoint));
   }
 

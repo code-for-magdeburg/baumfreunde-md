@@ -12,18 +12,23 @@
   </select>
 
   <div class="mt-3">
-    <label for="minHeightInput" class="form-label">Baumhöhe größer als <strong>{{ minHeight}}m</strong></label>
+    <label for="minHeightInput" class="form-label">Baumhöhe größer als <strong>{{ minHeight }}m</strong></label>
     <input type="range" class="form-range" min="0" max="100" id="minHeightInput" [(ngModel)]="minHeight">
   </div>
 
   <div class="mt-3">
-    <label for="minCrownInput" class="form-label">Kronendurchmesser größer als <strong>{{ minCrown}}m</strong></label>
+    <label for="minCrownInput" class="form-label">Kronendurchmesser größer als <strong>{{ minCrown }}m</strong></label>
     <input type="range" class="form-range" min="0" max="50" id="minCrownInput" [(ngModel)]="minCrown">
   </div>
 
   <div class="mt-3">
-    <label for="minDbhInput" class="form-label">Stammumfang größer als <strong>{{ minDbh}}cm</strong></label>
+    <label for="minDbhInput" class="form-label">Stammumfang größer als <strong>{{ minDbh }}cm</strong></label>
     <input type="range" class="form-range" min="0" max="1400" id="minDbhInput" [(ngModel)]="minDbh">
+  </div>
+
+  <div class="mt-3">
+    <label for="minAgeInput" class="form-label">Älter als <strong>{{ minAge }} Jahre</strong></label>
+    <input type="range" class="form-range" min="0" max="500" id="minAgeInput" [(ngModel)]="minAge">
   </div>
 
   <div class="mt-3">
