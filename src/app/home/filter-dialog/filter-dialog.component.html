@@ -11,6 +11,11 @@
     <option *ngFor="let genus of genera" [value]="genus.genus">{{ genus.displayNamePlural }}</option>
   </select>
 
+  <div class="mt-3">
+    <label for="higherThanInput" class="form-label">Baumhöhe größer als <strong>{{ minHeight}}m</strong></label>
+    <input type="range" class="form-range" min="0" max="100" id="higherThanInput" [(ngModel)]="minHeight">
+  </div>
+
 </div>
 
 <div class="modal-footer">

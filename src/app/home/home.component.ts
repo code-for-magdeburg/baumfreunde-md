@@ -52,6 +52,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   leafletLayers: CircleMarker<TreeDataPoint>[] = [];
   selectedTreeId: number;
   currentGenusFilter = '';
+  currentMinHeightFilter = 0;
 
   map: L.Map;
   @ViewChild('root') rootElement!: ElementRef;
@@ -102,9 +103,9 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
 
   openViewConfigurationDialog(): void {
-    const options: ModalOptions = { initialState: { selectedGenus: this.currentGenusFilter } };
+    const options: ModalOptions = { initialState: { selectedGenus: this.currentGenusFilter, minHeight: this.currentMinHeightFilter } };
     const dialog = this.modalService.show(FilterDialogComponent, options);
-    dialog.content.onConfirm = selectedGenus => this.applyGenusFilter(selectedGenus);
+    dialog.content.onConfirm = (selectedGenus, minHeight) => this.applyGenusFilter(selectedGenus, minHeight);
   }
 
 
@@ -181,10 +182,11 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
 
-  private applyGenusFilter(genus: string): void {
+  private applyGenusFilter(genus: string, minHeight: number): void {
     this.currentGenusFilter = genus;
+    this.currentMinHeightFilter = minHeight;
     this.leafletLayers = this.dataPoints
-      .filter(d => genus === '' || d.genus === genus)
+      .filter(d => (genus === '' || d.genus === genus) && (d.height >= minHeight))
       .map(dataPoint => this.createRegularTreeMarker(dataPoint));
   }
 
