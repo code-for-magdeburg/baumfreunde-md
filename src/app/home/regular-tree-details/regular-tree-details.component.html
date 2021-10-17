@@ -33,6 +33,10 @@
     <div class="fw-bold">{{ treeDetails.scientific }}cm</div>
   </div>
 
+  <div *ngIf="treeDetails.wikipediaPageUrl" class="mt-2">
+    <a [href]="treeDetails.wikipediaPageUrl" target="_blank">Zur Wikipedia-Seite</a>
+  </div>
+
 </div>
 
 <div class="modal-footer justify-content-start">

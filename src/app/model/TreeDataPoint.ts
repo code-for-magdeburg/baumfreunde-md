@@ -14,4 +14,5 @@ export type TreeDataPoint = {
   crown: number;
   dbh: number;
   planted: number;
+  wikipediaPageUrl: string;
 };

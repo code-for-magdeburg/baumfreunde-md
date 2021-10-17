@@ -5,4 +5,5 @@ export type Classification = {
   variety: string;
   common: string;
   scientific: string;
+  wikipediaPageUrl: string;
 };

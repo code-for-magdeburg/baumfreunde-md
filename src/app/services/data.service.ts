@@ -97,7 +97,8 @@ export class DataService {
       species: classification.species,
       variety: classification.variety,
       common: classification.common,
-      scientific: classification.scientific
+      scientific: classification.scientific,
+      wikipediaPageUrl: classification.wikipediaPageUrl
     };
   }
 
