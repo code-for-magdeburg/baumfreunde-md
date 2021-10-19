@@ -18,11 +18,13 @@
   </div>
   <div class="mt-2">
     <span class="small">Baumhöhe</span><br>
-    <div class="fw-bold">{{ treeDetails.height | number: '0.2':'de' }}m</div>
+    <div *ngIf="treeDetails.height" class="fw-bold">{{ treeDetails.height | number: '0.2':'de' }}m</div>
+    <div *ngIf="!treeDetails.height" class="fw-bold">?</div>
   </div>
   <div class="mt-2">
     <span class="small">Kronendurchmesser</span><br>
-    <div class="fw-bold">{{ treeDetails.crown | number: '0.2':'de' }}m</div>
+    <div *ngIf="treeDetails.crown" class="fw-bold">{{ treeDetails.crown | number: '0.2':'de' }}m</div>
+    <div *ngIf="!treeDetails.crown" class="fw-bold">?</div>
   </div>
   <div class="mt-2">
     <span class="small">Stammumfang</span><br>
@@ -40,5 +42,6 @@
 </div>
 
 <div class="modal-footer justify-content-start">
-  <span class="small text-muted">Datenquelle: Landeshauptstadt Magdeburg – www.magdeburg.de</span>
+  <span class="small text-muted d-block">Datenquelle: Landeshauptstadt Magdeburg – www.magdeburg.de</span>
+  <span class="small text-muted d-block">Alle Angaben sind ohne Gewähr</span>
 </div>
