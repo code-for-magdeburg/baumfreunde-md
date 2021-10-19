@@ -3,6 +3,10 @@ import { parse, ParseConfig, unparse } from 'papaparse';
 const axios = require('axios').default;
 
 
+const MAX_HEIGHT = 40;
+const MAX_CROWN = 40;
+const MAX_PLANTED = 2021;
+
 const LAT_LON_ACCURACY_FACTOR = 10000000;
 
 const IGNORED_ADDRESS_WORDS = [
@@ -149,8 +153,8 @@ type Classification = {
   wikipediaPageUrl: string;
 };
 
-
 // Load and parse original csv data file
+console.log('Reading and parsing "./data/Baumkataster-Magdeburg-2021.csv"...');
 const csv = fs.readFileSync('./data/Baumkataster-Magdeburg-2021.csv', 'utf-8');
 const parseOptions: ParseConfig = {
   dynamicTyping: true,
@@ -160,17 +164,21 @@ const parseOptions: ParseConfig = {
 };
 const originalCsvRecords = parse(csv, parseOptions).data as OriginalCsvRecord[];
 
+
 // Save locations to json file
+console.log('Writing locations to "./src/assets/data/Baumkataster-Magdeburg-2021-Typen.json"...');
 const locations = [...new Set(originalCsvRecords.map(r => r.Typ))].sort();
 const locationsJson = JSON.stringify(locations, null, 2);
 fs.writeFileSync('./src/assets/data/Baumkataster-Magdeburg-2021-Typen.json', locationsJson);
 
 // Save addresses to json file
+console.log('Writing addresses to "./src/assets/data/Baumkataster-Magdeburg-2021-Gebiete.json"...');
 const addresses = [...new Set(originalCsvRecords.map(r => cleanAddress(r.Gebiet)))].sort();
 const adressesJson = JSON.stringify(addresses, null, 2);
 fs.writeFileSync('./src/assets/data/Baumkataster-Magdeburg-2021-Gebiete.json', adressesJson);
 
 // Save classification to json file
+console.log('Writing classifications to "./src/assets/data/Baumkataster-Magdeburg-2021-Gattungen.json"...');
 const genii = [...new Set(originalCsvRecords.map(r => r.Gattung))].sort();
 const geniiPromises = genii.map(mapToClassification);
 Promise.all(geniiPromises)
@@ -180,10 +188,17 @@ Promise.all(geniiPromises)
     fs.writeFileSync('./src/assets/data/Baumkataster-Magdeburg-2021-Gattungen.json', classificationsJson);
 
     // Save tree records to csv file
+    console.log('Writing tree data to "./src/assets/data/Baumkataster-Magdeburg-2021.txt"...');
+    console.log('When importing a new dataset check if the following hints still hold true');
+    console.log(`- Height > ${MAX_HEIGHT} is considered invalid data`);
+    console.log(`- Crown > ${MAX_CROWN} is considered invalid data`);
+    console.log(`- Planted > ${MAX_PLANTED} is considered invalid data`);
     const targetRecords = originalCsvRecords
       .map(r => mapToStandardTreeRecord(r, classifications))
       .sort((a, b) => a.internal_ref < b.internal_ref ? -1 : 0);
     fs.writeFileSync('./src/assets/data/Baumkataster-Magdeburg-2021.txt', unparse(targetRecords));
+
+    console.log('Finished.');
 
   })
   .catch(console.error);
@@ -198,10 +213,10 @@ function mapToStandardTreeRecord(original: OriginalCsvRecord, classifications: C
     lat: Math.trunc(original.latitude * LAT_LON_ACCURACY_FACTOR) / LAT_LON_ACCURACY_FACTOR,
     lon: Math.trunc(original.longitude * LAT_LON_ACCURACY_FACTOR) / LAT_LON_ACCURACY_FACTOR,
     genusIndex: classifications.map(g => g.fullname).indexOf(original.Gattung),
-    height: original.Baumhoehe,
-    crown: original.Kronendurc,
+    height: original.Baumhoehe > 40 ? null : original.Baumhoehe, // height > 40 meters is considered invalid data (see #41)
+    crown: original.Kronendurc > 40 ? null : original.Kronendurc, // height > 40 meters is considered invalid data (see #41)
     dbh: original.Stammumfan,
-    planted: original.Pflanzjahr
+    planted: original.Pflanzjahr > 2021 ? null : original.Pflanzjahr  // planted > 2021 is considered invalid data (see #41)
   };
 }
 
