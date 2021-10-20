@@ -1,5 +1,45 @@
-<div class="container text-center p-5">
-  <h1>Die gesuchten Informationen stehen demnächst hier zur Verfügung.</h1>
-  <h1><fa-icon [icon]="faWrench" class="me-3"></fa-icon>Aber hier ist gerade eine Baustelle.<fa-icon [icon]="faHardHat" class="ms-3"></fa-icon></h1>
-  <h2 class="text-muted mt-5">Sorry! Magdeburg halt...</h2>
+
+<div role="main" class="container py-3">
+
+  <div class="mb-3">
+    <a href="/" class="btn btn-outline-primary btn-sm">Zur Hauptseite</a>
+  </div>
+
+  <div *ngIf="!reportId" class="list-group">
+    <a
+      *ngFor="let report of reports"
+      [routerLink]="['/faellungen-reports', report._id]"
+      class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+    >
+      Fällungen gemeldet am {{ report.reportedDate | date: 'dd.MM.yyyy' }} <span class="badge bg-primary rounded-pill">{{ report.trees.length}}</span>
+    </a>
+  </div>
+
+
+  <div *ngIf="reportId">
+
+    <h3 class="mb-3">Baumfällungen gemeldet am {{ report?.reportedDate | date: 'dd.MM.yyyy' }}</h3>
+
+    <div class="list-group">
+      <div *ngFor="let tree of report?.trees" class="list-group-item">
+        <div class="d-flex w-100 justify-content-between align-items-center mb-3">
+          <span class="h5">{{ tree.title }}</span>
+          <span class="badge rounded-pill bg-primary">{{ tree.numberOfTrees }}</span>
+        </div>
+        <div class="d-flex justify-content-between align-items-center">
+          <small class="text-muted">Eingestellt am {{ tree.addedDate | date: 'dd.MM.yyyy' }}</small>
+          <a [href]="'https://www.magdeburg.de' + tree.url" target="_blank" class="btn btn-primary btn-sm">
+            <fa-icon [icon]="faDownload" class="me-1"></fa-icon>
+            Info-Dokument
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="alert alert-secondary mt-3">
+      <small class="text-muted">Alle Angaben sind ohne Gewähr. Die Baumfällungen werden regelmäßig vom Eigenbetrieb Stadtgarten und Friedhöfe Magdeburg auf der Homepage der Stadt veröffentlicht. <a href="http://www.magdeburg.de/index.php?object=tx%7c698.85.1&ModID=10&FID=698.186.1" target="_blank">Mehr Informationen</a></small>
+    </div>
+
+  </div>
+
 </div>

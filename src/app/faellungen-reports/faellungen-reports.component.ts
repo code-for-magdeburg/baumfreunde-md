@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { faHardHat, faWrench } from '@fortawesome/free-solid-svg-icons';
+import { environment } from '../../environments/environment';
+import { ActivatedRoute } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
@@ -10,21 +13,18 @@ import { faHardHat, faWrench } from '@fortawesome/free-solid-svg-icons';
 export class FaellungenReportsComponent implements OnInit {
 
 
-/*
+  faDownload = faDownload;
+
   reportId = null;
   report = null;
   reports = [];
-*/
-  faWrench = faWrench;
-  faHardHat = faHardHat;
 
 
-  constructor() { }
+  constructor(private route: ActivatedRoute, private http: HttpClient) { }
 
 
   ngOnInit(): void {
 
-/*
     this.route.params.subscribe(params => {
 
       this.reportId = params.reportId;
@@ -40,7 +40,6 @@ export class FaellungenReportsComponent implements OnInit {
       }
 
     });
-*/
 
   }
 
