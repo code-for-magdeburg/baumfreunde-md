@@ -1,7 +1,20 @@
 <div class="modal-header align-items-start">
   <div>
     <h5 class="modal-title">{{ treeDetails.common }}</h5>
-    <h6 class="text-muted mt-1 mb-0">{{ treeDetails.ref }}</h6>
+
+    <ng-container *ngIf="treeDetails.fellingInfo; else notFelled">
+      <h6 class="text-muted mt-1 d-flex align-items-center">{{ treeDetails.ref }} <span class="badge bg-danger ms-2">Fällung</span></h6>
+      <h6 class="mt-1 mb-0">
+        <a [href]="felling.url" target="_blank">
+          Gemeldet am {{ felling.reportedDate | date: 'dd.MM.yyyy' }}<fa-icon class="ms-2" [icon]="faExternalLinkAlt"></fa-icon>
+        </a>
+      </h6>
+    </ng-container>
+
+    <ng-template #notFelled>
+      <h6 class="text-muted mt-1 mb-0">{{ treeDetails.ref }}</h6>
+    </ng-template>
+
   </div>
   <button type="button" class="btn-close" aria-label="Close" (click)="modalRef?.hide()"></button>
 </div>
