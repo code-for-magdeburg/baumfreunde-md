@@ -15,4 +15,5 @@ export type TreeDataPoint = {
   dbh: number;
   planted: number;
   wikipediaPageUrl: string;
+  fellingInfo: any;
 };

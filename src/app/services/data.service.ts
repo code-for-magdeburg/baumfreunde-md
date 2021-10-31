@@ -14,6 +14,7 @@ export class DataService {
   private classifications: Classification[];
   private locations: string[];
   private addresses: string[];
+  private felledTrees: any[];
 
 
   constructor(private http: HttpClient) {
@@ -41,12 +42,14 @@ export class DataService {
     const p2 = this.createFetchClassificationPromise();
     const p3 = this.createFetchLocationsPromise();
     const p4 = this.createFetchAddressesPromise();
+    const p5 = this.createFetchFelledTreesPromise();
 
-    const results = await Promise.all([p1, p2, p3, p4]);
+    const results = await Promise.all([p1, p2, p3, p4, p5]);
 
     this.classifications = results[1];
     this.locations = results[2];
     this.addresses = results[3];
+    this.felledTrees = results[4];
     this.dataPoints = results[0].map(csvRecord => this.mapCsvRecordToTreeDataPoint(csvRecord));
 
   }
@@ -87,8 +90,16 @@ export class DataService {
   }
 
 
+  private createFetchFelledTreesPromise(): Promise<any[]> {
+    return this.http
+      .get<string[]>('/assets/data/Baumfaellungen.json')
+      .toPromise();
+  }
+
+
   private mapCsvRecordToTreeDataPoint(csvRecord: TreeDataPointCsvRecord): TreeDataPoint {
     const classification = this.classifications[csvRecord.genusIndex];
+    const fellingInfo = this.felledTrees.find(t => t.treeId === csvRecord.ref);
     return {
       ...csvRecord,
       location: this.locations[csvRecord.locationIndex],
@@ -98,7 +109,8 @@ export class DataService {
       variety: classification.variety,
       common: classification.common,
       scientific: classification.scientific,
-      wikipediaPageUrl: classification.wikipediaPageUrl
+      wikipediaPageUrl: classification.wikipediaPageUrl,
+      fellingInfo
     };
   }
 
