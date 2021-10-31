@@ -152,9 +152,12 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   private createRegularTreeMarker(dataPoint: TreeDataPoint): CircleMarker<TreeDataPoint> {
 
+    const fillOpacity = dataPoint.fellingInfo ? .5 : .8;
+    const color = dataPoint.fellingInfo ? '#d066ff' : '#517551';
+    const fillColor = dataPoint.fellingInfo ? '#7e7e7e' : '#92D292';
     const marker = circleMarker(
       latLng(dataPoint.lat, dataPoint.lon),
-      { radius: this.calcCircleRadiusByZoomFactor(), fillOpacity: 1, color: '#517551', weight: 2, fillColor: '#92D292' }
+      { radius: this.calcCircleRadiusByZoomFactor(), fillOpacity, color, weight: 2, fillColor }
     )
       .on('click', event => {
         this.showTreeDetails(event.sourceTarget.feature.properties as TreeDataPoint);
@@ -188,7 +191,10 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
     const selectedMarker = this.leafletLayers.find(l => l.feature.properties.internal_ref === this.selectedTreeId);
     if (selectedMarker) {
-      selectedMarker.setStyle({ fillOpacity: 1, color: '#517551', weight: 2, fillColor: '#92D292' });
+      const fillOpacity = selectedMarker.feature.properties.fellingInfo ? .5 : .8;
+      const color = selectedMarker.feature.properties.fellingInfo ? '#d066ff' : '#517551';
+      const fillColor = selectedMarker.feature.properties.fellingInfo ? '#7e7e7e' : '#92D292';
+      selectedMarker.setStyle({ fillOpacity, color, weight: 2, fillColor });
       selectedMarker.setRadius(this.calcCircleRadiusByZoomFactor());
     }
 
