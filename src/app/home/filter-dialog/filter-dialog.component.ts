@@ -16,8 +16,10 @@ export class FilterDialogComponent {
   minCrown = 0;
   minDbh = 0;
   minAge = 0;
+  onlyFelledTrees = false;
+
   genera = GENUS_DICTIONARY;
-  onConfirm: (genus: string, minHeight: number, minCrown: number, minDbh: number, minAge: number) => void;
+  onConfirm: (genus: string, minHeight: number, minCrown: number, minDbh: number, minAge: number, onlyFelledTrees: boolean) => void;
 
   constructor(public modalRef: BsModalRef) {
     this.genera.sort((g1, g2) => g1.displayNamePlural < g2.displayNamePlural ? -1 : 0);
@@ -30,11 +32,12 @@ export class FilterDialogComponent {
     this.minCrown = 0;
     this.minDbh = 0;
     this.minAge = 0;
+    this.onlyFelledTrees = false;
   }
 
 
   submit(): void {
-    this.onConfirm(this.selectedGenus, this.minHeight, this.minCrown, this.minDbh, this.minAge);
+    this.onConfirm(this.selectedGenus, this.minHeight, this.minCrown, this.minDbh, this.minAge, this.onlyFelledTrees);
     this.modalRef.hide();
   }
 

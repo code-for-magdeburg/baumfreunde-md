@@ -56,6 +56,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   currentMinCrownFilter = 0;
   currentMinDbhFilter = 0;
   currentMinAgeFilter = 0;
+  showOnlyFelledTrees = false;
 
   map: L.Map;
   @ViewChild('root') rootElement!: ElementRef;
@@ -121,12 +122,13 @@ export class HomeComponent implements OnInit, AfterViewInit {
         minHeight: this.currentMinHeightFilter,
         minCrown: this.currentMinCrownFilter,
         minDbh: this.currentMinDbhFilter,
-        minAge: this.currentMinAgeFilter
+        minAge: this.currentMinAgeFilter,
+        onlyFelledTrees: this.showOnlyFelledTrees
       }
     };
     const dialog = this.modalService.show(FilterDialogComponent, options);
-    dialog.content.onConfirm = (selectedGenus, minHeight, minCrown, minDbh, minAge) =>
-      this.applyGenusFilter(selectedGenus, minHeight, minCrown, minDbh, minAge);
+    dialog.content.onConfirm = (selectedGenus, minHeight, minCrown, minDbh, minAge, onlyFelledTrees) =>
+      this.applyFilter(selectedGenus, minHeight, minCrown, minDbh, minAge, onlyFelledTrees);
   }
 
 
@@ -203,12 +205,13 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
 
-  private applyGenusFilter(genus: string, minHeight: number, minCrown: number, minDbh: number, minAge: number): void {
+  private applyFilter(genus: string, minHeight: number, minCrown: number, minDbh: number, minAge: number, showOnlyFelledTrees: boolean): void {
     this.currentGenusFilter = genus;
     this.currentMinHeightFilter = minHeight;
     this.currentMinCrownFilter = minCrown;
     this.currentMinDbhFilter = minDbh;
     this.currentMinAgeFilter = minAge;
+    this.showOnlyFelledTrees = showOnlyFelledTrees;
     const currentYear = new Date().getFullYear();
     this.leafletLayers = this.dataPoints
       .filter(d =>
@@ -216,7 +219,8 @@ export class HomeComponent implements OnInit, AfterViewInit {
         && (d.height >= minHeight)
         && (d.crown >= minCrown)
         && (d.dbh >= minDbh)
-        && (minAge === 0 || (d.planted && d.planted <= currentYear - minAge)))
+        && (minAge === 0 || (d.planted && d.planted <= currentYear - minAge))
+        && (!showOnlyFelledTrees || d.fellingInfo))
       .map(dataPoint => this.createRegularTreeMarker(dataPoint));
   }
 
