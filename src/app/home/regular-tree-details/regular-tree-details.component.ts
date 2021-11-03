@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { BsModalRef } from 'ngx-bootstrap/modal';
 import { TreeDataPoint } from '../../model/TreeDataPoint';
+import { environment } from '../../../environments/environment';
 
 
 type FellingDocumentationType = {
@@ -35,7 +36,7 @@ export class RegularTreeDetailsComponent implements OnInit {
     if (this.treeDetails.fellingInfo) {
       const filesize = this.treeDetails .fellingInfo?.filesize;
       this.felling = {
-        url: encodeURI(`https://magdeburger-baeume.s3.eu-central-1.amazonaws.com/baumfaellungen/${this.treeDetails.fellingInfo.pdfFile}`),
+        url: encodeURI(`${environment.fellingDocsBaseUrl}/${this.treeDetails.fellingInfo.pdfFile}`),
         reportedDate: new Date(this.treeDetails.fellingInfo.reportedDate),
         fileSize: filesize > 1024 ? filesize / 1024 / 1024 : filesize / 1024,
         fileSizeUnit: filesize > 1024 ? 'MB' : 'kb'
