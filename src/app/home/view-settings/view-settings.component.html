@@ -1,0 +1,23 @@
+<div class="modal-header align-items-start">
+  <h5 class="modal-title">Anzeige-Einstellungen</h5>
+  <button type="button" class="btn-close" aria-label="Close" (click)="modalRef?.hide()"></button>
+</div>
+
+<div class="modal-body">
+
+  <div class="form-check form-switch mt-3">
+    <input class="form-check-input" type="checkbox" id="showCityTreesSwitch" [(ngModel)]="showCityTrees">
+    <label class="form-check-label" for="showCityTreesSwitch">Stadtbäume</label>
+  </div>
+
+  <div class="form-check form-switch mt-3">
+    <input class="form-check-input" type="checkbox" id="showOttoPflanztSwitch" [(ngModel)]="showOttoPflanzt">
+    <label class="form-check-label" for="showOttoPflanztSwitch">Otto pflanzt!</label>
+  </div>
+
+</div>
+
+<div class="modal-footer">
+  <button type="button" class="btn" (click)="modalRef.hide()">Abbrechen</button>
+  <button type="submit" class="btn btn-primary" (click)="submit()">Übernehmen</button>
+</div>

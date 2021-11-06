@@ -9,12 +9,19 @@ import { Offcanvas } from 'bootstrap';
 import { DataService } from '../services/data.service';
 import { TreeDataPoint } from '../model/TreeDataPoint';
 import { FilterDialogComponent } from './filter-dialog/filter-dialog.component';
+import { ViewSettingsComponent } from './view-settings/view-settings.component';
 
 
 const MAX_ZOOM = 20;
 const INITIAL_ZOOM = 13;
 const INITIAL_MAP_CENTER = latLng(52.1259661, 11.6418369);
 const MAP_ATTRIBUTION = 'Kartendaten &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> Mitwirkende';
+
+
+export type ViewSettings = {
+  cityTrees: boolean;
+  ottoPflanzt: boolean;
+};
 
 
 @Component({
@@ -58,6 +65,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   currentMinDbhFilter = 0;
   currentMinAgeFilter = 0;
   showOnlyFelledTrees = false;
+  viewSettings: ViewSettings = { cityTrees: true, ottoPflanzt: false };
 
   map: L.Map;
   @ViewChild('root') rootElement!: ElementRef;
@@ -134,6 +142,14 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
 
   openViewSettingsDialog(): void {
+    const options: ModalOptions = {
+      initialState: {
+        showCityTrees: this.viewSettings.cityTrees,
+        showOttoPflanzt: this.viewSettings.ottoPflanzt
+      }
+    };
+    const dialog = this.modalService.show(ViewSettingsComponent, options);
+    dialog.content.onConfirm = (viewSettings: ViewSettings) => this.applyViewSettings(viewSettings);
   }
 
 
@@ -233,6 +249,11 @@ export class HomeComponent implements OnInit, AfterViewInit {
         && (minAge === 0 || (d.planted && d.planted <= currentYear - minAge))
         && (!showOnlyFelledTrees || d.fellingInfo))
       .map(dataPoint => this.createRegularTreeMarker(dataPoint));
+  }
+
+
+  private applyViewSettings(viewSettings: ViewSettings): void {
+    this.viewSettings = viewSettings;
   }
 
 

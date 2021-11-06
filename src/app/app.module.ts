@@ -17,6 +17,7 @@ import { ImpressumComponent } from './impressum/impressum.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { FaellungenReportsComponent } from './faellungen-reports/faellungen-reports.component';
 import { FilterDialogComponent } from './home/filter-dialog/filter-dialog.component';
+import { ViewSettingsComponent } from './home/view-settings/view-settings.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { FilterDialogComponent } from './home/filter-dialog/filter-dialog.compon
     ImpressumComponent,
     PrivacyComponent,
     FaellungenReportsComponent,
-    FilterDialogComponent
+    FilterDialogComponent,
+    ViewSettingsComponent
   ],
   imports: [
     BrowserModule,
