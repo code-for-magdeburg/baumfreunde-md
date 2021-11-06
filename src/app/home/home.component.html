@@ -18,7 +18,7 @@
     <button class="btn btn-light shadow" data-bs-toggle="offcanvas" data-bs-target="#offcanvas">
       <fa-icon [icon]="faBars"></fa-icon>
     </button>
-    <button class="btn btn-light shadow" [ngClass]="{ 'text-primary': isFilterActive }" (click)="openFilterDialog()">
+    <button class="btn btn-light shadow" [ngClass]="{ 'text-primary': filterSettings.isActive }" (click)="openFilterDialog()">
       <fa-icon [icon]="faFilter"></fa-icon>
     </button>
     <button class="btn btn-light shadow" (click)="openViewSettingsDialog()">

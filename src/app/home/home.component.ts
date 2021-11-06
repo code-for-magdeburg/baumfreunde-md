@@ -18,6 +18,24 @@ const INITIAL_MAP_CENTER = latLng(52.1259661, 11.6418369);
 const MAP_ATTRIBUTION = 'Kartendaten &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> Mitwirkende';
 
 
+export class FilterSettings {
+  genus = '';
+  minHeight = 0;
+  minCrown = 0;
+  minDbh = 0;
+  minAge = 0;
+  onlyFelledTrees = false;
+
+  public get isActive(): boolean {
+    return this.genus !== ''
+      || this.minHeight > 0
+      || this.minCrown > 0
+      || this.minDbh > 0
+      || this.minAge > 0
+      || this.onlyFelledTrees;
+  }
+}
+
 export type ViewSettings = {
   cityTrees: boolean;
   ottoPflanzt: boolean;
@@ -41,7 +59,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
   dataIsLoading = false;
   hideFlyHomeButton = false;
 
-
   leafletOptions: MapOptions = {
     preferCanvas: true,
     tap: false, // To prevent a second event when clicking a marker
@@ -58,14 +75,10 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   cityTrees: CityTree[] = [];
   leafletLayers: CircleMarker<CityTree>[] = [];
+  filterSettings = new FilterSettings();
+  viewSettings = HomeComponent.defaultViewSettings();
+
   selectedTreeId: number;
-  currentGenusFilter = '';
-  currentMinHeightFilter = 0;
-  currentMinCrownFilter = 0;
-  currentMinDbhFilter = 0;
-  currentMinAgeFilter = 0;
-  showOnlyFelledTrees = false;
-  viewSettings: ViewSettings = { cityTrees: true, ottoPflanzt: false };
 
   map: L.Map;
   @ViewChild('root') rootElement!: ElementRef;
@@ -73,12 +86,8 @@ export class HomeComponent implements OnInit, AfterViewInit {
   private offcanvas: Offcanvas;
 
 
-  public get isFilterActive(): boolean {
-    return this.currentGenusFilter !== ''
-      || this.currentMinHeightFilter > 0
-      || this.currentMinCrownFilter > 0
-      || this.currentMinDbhFilter > 0
-      || this.currentMinAgeFilter > 0;
+  private static defaultViewSettings(): ViewSettings {
+    return { cityTrees: true, ottoPflanzt: false };
   }
 
 
@@ -125,19 +134,9 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
 
   openFilterDialog(): void {
-    const options: ModalOptions = {
-      initialState: {
-        selectedGenus: this.currentGenusFilter,
-        minHeight: this.currentMinHeightFilter,
-        minCrown: this.currentMinCrownFilter,
-        minDbh: this.currentMinDbhFilter,
-        minAge: this.currentMinAgeFilter,
-        onlyFelledTrees: this.showOnlyFelledTrees
-      }
-    };
+    const options: ModalOptions = { initialState: { filterSettings: this.filterSettings } };
     const dialog = this.modalService.show(FilterDialogComponent, options);
-    dialog.content.onConfirm = (selectedGenus, minHeight, minCrown, minDbh, minAge, onlyFelledTrees) =>
-      this.applyFilter(selectedGenus, minHeight, minCrown, minDbh, minAge, onlyFelledTrees);
+    dialog.content.onConfirm = (updatedFilterSettings: FilterSettings) => this.applyFilter(updatedFilterSettings);
   }
 
 
@@ -232,22 +231,17 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
 
-  private applyFilter(genus: string, minHeight: number, minCrown: number, minDbh: number, minAge: number, showOnlyFelledTrees: boolean): void {
-    this.currentGenusFilter = genus;
-    this.currentMinHeightFilter = minHeight;
-    this.currentMinCrownFilter = minCrown;
-    this.currentMinDbhFilter = minDbh;
-    this.currentMinAgeFilter = minAge;
-    this.showOnlyFelledTrees = showOnlyFelledTrees;
+  private applyFilter(filterSettings: FilterSettings): void {
+    this.filterSettings = filterSettings;
     const currentYear = new Date().getFullYear();
     this.leafletLayers = this.cityTrees
       .filter(tree =>
-        (genus === '' || tree.genus === genus)
-        && (tree.height >= minHeight)
-        && (tree.crown >= minCrown)
-        && (tree.dbh >= minDbh)
-        && (minAge === 0 || (tree.planted && tree.planted <= currentYear - minAge))
-        && (!showOnlyFelledTrees || tree.fellingInfo))
+        (filterSettings.genus === '' || tree.genus === filterSettings.genus)
+        && (tree.height >= filterSettings.minHeight)
+        && (tree.crown >= filterSettings.minCrown)
+        && (tree.dbh >= filterSettings.minDbh)
+        && (filterSettings.minAge === 0 || (tree.planted && tree.planted <= currentYear - filterSettings.minAge))
+        && (!filterSettings.onlyFelledTrees || tree.fellingInfo))
       .map(tree => this.createRegularTreeMarker(tree));
   }
 

@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { BsModalRef } from 'ngx-bootstrap/modal';
 import { GENUS_DICTIONARY } from '../../catalogs/genera';
+import { FilterSettings } from '../home.component';
 
 
 @Component({
@@ -8,8 +9,10 @@ import { GENUS_DICTIONARY } from '../../catalogs/genera';
   templateUrl: './filter-dialog.component.html',
   styleUrls: ['./filter-dialog.component.scss']
 })
-export class FilterDialogComponent {
+export class FilterDialogComponent implements OnInit {
 
+
+  filterSettings: FilterSettings;
 
   selectedGenus = '';
   minHeight = 0;
@@ -19,10 +22,20 @@ export class FilterDialogComponent {
   onlyFelledTrees = false;
 
   genera = GENUS_DICTIONARY;
-  onConfirm: (genus: string, minHeight: number, minCrown: number, minDbh: number, minAge: number, onlyFelledTrees: boolean) => void;
+  onConfirm: (updatedFilterSettings: FilterSettings) => void;
 
   constructor(public modalRef: BsModalRef) {
     this.genera.sort((g1, g2) => g1.displayNamePlural < g2.displayNamePlural ? -1 : 0);
+  }
+
+
+  ngOnInit(): void {
+    this.selectedGenus = this.filterSettings.genus;
+    this.minHeight = this.filterSettings.minHeight;
+    this.minCrown = this.filterSettings.minCrown;
+    this.minDbh = this.filterSettings.minDbh;
+    this.minAge = this.filterSettings.minAge;
+    this.onlyFelledTrees = this.filterSettings.onlyFelledTrees;
   }
 
 
@@ -37,7 +50,14 @@ export class FilterDialogComponent {
 
 
   submit(): void {
-    this.onConfirm(this.selectedGenus, this.minHeight, this.minCrown, this.minDbh, this.minAge, this.onlyFelledTrees);
+    const updatedFilterSettings = new FilterSettings();
+    updatedFilterSettings.genus = this.selectedGenus;
+    updatedFilterSettings.minHeight = this.minHeight;
+    updatedFilterSettings.minCrown = this.minCrown;
+    updatedFilterSettings.minDbh = this.minDbh;
+    updatedFilterSettings.minAge = this.minAge;
+    updatedFilterSettings.onlyFelledTrees = this.onlyFelledTrees;
+    this.onConfirm(updatedFilterSettings);
     this.modalRef.hide();
   }
 
