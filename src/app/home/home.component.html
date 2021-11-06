@@ -18,8 +18,11 @@
     <button class="btn btn-light shadow" data-bs-toggle="offcanvas" data-bs-target="#offcanvas">
       <fa-icon [icon]="faBars"></fa-icon>
     </button>
-    <button class="btn btn-light shadow" [ngClass]="{ 'text-primary': isFilterActive }" (click)="openViewConfigurationDialog()">
+    <button class="btn btn-light shadow" [ngClass]="{ 'text-primary': isFilterActive }" (click)="openFilterDialog()">
       <fa-icon [icon]="faFilter"></fa-icon>
+    </button>
+    <button class="btn btn-light shadow" (click)="openViewSettingsDialog()">
+      <fa-icon [icon]="faCog"></fa-icon>
     </button>
     <button class="btn btn-light shadow" [hidden]="hideFlyHomeButton" (click)="jumpToCurrentLocation()">
       <fa-icon [icon]="faCrosshairs"></fa-icon>

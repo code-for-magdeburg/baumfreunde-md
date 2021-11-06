@@ -4,7 +4,7 @@ import { CircleMarker, circleMarker, latLng, MapOptions, tileLayer } from 'leafl
 import { BsModalService, ModalOptions } from 'ngx-bootstrap/modal';
 import { RegularTreeDetailsComponent } from './regular-tree-details/regular-tree-details.component';
 import { SearchTreeDialogComponent } from './search-tree-dialog/search-tree-dialog.component';
-import { faBars, faCrosshairs, faFilter, faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faCog, faCrosshairs, faFilter, faSearch } from '@fortawesome/free-solid-svg-icons';
 import { Offcanvas } from 'bootstrap';
 import { DataService } from '../services/data.service';
 import { TreeDataPoint } from '../model/TreeDataPoint';
@@ -29,6 +29,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   faSearch = faSearch;
   faCrosshairs = faCrosshairs;
   faFilter = faFilter;
+  faCog = faCog;
 
   dataIsLoading = false;
   hideFlyHomeButton = false;
@@ -115,7 +116,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
 
-  openViewConfigurationDialog(): void {
+  openFilterDialog(): void {
     const options: ModalOptions = {
       initialState: {
         selectedGenus: this.currentGenusFilter,
@@ -129,6 +130,10 @@ export class HomeComponent implements OnInit, AfterViewInit {
     const dialog = this.modalService.show(FilterDialogComponent, options);
     dialog.content.onConfirm = (selectedGenus, minHeight, minCrown, minDbh, minAge, onlyFelledTrees) =>
       this.applyFilter(selectedGenus, minHeight, minCrown, minDbh, minAge, onlyFelledTrees);
+  }
+
+
+  openViewSettingsDialog(): void {
   }
 
 
