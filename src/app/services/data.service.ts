@@ -1,8 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { parse, ParseConfig } from 'papaparse';
-import { TreeDataPointCsvRecord } from '../model/TreeDataPointCsvRecord';
-import { TreeDataPoint } from '../model/TreeDataPoint';
+import { CityTreeCsvRecord } from '../model/CityTreeCsvRecord';
+import { CityTree } from '../model/CityTree';
 import { Classification } from '../model/Classification';
 
 
@@ -10,7 +10,7 @@ import { Classification } from '../model/Classification';
 export class DataService {
 
 
-  private dataPoints: TreeDataPoint[];
+  private cachedTrees: CityTree[];
   private classifications: Classification[];
   private locations: string[];
   private addresses: string[];
@@ -21,24 +21,24 @@ export class DataService {
   }
 
 
-  public async getAllDataPoints(): Promise<TreeDataPoint[]> {
+  public async getAllCityTrees(): Promise<CityTree[]> {
 
     try {
-      if (!this.dataPoints) {
+      if (!this.cachedTrees) {
         await this.loadData();
       }
     } catch (e) {
       return Promise.reject(e);
     }
 
-    return Promise.resolve(this.dataPoints);
+    return Promise.resolve(this.cachedTrees);
 
   }
 
 
   private async loadData(): Promise<void> {
 
-    const p1 = this.createFetchDataPointsPromise();
+    const p1 = this.createFetchCityTreesPromise();
     const p2 = this.createFetchClassificationPromise();
     const p3 = this.createFetchLocationsPromise();
     const p4 = this.createFetchAddressesPromise();
@@ -50,19 +50,19 @@ export class DataService {
     this.locations = results[2];
     this.addresses = results[3];
     this.felledTrees = results[4];
-    this.dataPoints = results[0].map(csvRecord => this.mapCsvRecordToTreeDataPoint(csvRecord));
+    this.cachedTrees = results[0].map(csvRecord => this.mapCsvRecordToCityTree(csvRecord));
 
   }
 
 
-  private createFetchDataPointsPromise(): Promise<TreeDataPointCsvRecord[]> {
+  private createFetchCityTreesPromise(): Promise<CityTreeCsvRecord[]> {
 
     return new Promise((resolve, reject) => {
       this.http
         .get('/assets/data/Baumkataster-Magdeburg-2021.txt', { responseType: 'text' })
         .subscribe(csv => {
           const parseOptions: ParseConfig = { dynamicTyping: true, skipEmptyLines: true, header: true };
-          resolve(parse(csv, parseOptions).data as TreeDataPointCsvRecord[]);
+          resolve(parse(csv, parseOptions).data as CityTreeCsvRecord[]);
         }, reject);
     });
 
@@ -97,7 +97,7 @@ export class DataService {
   }
 
 
-  private mapCsvRecordToTreeDataPoint(csvRecord: TreeDataPointCsvRecord): TreeDataPoint {
+  private mapCsvRecordToCityTree(csvRecord: CityTreeCsvRecord): CityTree {
     const classification = this.classifications[csvRecord.genusIndex];
     const fellingInfo = this.felledTrees.find(t => t.treeId === csvRecord.ref);
     return {

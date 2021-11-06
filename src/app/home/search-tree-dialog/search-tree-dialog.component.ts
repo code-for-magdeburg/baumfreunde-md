@@ -1,7 +1,7 @@
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import { BsModalRef } from 'ngx-bootstrap/modal';
 import { timer } from 'rxjs';
-import { TreeDataPoint } from '../../model/TreeDataPoint';
+import { CityTree } from '../../model/CityTree';
 
 
 @Component({
@@ -12,10 +12,10 @@ import { TreeDataPoint } from '../../model/TreeDataPoint';
 export class SearchTreeDialogComponent implements AfterViewInit {
 
 
-  trees: TreeDataPoint[] = [];
-  searchResult: TreeDataPoint[] = [];
+  trees: CityTree[] = [];
+  searchResult: CityTree[] = [];
   searchFailed = false;
-  onConfirm: (result: TreeDataPoint) => void;
+  onConfirm: (result: CityTree) => void;
 
   @ViewChild('treeNrInput') treeNrInputRef: ElementRef;
 
@@ -70,7 +70,7 @@ export class SearchTreeDialogComponent implements AfterViewInit {
   }
 
 
-  selectTreeAndClose(item: TreeDataPoint): void {
+  selectTreeAndClose(item: CityTree): void {
     this.modalRef.hide();
     this.onConfirm(item);
   }

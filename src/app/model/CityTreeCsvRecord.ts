@@ -1,4 +1,4 @@
-export type TreeDataPointCsvRecord = {
+export type CityTreeCsvRecord = {
   internal_ref: number;
   ref: string;
   locationIndex: number;

@@ -1,4 +1,4 @@
-export type TreeDataPoint = {
+export type CityTree = {
   internal_ref: number;
   ref: string;
   location: string;

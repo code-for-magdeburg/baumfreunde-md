@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { BsModalRef } from 'ngx-bootstrap/modal';
-import { TreeDataPoint } from '../../model/TreeDataPoint';
+import { CityTree } from '../../model/CityTree';
 import { environment } from '../../../environments/environment';
 
 
@@ -23,7 +23,7 @@ export class RegularTreeDetailsComponent implements OnInit {
 
   faExternalLinkAlt = faExternalLinkAlt;
 
-  treeDetails: TreeDataPoint = null;
+  treeDetails: CityTree = null;
   felling: FellingDocumentationType = null;
 
 

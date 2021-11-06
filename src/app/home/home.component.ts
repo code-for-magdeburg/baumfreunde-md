@@ -7,7 +7,7 @@ import { SearchTreeDialogComponent } from './search-tree-dialog/search-tree-dial
 import { faBars, faCog, faCrosshairs, faFilter, faSearch } from '@fortawesome/free-solid-svg-icons';
 import { Offcanvas } from 'bootstrap';
 import { DataService } from '../services/data.service';
-import { TreeDataPoint } from '../model/TreeDataPoint';
+import { CityTree } from '../model/CityTree';
 import { FilterDialogComponent } from './filter-dialog/filter-dialog.component';
 import { ViewSettingsComponent } from './view-settings/view-settings.component';
 
@@ -56,8 +56,8 @@ export class HomeComponent implements OnInit, AfterViewInit {
     center: INITIAL_MAP_CENTER
   };
 
-  dataPoints: TreeDataPoint[] = [];
-  leafletLayers: CircleMarker<TreeDataPoint>[] = [];
+  cityTrees: CityTree[] = [];
+  leafletLayers: CircleMarker<CityTree>[] = [];
   selectedTreeId: number;
   currentGenusFilter = '';
   currentMinHeightFilter = 0;
@@ -91,8 +91,8 @@ export class HomeComponent implements OnInit, AfterViewInit {
     try {
       this.dataIsLoading = true;
       this.jumpToCurrentLocation();
-      this.dataPoints = await this.dataService.getAllDataPoints();
-      this.leafletLayers = this.dataPoints.map(dataPoint => this.createRegularTreeMarker(dataPoint));
+      this.cityTrees = await this.dataService.getAllCityTrees();
+      this.leafletLayers = this.cityTrees.map(tree => this.createRegularTreeMarker(tree));
     } finally {
       this.dataIsLoading = false;
     }
@@ -114,7 +114,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
 
   openSearchDialog(): void {
-    const options: ModalOptions = { initialState: { trees: this.dataPoints } };
+    const options: ModalOptions = { initialState: { trees: this.cityTrees } };
     const dialog = this.modalService.show(SearchTreeDialogComponent, options);
     dialog.content.onConfirm = tree => {
       this.jumpToLocation(tree.lat, tree.lon);
@@ -171,44 +171,44 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
 
-  private createRegularTreeMarker(dataPoint: TreeDataPoint): CircleMarker<TreeDataPoint> {
+  private createRegularTreeMarker(tree: CityTree): CircleMarker<CityTree> {
 
-    const fillOpacity = dataPoint.fellingInfo ? .5 : .8;
-    const color = dataPoint.fellingInfo ? '#d066ff' : '#517551';
-    const fillColor = dataPoint.fellingInfo ? '#7e7e7e' : '#92D292';
+    const fillOpacity = tree.fellingInfo ? .5 : .8;
+    const color = tree.fellingInfo ? '#d066ff' : '#517551';
+    const fillColor = tree.fellingInfo ? '#7e7e7e' : '#92D292';
     const marker = circleMarker(
-      latLng(dataPoint.lat, dataPoint.lon),
+      latLng(tree.lat, tree.lon),
       { radius: this.calcCircleRadiusByZoomFactor(), fillOpacity, color, weight: 2, fillColor }
     )
       .on('click', event => {
-        this.showTreeDetails(event.sourceTarget.feature.properties as TreeDataPoint);
-        this.selectTree(event.sourceTarget.feature.properties as TreeDataPoint);
+        this.showTreeDetails(event.sourceTarget.feature.properties as CityTree);
+        this.selectTree(event.sourceTarget.feature.properties as CityTree);
       });
     marker.feature = {
       type: 'Feature',
-      geometry: { type: 'Point', coordinates: [dataPoint.lon, dataPoint.lat] },
-      properties: dataPoint
+      geometry: { type: 'Point', coordinates: [tree.lon, tree.lat] },
+      properties: tree
     };
     return marker;
 
   }
 
 
-  private showTreeDetails(dataPoint: TreeDataPoint): void {
-    const options: ModalOptions = { initialState: { treeDetails: dataPoint } };
+  private showTreeDetails(tree: CityTree): void {
+    const options: ModalOptions = { initialState: { treeDetails: tree } };
     this.modalService.show(RegularTreeDetailsComponent, options);
   }
 
 
-  private selectTree(treeData: TreeDataPoint): void {
-    const marker = this.leafletLayers.find(c => c.feature.properties.internal_ref === treeData.internal_ref);
+  private selectTree(tree: CityTree): void {
+    const marker = this.leafletLayers.find(layer => layer.feature.properties.internal_ref === tree.internal_ref);
     if (marker) {
       this.switchSelectedTree(marker);
     }
   }
 
 
-  private switchSelectedTree(treeMarker: CircleMarker<TreeDataPoint>): void {
+  private switchSelectedTree(treeMarker: CircleMarker<CityTree>): void {
 
     const selectedMarker = this.leafletLayers.find(l => l.feature.properties.internal_ref === this.selectedTreeId);
     if (selectedMarker) {
@@ -240,15 +240,15 @@ export class HomeComponent implements OnInit, AfterViewInit {
     this.currentMinAgeFilter = minAge;
     this.showOnlyFelledTrees = showOnlyFelledTrees;
     const currentYear = new Date().getFullYear();
-    this.leafletLayers = this.dataPoints
-      .filter(d =>
-        (genus === '' || d.genus === genus)
-        && (d.height >= minHeight)
-        && (d.crown >= minCrown)
-        && (d.dbh >= minDbh)
-        && (minAge === 0 || (d.planted && d.planted <= currentYear - minAge))
-        && (!showOnlyFelledTrees || d.fellingInfo))
-      .map(dataPoint => this.createRegularTreeMarker(dataPoint));
+    this.leafletLayers = this.cityTrees
+      .filter(tree =>
+        (genus === '' || tree.genus === genus)
+        && (tree.height >= minHeight)
+        && (tree.crown >= minCrown)
+        && (tree.dbh >= minDbh)
+        && (minAge === 0 || (tree.planted && tree.planted <= currentYear - minAge))
+        && (!showOnlyFelledTrees || tree.fellingInfo))
+      .map(tree => this.createRegularTreeMarker(tree));
   }
 
 
