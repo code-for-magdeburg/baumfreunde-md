@@ -16,6 +16,7 @@ const MAX_ZOOM = 20;
 const INITIAL_ZOOM = 13;
 const INITIAL_MAP_CENTER = latLng(52.1259661, 11.6418369);
 const MAP_ATTRIBUTION = 'Kartendaten &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> Mitwirkende';
+const CURRENT_YEAR = new Date().getFullYear();
 
 
 export class FilterSettings {
@@ -33,6 +34,15 @@ export class FilterSettings {
       || this.minDbh > 0
       || this.minAge > 0
       || this.onlyFelledTrees;
+  }
+
+  public matches(tree: CityTree): boolean {
+    return (this.genus === '' || tree.genus === this.genus)
+      && (tree.height >= this.minHeight)
+      && (tree.crown >= this.minCrown)
+      && (tree.dbh >= this.minDbh)
+      && (this.minAge === 0 || (tree.planted && tree.planted <= CURRENT_YEAR - this.minAge))
+      && (!this.onlyFelledTrees || tree.fellingInfo);
   }
 }
 
@@ -84,6 +94,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   @ViewChild('root') rootElement!: ElementRef;
   @ViewChild('offcanvas') offcanvasElement!: ElementRef;
   private offcanvas: Offcanvas;
+  private currentZoom: number;
 
 
   constructor(private modalService: BsModalService, private dataService: DataService) {
@@ -96,7 +107,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
       this.dataIsLoading = true;
       this.jumpToCurrentLocation();
       this.cityTrees = await this.dataService.getAllCityTrees();
-      this.leafletLayers = this.cityTrees.map(tree => this.createRegularTreeMarker(tree));
+      this.leafletLayers = this.createRegularTreeMarkers(this.cityTrees);
     } finally {
       this.dataIsLoading = false;
     }
@@ -114,6 +125,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
     map.attributionControl.setPosition('topright');
     map.addControl(L.control.zoom({ position: 'topright' }));
     this.map = map;
+    this.currentZoom = map.getZoom();
   }
 
 
@@ -150,8 +162,8 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
 
   zoomChanged(zoom: number): void {
-    const radius = Math.max(zoom * 5 - 75, 1);
-    this.leafletLayers.forEach(l => l.setRadius(radius));
+    this.currentZoom = zoom;
+    this.fixTreeCircleMarkerRadius();
   }
 
 
@@ -160,14 +172,20 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
 
-  private createRegularTreeMarker(tree: CityTree): CircleMarker<CityTree> {
+  private createRegularTreeMarkers(trees: CityTree[]): CircleMarker<CityTree>[] {
+    const radius = this.calcCircleRadiusByZoomFactor();
+    return trees.map(tree => this.createRegularTreeMarker(tree, radius));
+  }
+
+
+  private createRegularTreeMarker(tree: CityTree, radius: number): CircleMarker<CityTree> {
 
     const fillOpacity = tree.fellingInfo ? .5 : .8;
     const color = tree.fellingInfo ? '#d066ff' : '#517551';
     const fillColor = tree.fellingInfo ? '#7e7e7e' : '#92D292';
     const marker = circleMarker(
       latLng(tree.lat, tree.lon),
-      { radius: this.calcCircleRadiusByZoomFactor(), fillOpacity, color, weight: 2, fillColor }
+      { radius, fillOpacity, color, weight: 2, fillColor }
     )
       .on('click', event => {
         this.showTreeDetails(event.sourceTarget.feature.properties as CityTree);
@@ -216,23 +234,20 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
 
+  private fixTreeCircleMarkerRadius(): void {
+    const radius = this.calcCircleRadiusByZoomFactor();
+    this.leafletLayers.forEach(layer => layer.setRadius(radius));
+  }
+
+
   private calcCircleRadiusByZoomFactor(): number {
-    return Math.max(this.map.getZoom() * 5 - 75, 1);
+    return Math.max(this.currentZoom * 5 - 75, 1);
   }
 
 
   private applyFilter(filterSettings: FilterSettings): void {
     this.filterSettings = filterSettings;
-    const currentYear = new Date().getFullYear();
-    this.leafletLayers = this.cityTrees
-      .filter(tree =>
-        (filterSettings.genus === '' || tree.genus === filterSettings.genus)
-        && (tree.height >= filterSettings.minHeight)
-        && (tree.crown >= filterSettings.minCrown)
-        && (tree.dbh >= filterSettings.minDbh)
-        && (filterSettings.minAge === 0 || (tree.planted && tree.planted <= currentYear - filterSettings.minAge))
-        && (!filterSettings.onlyFelledTrees || tree.fellingInfo))
-      .map(tree => this.createRegularTreeMarker(tree));
+    this.leafletLayers = this.createRegularTreeMarkers(this.cityTrees.filter(tree => this.filterSettings.matches(tree)));
   }
 
 
