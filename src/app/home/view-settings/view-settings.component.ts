@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { BsModalRef } from 'ngx-bootstrap/modal';
 import { ViewSettings } from '../home.component';
 
@@ -8,8 +8,10 @@ import { ViewSettings } from '../home.component';
   templateUrl: './view-settings.component.html',
   styleUrls: ['./view-settings.component.scss']
 })
-export class ViewSettingsComponent {
+export class ViewSettingsComponent implements OnInit {
 
+
+  viewSettings: ViewSettings;
 
   showCityTrees = true;
   showOttoPflanzt = false;
@@ -21,11 +23,17 @@ export class ViewSettingsComponent {
   }
 
 
+  ngOnInit(): void {
+    this.showCityTrees = this.viewSettings.cityTrees;
+    this.showOttoPflanzt = this.viewSettings.ottoPflanzt;
+  }
+
+
   submit(): void {
-    this.onConfirm({
-      cityTrees: this.showCityTrees,
-      ottoPflanzt: this.showOttoPflanzt
-    });
+    const updatedViewSettings = new ViewSettings();
+    updatedViewSettings.cityTrees = this.showCityTrees;
+    updatedViewSettings.ottoPflanzt = this.showOttoPflanzt;
+    this.onConfirm(updatedViewSettings);
     this.modalRef.hide();
   }
 

@@ -36,10 +36,10 @@ export class FilterSettings {
   }
 }
 
-export type ViewSettings = {
-  cityTrees: boolean;
-  ottoPflanzt: boolean;
-};
+export class ViewSettings {
+  cityTrees = true;
+  ottoPflanzt = false;
+}
 
 
 @Component({
@@ -76,7 +76,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   cityTrees: CityTree[] = [];
   leafletLayers: CircleMarker<CityTree>[] = [];
   filterSettings = new FilterSettings();
-  viewSettings = HomeComponent.defaultViewSettings();
+  viewSettings = new ViewSettings();
 
   selectedTreeId: number;
 
@@ -84,11 +84,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
   @ViewChild('root') rootElement!: ElementRef;
   @ViewChild('offcanvas') offcanvasElement!: ElementRef;
   private offcanvas: Offcanvas;
-
-
-  private static defaultViewSettings(): ViewSettings {
-    return { cityTrees: true, ottoPflanzt: false };
-  }
 
 
   constructor(private modalService: BsModalService, private dataService: DataService) {
@@ -141,12 +136,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
 
   openViewSettingsDialog(): void {
-    const options: ModalOptions = {
-      initialState: {
-        showCityTrees: this.viewSettings.cityTrees,
-        showOttoPflanzt: this.viewSettings.ottoPflanzt
-      }
-    };
+    const options: ModalOptions = { initialState: { viewSettings: this.viewSettings } };
     const dialog = this.modalService.show(ViewSettingsComponent, options);
     dialog.content.onConfirm = (viewSettings: ViewSettings) => this.applyViewSettings(viewSettings);
   }
