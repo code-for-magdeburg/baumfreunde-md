@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import * as L from 'leaflet';
-import { CircleMarker, circleMarker, latLng, MapOptions, tileLayer } from 'leaflet';
+import { CircleMarker, circleMarker, latLng, MapOptions, polygon, Polygon, tileLayer } from 'leaflet';
 import { BsModalService, ModalOptions } from 'ngx-bootstrap/modal';
 import { RegularTreeDetailsComponent } from './regular-tree-details/regular-tree-details.component';
 import { SearchTreeDialogComponent } from './search-tree-dialog/search-tree-dialog.component';
@@ -84,7 +84,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   };
 
   cityTrees: CityTree[] = [];
-  leafletLayers: CircleMarker<CityTree>[] = [];
+  leafletLayers: (CircleMarker<CityTree> | Polygon<any>)[] = [];
   filterSettings = new FilterSettings();
   viewSettings = new ViewSettings();
 
@@ -107,7 +107,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
       this.dataIsLoading = true;
       this.jumpToCurrentLocation();
       this.cityTrees = await this.dataService.getAllCityTrees();
-      this.leafletLayers = this.createRegularTreeMarkers(this.cityTrees);
+      this.leafletLayers = this.createLeafletLayers();
     } finally {
       this.dataIsLoading = false;
     }
@@ -172,9 +172,54 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
 
-  private createRegularTreeMarkers(trees: CityTree[]): CircleMarker<CityTree>[] {
-    const radius = this.calcCircleRadiusByZoomFactor();
-    return trees.map(tree => this.createRegularTreeMarker(tree, radius));
+  private createLeafletLayers(): (CircleMarker<CityTree> | Polygon<any>)[] {
+
+    const treeMarkers: CircleMarker<CityTree>[] = [];
+    const ottoPflanztPolygons: Polygon<any>[] = [];
+
+    if (this.viewSettings.cityTrees) {
+      const trees = this.cityTrees.filter(tree => this.filterSettings.matches(tree));
+      const radius = this.calcCircleRadiusByZoomFactor();
+      treeMarkers.push(...trees.map(tree => this.createRegularTreeMarker(tree, radius)));
+    }
+
+    if (this.viewSettings.ottoPflanzt) {
+      ottoPflanztPolygons.push(polygon([
+        [
+          [
+            52.18720083820769,
+            11.645057201385498
+          ],
+          [
+            52.18761194086276,
+            11.645129621028898
+          ],
+          [
+            52.18772376012739,
+            11.645269095897675
+          ],
+          [
+            52.18781091318277,
+            11.645041108131409
+          ],
+          [
+            52.18761687407154,
+            11.644874811172485
+          ],
+          [
+            52.18721563796921,
+            11.644847989082336
+          ],
+          [
+            52.18720083820769,
+            11.645057201385498
+          ]
+        ]
+      ]));
+    }
+
+    return [...treeMarkers, ...ottoPflanztPolygons];
+
   }
 
 
@@ -210,7 +255,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   private selectTree(tree: CityTree): void {
     const marker = this.leafletLayers.find(layer => layer.feature.properties.internal_ref === tree.internal_ref);
     if (marker) {
-      this.switchSelectedTree(marker);
+      this.switchSelectedTree(marker as CircleMarker<CityTree>);
     }
   }
 
@@ -223,7 +268,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
       const color = selectedMarker.feature.properties.fellingInfo ? '#d066ff' : '#517551';
       const fillColor = selectedMarker.feature.properties.fellingInfo ? '#7e7e7e' : '#92D292';
       selectedMarker.setStyle({ fillOpacity, color, weight: 2, fillColor });
-      selectedMarker.setRadius(this.calcCircleRadiusByZoomFactor());
+      (selectedMarker as CircleMarker).setRadius(this.calcCircleRadiusByZoomFactor());
     }
 
     this.selectedTreeId = treeMarker.feature.properties.internal_ref;
@@ -236,7 +281,9 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   private fixTreeCircleMarkerRadius(): void {
     const radius = this.calcCircleRadiusByZoomFactor();
-    this.leafletLayers.forEach(layer => layer.setRadius(radius));
+    this.leafletLayers
+      .filter(layer => layer instanceof CircleMarker)
+      .forEach(layer => (layer as CircleMarker<CityTree>).setRadius(radius));
   }
 
 
@@ -247,12 +294,13 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   private applyFilter(filterSettings: FilterSettings): void {
     this.filterSettings = filterSettings;
-    this.leafletLayers = this.createRegularTreeMarkers(this.cityTrees.filter(tree => this.filterSettings.matches(tree)));
+    this.leafletLayers = this.createLeafletLayers();
   }
 
 
   private applyViewSettings(viewSettings: ViewSettings): void {
     this.viewSettings = viewSettings;
+    this.leafletLayers = this.createLeafletLayers();
   }
 
 
