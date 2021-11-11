@@ -36,6 +36,13 @@ export class DataService {
   }
 
 
+  public async getOttoPflanztAreas(): Promise<any> {
+    return this.http
+      .get('/assets/data/Otto_pflanzt.geojson')
+      .toPromise();
+  }
+
+
   private async loadData(): Promise<void> {
 
     const p1 = this.createFetchCityTreesPromise();
