@@ -132,7 +132,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
       this.ottoPflanztAreas = await this.dataService.getOttoPflanztAreas();
       this.cityTreeLayerGroup = layerGroup();
       this.ottoPflanztLayerGroup = layerGroup();
-      this.leafletLayers = [this.cityTreeLayerGroup, this.ottoPflanztLayerGroup];
+      this.leafletLayers = [this.ottoPflanztLayerGroup, this.cityTreeLayerGroup];
       this.updateDisplayedElements();
     } finally {
       this.dataIsLoading = false;
@@ -228,6 +228,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
     }
 
     return geoJSON(this.ottoPflanztAreas, {
+      style: { fillColor: '#8FBF27', color: '#6a8f17', fillOpacity: .8 },
       pointToLayer: (point: Feature<Point, OttoPflanztFeature>, latlng: LatLng): Layer => {
         const options: MarkerOptions = {
           icon: OTTO_PFLANZT_ICON,
