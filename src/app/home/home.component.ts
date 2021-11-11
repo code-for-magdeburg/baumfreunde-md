@@ -1,6 +1,16 @@
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import * as L from 'leaflet';
-import { CircleMarker, circleMarker, latLng, MapOptions, polygon, Polygon, tileLayer } from 'leaflet';
+import {
+  CircleMarker,
+  circleMarker, GeoJSON,
+  geoJSON, icon, LatLng,
+  latLng,
+  Layer,
+  LayerGroup,
+  layerGroup,
+  MapOptions, marker, MarkerOptions,
+  tileLayer
+} from 'leaflet';
 import { BsModalService, ModalOptions } from 'ngx-bootstrap/modal';
 import { RegularTreeDetailsComponent } from './regular-tree-details/regular-tree-details.component';
 import { SearchTreeDialogComponent } from './search-tree-dialog/search-tree-dialog.component';
@@ -10,6 +20,8 @@ import { DataService } from '../services/data.service';
 import { CityTree } from '../model/CityTree';
 import { FilterDialogComponent } from './filter-dialog/filter-dialog.component';
 import { ViewSettingsComponent } from './view-settings/view-settings.component';
+import { Feature, Point } from 'geojson';
+import { OttoPflanztFeature } from '../model/OttoPflanztFeature';
 
 
 const MAX_ZOOM = 20;
@@ -17,6 +29,13 @@ const INITIAL_ZOOM = 13;
 const INITIAL_MAP_CENTER = latLng(52.1259661, 11.6418369);
 const MAP_ATTRIBUTION = 'Kartendaten &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> Mitwirkende';
 const CURRENT_YEAR = new Date().getFullYear();
+
+const OTTO_PFLANZT_ICON = icon({
+  iconSize: [32, 48],
+  iconAnchor: [16, 48],
+  iconUrl: 'assets/images/otto-pflanzt-marker.png',
+  shadowUrl: 'assets/marker-icons/marker-shadow.png'
+});
 
 
 export class FilterSettings {
@@ -48,7 +67,7 @@ export class FilterSettings {
 
 export class ViewSettings {
   cityTrees = true;
-  ottoPflanzt = false;
+  ottoPflanzt = true;
 }
 
 
@@ -84,7 +103,10 @@ export class HomeComponent implements OnInit, AfterViewInit {
   };
 
   cityTrees: CityTree[] = [];
-  leafletLayers: (CircleMarker<CityTree> | Polygon<any>)[] = [];
+  ottoPflanztAreas: any = {};
+  leafletLayers: Layer[] = [];
+  cityTreeLayerGroup: LayerGroup<CityTree>;
+  ottoPflanztLayerGroup: LayerGroup;
   filterSettings = new FilterSettings();
   viewSettings = new ViewSettings();
 
@@ -107,7 +129,11 @@ export class HomeComponent implements OnInit, AfterViewInit {
       this.dataIsLoading = true;
       this.jumpToCurrentLocation();
       this.cityTrees = await this.dataService.getAllCityTrees();
-      this.leafletLayers = this.createLeafletLayers();
+      this.ottoPflanztAreas = await this.dataService.getOttoPflanztAreas();
+      this.cityTreeLayerGroup = layerGroup();
+      this.ottoPflanztLayerGroup = layerGroup();
+      this.leafletLayers = [this.cityTreeLayerGroup, this.ottoPflanztLayerGroup];
+      this.updateDisplayedElements();
     } finally {
       this.dataIsLoading = false;
     }
@@ -130,13 +156,22 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
 
   openSearchDialog(): void {
+
     const options: ModalOptions = { initialState: { trees: this.cityTrees } };
     const dialog = this.modalService.show(SearchTreeDialogComponent, options);
     dialog.content.onConfirm = tree => {
+
       this.jumpToLocation(tree.lat, tree.lon);
       this.showTreeDetails(tree);
-      this.selectTree(tree);
+      const treeMarker = this.cityTreeLayerGroup
+        .getLayers()
+        .find(layer => (layer as CircleMarker).feature.properties.internal_ref === tree.internal_ref) as CircleMarker;
+      if (treeMarker) {
+        this.switchSelectedTree(treeMarker);
+      }
+
     };
+
   }
 
 
@@ -172,53 +207,48 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
 
-  private createLeafletLayers(): (CircleMarker<CityTree> | Polygon<any>)[] {
+  private createCityTreeLayers(): CircleMarker<CityTree>[] {
 
-    const treeMarkers: CircleMarker<CityTree>[] = [];
-    const ottoPflanztPolygons: Polygon<any>[] = [];
-
-    if (this.viewSettings.cityTrees) {
-      const trees = this.cityTrees.filter(tree => this.filterSettings.matches(tree));
-      const radius = this.calcCircleRadiusByZoomFactor();
-      treeMarkers.push(...trees.map(tree => this.createRegularTreeMarker(tree, radius)));
+    if (!this.viewSettings.cityTrees) {
+      return [];
     }
 
-    if (this.viewSettings.ottoPflanzt) {
-      ottoPflanztPolygons.push(polygon([
-        [
-          [
-            52.18720083820769,
-            11.645057201385498
-          ],
-          [
-            52.18761194086276,
-            11.645129621028898
-          ],
-          [
-            52.18772376012739,
-            11.645269095897675
-          ],
-          [
-            52.18781091318277,
-            11.645041108131409
-          ],
-          [
-            52.18761687407154,
-            11.644874811172485
-          ],
-          [
-            52.18721563796921,
-            11.644847989082336
-          ],
-          [
-            52.18720083820769,
-            11.645057201385498
-          ]
-        ]
-      ]));
+    const radius = this.calcCircleRadiusByZoomFactor();
+    return this.cityTrees
+      .filter(tree => this.filterSettings.matches(tree))
+      .map(tree => this.createRegularTreeMarker(tree, radius));
+
+  }
+
+
+  private createOttoPflanztLayers(): GeoJSON {
+
+    if (!this.viewSettings.ottoPflanzt) {
+      return geoJSON();
     }
 
-    return [...treeMarkers, ...ottoPflanztPolygons];
+    return geoJSON(this.ottoPflanztAreas, {
+      pointToLayer: (point: Feature<Point, OttoPflanztFeature>, latlng: LatLng): Layer => {
+        const options: MarkerOptions = {
+          icon: OTTO_PFLANZT_ICON,
+          title: point.properties.title
+        };
+        const fmtOptions: Intl.DateTimeFormatOptions = {
+          day: '2-digit',
+          month: '2-digit',
+          year: 'numeric'
+        };
+        const plantedOnStr = new Date(point.properties.planted_on).toLocaleDateString('de', fmtOptions);
+        const content = `
+            <h1>Otto pflanzt!</h1>
+            Ort: <strong>${point.properties.title}</strong><br>
+            Was: <strong>${point.properties.tree_species.length} versch. Arten</strong><br>
+            Wieviel: <strong>${point.properties.number_of_trees_and_bushes} Bäume und Sträucher</strong><br>
+            Wann: <strong>${plantedOnStr}</strong>
+        `;
+        return marker(latlng, options).bindPopup(content);
+      }
+    });
 
   }
 
@@ -228,20 +258,20 @@ export class HomeComponent implements OnInit, AfterViewInit {
     const fillOpacity = tree.fellingInfo ? .5 : .8;
     const color = tree.fellingInfo ? '#d066ff' : '#517551';
     const fillColor = tree.fellingInfo ? '#7e7e7e' : '#92D292';
-    const marker = circleMarker(
+    const treeMarker = circleMarker(
       latLng(tree.lat, tree.lon),
       { radius, fillOpacity, color, weight: 2, fillColor }
     )
       .on('click', event => {
         this.showTreeDetails(event.sourceTarget.feature.properties as CityTree);
-        this.selectTree(event.sourceTarget.feature.properties as CityTree);
+        this.switchSelectedTree(event.sourceTarget as CircleMarker);
       });
-    marker.feature = {
+    treeMarker.feature = {
       type: 'Feature',
       geometry: { type: 'Point', coordinates: [tree.lon, tree.lat] },
       properties: tree
     };
-    return marker;
+    return treeMarker;
 
   }
 
@@ -252,17 +282,11 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
 
-  private selectTree(tree: CityTree): void {
-    const marker = this.leafletLayers.find(layer => layer.feature.properties.internal_ref === tree.internal_ref);
-    if (marker) {
-      this.switchSelectedTree(marker as CircleMarker<CityTree>);
-    }
-  }
+  private switchSelectedTree(treeMarker: CircleMarker): void {
 
-
-  private switchSelectedTree(treeMarker: CircleMarker<CityTree>): void {
-
-    const selectedMarker = this.leafletLayers.find(l => l.feature.properties.internal_ref === this.selectedTreeId);
+    const selectedMarker = this.cityTreeLayerGroup
+      .getLayers()
+      .find(layer => (layer as CircleMarker).feature.properties.internal_ref === this.selectedTreeId) as CircleMarker;
     if (selectedMarker) {
       const fillOpacity = selectedMarker.feature.properties.fellingInfo ? .5 : .8;
       const color = selectedMarker.feature.properties.fellingInfo ? '#d066ff' : '#517551';
@@ -281,9 +305,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   private fixTreeCircleMarkerRadius(): void {
     const radius = this.calcCircleRadiusByZoomFactor();
-    this.leafletLayers
-      .filter(layer => layer instanceof CircleMarker)
-      .forEach(layer => (layer as CircleMarker<CityTree>).setRadius(radius));
+    this.cityTreeLayerGroup.eachLayer(layer => (layer as CircleMarker).setRadius(radius));
   }
 
 
@@ -294,13 +316,21 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   private applyFilter(filterSettings: FilterSettings): void {
     this.filterSettings = filterSettings;
-    this.leafletLayers = this.createLeafletLayers();
+    this.updateDisplayedElements();
   }
 
 
   private applyViewSettings(viewSettings: ViewSettings): void {
     this.viewSettings = viewSettings;
-    this.leafletLayers = this.createLeafletLayers();
+    this.updateDisplayedElements();
+  }
+
+
+  private updateDisplayedElements(): void {
+    this.cityTreeLayerGroup.clearLayers();
+    this.createCityTreeLayers().forEach(layer => this.cityTreeLayerGroup.addLayer(layer));
+    this.ottoPflanztLayerGroup.clearLayers();
+    this.ottoPflanztLayerGroup.addLayer(this.createOttoPflanztLayers());
   }
 
 

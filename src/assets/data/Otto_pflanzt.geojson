@@ -1,0 +1,613 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.645596325397491,
+              52.18758891921454
+            ],
+            [
+              11.645497083663939,
+              52.187138350271326
+            ],
+            [
+              11.646097898483276,
+              52.18708079551539
+            ],
+            [
+              11.646926701068878,
+              52.18689168650714
+            ],
+            [
+              11.647342443466187,
+              52.1867946650516
+            ],
+            [
+              11.647033989429474,
+              52.18700679643405
+            ],
+            [
+              11.645596325397491,
+              52.18758891921454
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Oebisfelder Nord 1",
+        "tree_species": [
+          "Quercus robur",
+          "Prunus avium",
+          "Sorbus aucuparia",
+          "Mespilus germanica",
+          "Malus sylvestris",
+          "Pyrus pyraster",
+          "Euonymus europaeus",
+          "Crataegus monogyna",
+          "Cornus sanguineum",
+          "Lonicera xylosteum",
+          "Rosa canina",
+          "Rhamnus cathartica",
+          "Cytisus scoparius",
+          "Rhamnus frangula",
+          "Cornus mas",
+          "Sambucus nigra",
+          "Sambucus racemosa",
+          "Viburnum pulus",
+          "Viburnum lantana"
+        ],
+        "sponsors": "Landeshaupstadt Magdeburg",
+        "number_of_trees_and_bushes": 400,
+        "more info": "www.ottopflanzt.de",
+        "planted_on": "2020-11-14"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.645596325397491,
+          52.18758891921454
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.645057201385498,
+              52.18720083820769
+            ],
+            [
+              11.645129621028898,
+              52.18761194086276
+            ],
+            [
+              11.645269095897675,
+              52.18772376012739
+            ],
+            [
+              11.645041108131409,
+              52.18781091318277
+            ],
+            [
+              11.644874811172485,
+              52.18761687407154
+            ],
+            [
+              11.644847989082336,
+              52.18721563796921
+            ],
+            [
+              11.645057201385498,
+              52.18720083820769
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Oebisfelder Nord 2",
+        "tree_species": ["Apfelbaum", "Birnbaun"],
+        "sponsors": "Landeshaupstadt Magdeburg",
+        "number_of_trees_and_bushes": 16,
+        "more info": "www.ottopflanzt.de",
+        "planted_on": "2020-11-14"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.645057201385498,
+          52.18720083820769
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.645228862762451,
+              52.18690813080064
+            ],
+            [
+              11.645349562168121,
+              52.186408221559965
+            ],
+            [
+              11.646336615085602,
+              52.186621999225714
+            ],
+            [
+              11.646650433540342,
+              52.186613777026814
+            ],
+            [
+              11.64674162864685,
+              52.1865792437748
+            ],
+            [
+              11.646781861782074,
+              52.18663022142311
+            ],
+            [
+              11.646451950073242,
+              52.186740398721426
+            ],
+            [
+              11.646140813827515,
+              52.18681933154341
+            ],
+            [
+              11.645719707012177,
+              52.18689990865464
+            ],
+            [
+              11.645228862762451,
+              52.18690813080064
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Oebisfelder Süd",
+        "tree_species": [
+          "Quercus robur",
+          "Prunus avium",
+          "Sorbus aucuparia",
+          "Mespilus germanica",
+          "Malus sylvestris",
+          "Pyrus pyraster",
+          "Euonymus europaeus",
+          "Crataegus monogyna",
+          "Cornus sanguineum",
+          "Lonicera xylosteum",
+          "Rosa canina",
+          "Rhamnus cathartica",
+          "Cytisus scoparius",
+          "Rhamnus frangula",
+          "Cornus mas",
+          "Sambucus nigra",
+          "Sambucus racemosa",
+          "Viburnum pulus",
+          "Viburnum lantana"
+        ],
+        "sponsors": "Landeshaupstadt Magdeburg",
+        "number_of_trees_and_bushes": 1200,
+        "more info": "www.ottopflanzt.de",
+        "planted_on": "2020-11-14"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.645228862762451,
+          52.18690813080064
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.633714139461517,
+              52.14984041583505
+            ],
+            [
+              11.6337288916111,
+              52.149769646396486
+            ],
+            [
+              11.63472667336464,
+              52.14977376090181
+            ],
+            [
+              11.634561717510222,
+              52.150171220323436
+            ],
+            [
+              11.633900552988052,
+              52.15005354637166
+            ],
+            [
+              11.633714139461517,
+              52.14984041583505
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Heinrich-Mundlos-Ring",
+        "tree_species": [
+          "Sambucus racemosa",
+          "Cornus mas",
+          "Sorbus aucuparia",
+          "Buddleja davidii",
+          "Corylus colurna",
+          "Quercus rubra",
+          "Acer campestre"
+        ],
+        "sponsors": "Landeshaupstadt Magdeburg",
+        "number_of_trees_and_bushes": 20,
+        "more info": "www.ottopflanzt.de",
+        "planted_on": "2021-03-20"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.633714139461517,
+          52.14984041583505
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.66670799255371,
+              52.178802001239
+            ],
+            [
+              11.66670799255371,
+              52.17875101461629
+            ],
+            [
+              11.666831374168394,
+              52.17874608042388
+            ],
+            [
+              11.666812598705292,
+              52.178412198799975
+            ],
+            [
+              11.66666507720947,
+              52.17839575136457
+            ],
+            [
+              11.666522920131683,
+              52.17835134325857
+            ],
+            [
+              11.666496098041534,
+              52.178303645613866
+            ],
+            [
+              11.666474640369415,
+              52.1782066054202
+            ],
+            [
+              11.666474640369415,
+              52.17816548663019
+            ],
+            [
+              11.666702628135681,
+              52.17815068385651
+            ],
+            [
+              11.666898429393768,
+              52.178417133029406
+            ],
+            [
+              11.667000353336334,
+              52.17874608042388
+            ],
+            [
+              11.666997671127318,
+              52.178788843406466
+            ],
+            [
+              11.66670799255371,
+              52.178802001239
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Buschfeldstraße B",
+        "tree_species": [
+          "Quercus robur",
+          "Prunus avium",
+          "Sorbus aucuparia",
+          "Mespilus germanica",
+          "Malus sylvestris",
+          "Pyrus pyraster",
+          "Euonymus europaeus",
+          "Crataegus monogyna",
+          "Cornus sanguineum",
+          "Lonicera xylosteum",
+          "Rosa canina",
+          "Rhamnus cathartica",
+          "Cytisus scoparius",
+          "Rhamnus frangula",
+          "Cornus mas",
+          "Sambucus nigra",
+          "Sambucus racemosa",
+          "Viburnum pulus",
+          "Viburnum lantana"
+        ],
+        "sponsors": "Kubbutat-Bau; sushifreunde.de; https://www.dominos.de/filiale/de-magdeburgsd-33847",
+        "number_of_trees_and_bushes": 800,
+        "more info": "www.ottopflanzt.de",
+        "planted_on": "2021-03-20"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.66670799255371,
+          52.178802001239
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.66637271642685,
+              52.178757593538606
+            ],
+            [
+              11.666415631771088,
+              52.17837272494478
+            ],
+            [
+              11.666576564311981,
+              52.178436869941685
+            ],
+            [
+              11.666555106639862,
+              52.178769106650385
+            ],
+            [
+              11.66637271642685,
+              52.178757593538606
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Buschfeldstraße A",
+        "tree_species": [
+          "Quercus robur",
+          "Prunus avium",
+          "Sorbus aucuparia",
+          "Mespilus germanica",
+          "Malus sylvestris",
+          "Pyrus pyraster",
+          "Euonymus europaeus",
+          "Crataegus monogyna",
+          "Cornus sanguineum",
+          "Lonicera xylosteum",
+          "Rosa canina",
+          "Rhamnus cathartica",
+          "Cytisus scoparius",
+          "Rhamnus frangula",
+          "Cornus mas",
+          "Sambucus nigra",
+          "Sambucus racemosa",
+          "Viburnum pulus",
+          "Viburnum lantana"
+        ],
+        "sponsors": "Kubbutat-Bau;sushifreunde.de; https://www.dominos.de/filiale/de-magdeburgsd-33847",
+        "number_of_trees_and_bushes": 400,
+        "more info": "www.ottopflanzt.de",
+        "planted_on": "2021-03-20"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.66637271642685,
+          52.178757593538606
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.556726694107056,
+              52.137857382654325
+            ],
+            [
+              11.557193398475647,
+              52.137793179150485
+            ],
+            [
+              11.557287275791166,
+              52.138010482943876
+            ],
+            [
+              11.556828618049622,
+              52.13807797860331
+            ],
+            [
+              11.556726694107056,
+              52.137857382654325
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Wellner Weg",
+        "tree_species": [
+          "Quercus robur",
+          "Prunus avium",
+          "Sorbus aucuparia",
+          "Mespilus germanica",
+          "Malus sylvestris",
+          "Pyrus pyraster",
+          "Euonymus europaeus",
+          "Crataegus monogyna",
+          "Cornus sanguineum",
+          "Lonicera xylosteum",
+          "Rosa canina",
+          "Rhamnus cathartica",
+          "Cytisus scoparius",
+          "Rhamnus frangula",
+          "Cornus mas",
+          "Sambucus nigra",
+          "Sambucus racemosa",
+          "Viburnum pulus",
+          "Viburnum lantana"
+        ],
+        "sponsors": "mdth.de",
+        "number_of_trees_and_bushes": 513,
+        "more info": "www.ottopflanzt.de",
+        "planted_on": "2021-11-13"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.556726694107056,
+          52.137857382654325
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.667059361934662,
+              52.09774345167097
+            ],
+            [
+              11.66762262582779,
+              52.09789833751977
+            ],
+            [
+              11.668067872524261,
+              52.098096063353765
+            ],
+            [
+              11.667904257774353,
+              52.09844702455056
+            ],
+            [
+              11.668167114257812,
+              52.09848327390652
+            ],
+            [
+              11.667944490909576,
+              52.09883917510957
+            ],
+            [
+              11.666364669799805,
+              52.09823776632899
+            ],
+            [
+              11.667059361934662,
+              52.09774345167097
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Elbweg 1",
+        "tree_species": [
+          "Quercus robur",
+          "Prunus avium",
+          "Sorbus aucuparia",
+          "Mespilus germanica",
+          "Malus sylvestris",
+          "Pyrus pyraster",
+          "Euonymus europaeus",
+          "Crataegus monogyna",
+          "Cornus sanguineum",
+          "Lonicera xylosteum",
+          "Rosa canina",
+          "Rhamnus cathartica",
+          "Cytisus scoparius",
+          "Rhamnus frangula",
+          "Cornus mas",
+          "Sambucus nigra",
+          "Sambucus racemosa",
+          "Viburnum pulus",
+          "Viburnum lantana"
+        ],
+        "sponsors": "Owner - Mr. Krueger",
+        "number_of_trees_and_bushes": 900,
+        "more info": "www.ottopflanzt.de",
+        "planted_on": "2021-11-20"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.667059361934662,
+          52.09774345167097
+        ]
+      }
+    }
+  ]
+}
