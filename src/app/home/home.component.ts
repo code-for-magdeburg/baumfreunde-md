@@ -127,12 +127,12 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
     try {
       this.dataIsLoading = true;
-      this.jumpToCurrentLocation();
       this.cityTrees = await this.dataService.getAllCityTrees();
       this.ottoPflanztAreas = await this.dataService.getOttoPflanztAreas();
       this.cityTreeLayerGroup = layerGroup();
       this.ottoPflanztLayerGroup = layerGroup();
       this.leafletLayers = [this.ottoPflanztLayerGroup, this.cityTreeLayerGroup];
+      this.jumpToCurrentLocation();
       this.updateDisplayedElements();
     } finally {
       this.dataIsLoading = false;
