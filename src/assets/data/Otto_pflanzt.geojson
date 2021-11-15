@@ -608,6 +608,74 @@
           52.09816197177034
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.67198657989502,
+              52.12706413254166
+            ],
+            [
+              11.672662496566772,
+              52.1269505141418
+            ],
+            [
+              11.672773808240889,
+              52.12713576138399
+            ],
+            [
+              11.67203888297081,
+              52.12714317125764
+            ],
+            [
+              11.67198657989502,
+              52.12706413254166
+            ]          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "MDCC-Arena",
+        "tree_species": [
+          "Quercus robur",
+          "Prunus avium",
+          "Sorbus aucuparia",
+          "Mespilus germanica",
+          "Malus sylvestris",
+          "Pyrus pyraster",
+          "Euonymus europaeus",
+          "Crataegus monogyna",
+          "Cornus sanguineum",
+          "Lonicera xylosteum",
+          "Rosa canina",
+          "Rhamnus cathartica",
+          "Cytisus scoparius",
+          "Rhamnus frangula",
+          "Cornus mas",
+          "Sambucus nigra",
+          "Sambucus racemosa",
+          "Viburnum pulus",
+          "Viburnum lantana"
+        ],
+        "sponsors": "1. FC Magdeburg",
+        "number_of_trees_and_bushes": 750,
+        "more info": "www.ottopflanzt.de",
+        "planted_on": "2021-11-07"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.672405004501343,
+          52.12708636219469
+        ]
+      }
     }
   ]
 }
