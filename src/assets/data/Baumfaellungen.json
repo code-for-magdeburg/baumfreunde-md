@@ -8260,5 +8260,23 @@
     "reportedDate": "2021-11-29",
     "pdfFile": "2021-11-29-Stadtpark_Abschnitt_7_Spitzahorn_G40278.pdf",
     "filesize": 576730
+  },
+  {
+    "treeId": "-",
+    "reportedDate": "2021-12-07",
+    "pdfFile": "2021-12-07-Herrenkrugpark,_1439_1,_Eibe.pdf",
+    "filesize": 3838661
+  },
+  {
+    "treeId": "G51449",
+    "reportedDate": "2021-12-07",
+    "pdfFile": "2021-12-07-Herrenkrugpark,_G51449,_Nußbaum.pdf",
+    "filesize": 7578508
+  },
+  {
+    "treeId": "G51457",
+    "reportedDate": "2021-12-07",
+    "pdfFile": "2021-12-07-Herrenkrugpark,_G51457,_Birke.pdf",
+    "filesize": 11048281
   }
 ]
