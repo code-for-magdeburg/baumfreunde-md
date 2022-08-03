@@ -22,6 +22,7 @@ import { FilterDialogComponent } from './filter-dialog/filter-dialog.component';
 import { ViewSettingsComponent } from './view-settings/view-settings.component';
 import { Feature, Point } from 'geojson';
 import { OttoPflanztFeature } from '../model/OttoPflanztFeature';
+import { PumpFeature } from '../model/PumpFeature';
 
 
 const MAX_ZOOM = 20;
@@ -31,10 +32,15 @@ const MAP_ATTRIBUTION = 'Kartendaten &copy; <a href="https://www.openstreetmap.o
 const CURRENT_YEAR = new Date().getFullYear();
 
 const OTTO_PFLANZT_ICON = icon({
-  iconSize: [32, 48],
-  iconAnchor: [16, 48],
-  iconUrl: 'assets/images/otto-pflanzt-marker.png',
-  shadowUrl: 'assets/marker-icons/marker-shadow.png'
+  iconSize: [16, 24],
+  iconAnchor: [8, 24],
+  iconUrl: 'assets/images/otto-pflanzt-marker-2x.png'
+});
+
+const PUMP_ICON = icon({
+  iconSize: [16, 24],
+  iconAnchor: [8, 24],
+  iconUrl: 'assets/images/pump-marker-2x.png'
 });
 
 
@@ -68,6 +74,7 @@ export class FilterSettings {
 export class ViewSettings {
   cityTrees = true;
   ottoPflanzt = true;
+  pumps = true;
 }
 
 
@@ -104,9 +111,11 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   cityTrees: CityTree[] = [];
   ottoPflanztAreas: any = {};
+  pumps: any = {};
   leafletLayers: Layer[] = [];
   cityTreeLayerGroup: LayerGroup<CityTree>;
   ottoPflanztLayerGroup: LayerGroup;
+  pumpsLayerGroup: LayerGroup;
   filterSettings = new FilterSettings();
   viewSettings = new ViewSettings();
 
@@ -129,9 +138,11 @@ export class HomeComponent implements OnInit, AfterViewInit {
       this.dataIsLoading = true;
       this.cityTrees = await this.dataService.getAllCityTrees();
       this.ottoPflanztAreas = await this.dataService.getOttoPflanztAreas();
+      this.pumps = await this.dataService.getPumps();
       this.cityTreeLayerGroup = layerGroup();
       this.ottoPflanztLayerGroup = layerGroup();
-      this.leafletLayers = [this.ottoPflanztLayerGroup, this.cityTreeLayerGroup];
+      this.pumpsLayerGroup = layerGroup();
+      this.leafletLayers = [this.ottoPflanztLayerGroup, this.cityTreeLayerGroup, this.pumpsLayerGroup];
       this.jumpToCurrentLocation();
       this.updateDisplayedElements();
     } finally {
@@ -241,12 +252,30 @@ export class HomeComponent implements OnInit, AfterViewInit {
         };
         const plantedOnStr = new Date(point.properties.planted_on).toLocaleDateString('de', fmtOptions);
         const content = `
-            <h1>Otto pflanzt!</h1>
+            <h5>Otto pflanzt!</h5>
             Ort: <strong>${point.properties.title}</strong><br>
             Was: <strong>${point.properties.tree_species.length} versch. Arten</strong><br>
             Wieviel: <strong>${point.properties.number_of_trees_and_bushes} Bäume und Sträucher</strong><br>
             Wann: <strong>${plantedOnStr}</strong>
         `;
+        return marker(latlng, options).bindPopup(content);
+      }
+    });
+
+  }
+
+
+  private createPumpsLayers(): GeoJSON {
+
+    if (!this.viewSettings.pumps) {
+      return geoJSON();
+    }
+
+    return geoJSON(this.pumps, {
+      pointToLayer: (point: Feature<Point, PumpFeature>, latlng: LatLng): Layer => {
+        const title = point.properties.title || point.properties.note || point.properties.name || 'Wasserpumpe';
+        const options: MarkerOptions = { icon: PUMP_ICON, title };
+        const content = `<h5>${title}</h5>`;
         return marker(latlng, options).bindPopup(content);
       }
     });
@@ -332,6 +361,8 @@ export class HomeComponent implements OnInit, AfterViewInit {
     this.createCityTreeLayers().forEach(layer => this.cityTreeLayerGroup.addLayer(layer));
     this.ottoPflanztLayerGroup.clearLayers();
     this.ottoPflanztLayerGroup.addLayer(this.createOttoPflanztLayers());
+    this.pumpsLayerGroup.clearLayers();
+    this.pumpsLayerGroup.addLayer(this.createPumpsLayers());
   }
 
 

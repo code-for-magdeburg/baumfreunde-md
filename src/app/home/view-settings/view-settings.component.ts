@@ -15,6 +15,7 @@ export class ViewSettingsComponent implements OnInit {
 
   showCityTrees = true;
   showOttoPflanzt = false;
+  showPumps = false;
 
   onConfirm: (viewSettings: ViewSettings) => void;
 
@@ -26,6 +27,7 @@ export class ViewSettingsComponent implements OnInit {
   ngOnInit(): void {
     this.showCityTrees = this.viewSettings.cityTrees;
     this.showOttoPflanzt = this.viewSettings.ottoPflanzt;
+    this.showPumps = this.viewSettings.pumps;
   }
 
 
@@ -33,6 +35,7 @@ export class ViewSettingsComponent implements OnInit {
     const updatedViewSettings = new ViewSettings();
     updatedViewSettings.cityTrees = this.showCityTrees;
     updatedViewSettings.ottoPflanzt = this.showOttoPflanzt;
+    updatedViewSettings.pumps = this.showPumps;
     this.onConfirm(updatedViewSettings);
     this.modalRef.hide();
   }

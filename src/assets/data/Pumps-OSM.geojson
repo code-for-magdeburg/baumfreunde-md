@@ -1,0 +1,523 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2022-08-03T07:53:54Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/322036807",
+        "addr:city": "Magdeburg",
+        "addr:country": "DE",
+        "addr:street": "Alter Markt",
+        "amenity": "fountain",
+        "description": "Eulenspiegel-Brunnen, Alter Markt in Magdeburg Stt Magdeburger Altstadt",
+        "drinking_water": "no",
+        "fountain": "splash_pad",
+        "heritage": "yes",
+        "heritage:operator": "lda",
+        "historic": "yes",
+        "image": "https://commons.wikimedia.org/wiki/File:MD-Altstadt_Eulenspiegelbrunnen.jpg",
+        "lda:criteria": "Baudenkmal",
+        "man_made": "water_well",
+        "name": "Eulenspiegel-Brunnen",
+        "operator": "Eulenspiegel-Multimedia Inhaber Lars Eichhorn",
+        "ref:lda": "094 70996",
+        "wheelchair": "yes",
+        "wikidata": "Q28804075"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6382988,
+          52.1318639
+        ]
+      },
+      "id": "node/322036807"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/355527482",
+        "man_made": "water_well"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6373446,
+          52.1276704
+        ]
+      },
+      "id": "node/355527482"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/390436000",
+        "drinking_water": "no",
+        "drinking_water:legal": "no",
+        "man_made": "water_well",
+        "note": "Brunnen mit Handpumpe",
+        "source": "OSB-Hinweis"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6127651,
+          52.1345248
+        ]
+      },
+      "id": "node/390436000"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/391407443",
+        "drinking_water": "no",
+        "drinking_water:legal": "no",
+        "man_made": "water_well",
+        "pump": "manual",
+        "pump:style": "historic",
+        "pump:type": "beam_pump",
+        "water": "water_well",
+        "water_well": "pump"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6404193,
+          52.1315858
+        ]
+      },
+      "id": "node/391407443"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/417811956",
+        "man_made": "water_well"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6395109,
+          52.1289107
+        ]
+      },
+      "id": "node/417811956"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/815320180",
+        "man_made": "water_well"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6085676,
+          52.1359257
+        ]
+      },
+      "id": "node/815320180"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/938088430",
+        "man_made": "water_well",
+        "pump": "manual",
+        "pump:style": "historic",
+        "pump:type": "beam_pump",
+        "water": "water_well",
+        "water_well": "pump"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6287624,
+          52.1299561
+        ]
+      },
+      "id": "node/938088430"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/938088438",
+        "amenity": "drinking_water",
+        "man_made": "water_well",
+        "pump": "manual",
+        "pump:style": "historic",
+        "pump:type": "beam_pump",
+        "water": "water_well",
+        "water_well": "pump",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6288763,
+          52.1216971
+        ]
+      },
+      "id": "node/938088438"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/938088440",
+        "check_date": "2021-07-30",
+        "emergency": "drinking_water",
+        "man_made": "water_well",
+        "pump": "manual",
+        "pump:status": "ok",
+        "pump:style": "historic",
+        "pump:type": "beam_pump",
+        "water": "water_well",
+        "water_well": "pump"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6369238,
+          52.1317412
+        ]
+      },
+      "id": "node/938088440"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1165446736",
+        "man_made": "water_well",
+        "pump": "manual",
+        "source": "OSB-Hinweis"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6220181,
+          52.115397
+        ]
+      },
+      "id": "node/1165446736"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1278625009",
+        "drinking_water": "no",
+        "drinking_water:legal": "no",
+        "man_made": "water_well",
+        "source": "OSB-Hinweis"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6458718,
+          52.1366931
+        ]
+      },
+      "id": "node/1278625009"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1376870431",
+        "drinking_water": "no",
+        "drinking_water:legal": "no",
+        "man_made": "water_well",
+        "note": "Schwengelpumpe",
+        "source": "OSB-Hinweis"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6171158,
+          52.1349317
+        ]
+      },
+      "id": "node/1376870431"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1550484635",
+        "man_made": "water_well",
+        "note": "Brunnen mit Handpumpe",
+        "source": "OSB-Hinweis"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6126573,
+          52.1305455
+        ]
+      },
+      "id": "node/1550484635"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1743294900",
+        "drinking_water": "no",
+        "drinking_water:legal": "no",
+        "loc_name": "Plumpe",
+        "man_made": "water_well",
+        "pump": "manual",
+        "pump:style": "historic",
+        "pump:type": "beam_pump",
+        "ref": "1",
+        "reg_name": "Schucke",
+        "water": "water_well",
+        "water_well": "pump"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.62645,
+          52.1220167
+        ]
+      },
+      "id": "node/1743294900"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1773020316",
+        "drinking_water": "no",
+        "drinking_water:legal": "no",
+        "man_made": "water_well",
+        "name": "Nottrinkwasserpumpe Wallonerberg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.64725,
+          52.1342833
+        ]
+      },
+      "id": "node/1773020316"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1787790579",
+        "man_made": "water_well"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.640617,
+          52.154803
+        ]
+      },
+      "id": "node/1787790579"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1800443824",
+        "drinking_water": "no",
+        "drinking_water:legal": "no",
+        "loc_name": "plumpe",
+        "man_made": "water_well",
+        "name": "Gerhart-Hauptmann-Straße",
+        "pump": "manual",
+        "pump:style": "historic",
+        "pump:type": "beam_pump",
+        "ref": "4",
+        "reg_name": "Schucke",
+        "water": "water_well",
+        "water_well": "plumpe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6162167,
+          52.13245
+        ]
+      },
+      "id": "node/1800443824"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4426409976",
+        "drinking_water": "no",
+        "man_made": "water_well",
+        "note": "Funktioniert nicht (Stand 09.05.2018)",
+        "operator": "Stadt Magdeburg",
+        "pump": "manual",
+        "pump:status": "out_of_order",
+        "pump:style": "historic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6087348,
+          52.1264779
+        ]
+      },
+      "id": "node/4426409976"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4432823420",
+        "addr:city": "Magdeburg",
+        "addr:postcode": "39114",
+        "addr:street": "Wasserstraße",
+        "description": "Wasserpumpe mit Handbetrieb zur Notwasserversorgung. ACHTUNG, KEIN TRINKWASSER!",
+        "man_made": "water_well",
+        "name": "Brauchwassernotversorgung (KEIN TRINKWASSER!)",
+        "operator": "Stadt Magdeburg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6547908,
+          52.1325784
+        ]
+      },
+      "id": "node/4432823420"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5107549937",
+        "man_made": "water_well",
+        "pump": "manual",
+        "source": "OSM-Hinweis"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6199449,
+          52.1124289
+        ]
+      },
+      "id": "node/5107549937"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6022304142",
+        "drinking_water": "no",
+        "man_made": "water_well",
+        "operator": "Stadt Magdeburg",
+        "pump": "manual",
+        "pump:status": "out_of_order"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6019484,
+          52.1255403
+        ]
+      },
+      "id": "node/6022304142"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6979175695",
+        "man_made": "water_well",
+        "pump": "manual",
+        "source": "OSM-Hinweis"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6026711,
+          52.1149777
+        ]
+      },
+      "id": "node/6979175695"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7086715011",
+        "drinking_water": "no",
+        "man_made": "water_well",
+        "operator": "Stadt Magdeburg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6069742,
+          52.1328252
+        ]
+      },
+      "id": "node/7086715011"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7086715012",
+        "drinking_water": "no",
+        "man_made": "water_well",
+        "operator": "Stadt Magdeburg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6092368,
+          52.1300151
+        ]
+      },
+      "id": "node/7086715012"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7931708585",
+        "man_made": "water_well"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6379196,
+          52.1710527
+        ]
+      },
+      "id": "node/7931708585"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7931710285",
+        "man_made": "water_well"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.637934,
+          52.1710377
+        ]
+      },
+      "id": "node/7931710285"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8420279664",
+        "drinking_water": "no",
+        "historic": "yes",
+        "man_made": "water_well",
+        "pump": "manual"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.565468,
+          52.1302252
+        ]
+      },
+      "id": "node/8420279664"
+    }
+  ]
+}

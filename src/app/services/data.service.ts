@@ -43,6 +43,13 @@ export class DataService {
   }
 
 
+  public async getPumps(): Promise<any> {
+    return this.http
+      .get('/assets/data/Pumps-OSM.geojson')
+      .toPromise();
+  }
+
+
   private async loadData(): Promise<void> {
 
     const p1 = this.createFetchCityTreesPromise();
