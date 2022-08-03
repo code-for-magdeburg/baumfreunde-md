@@ -39,10 +39,9 @@ const OTTO_PFLANZT_ICON = icon({
 });
 
 const PUMP_ICON = icon({
-  iconSize: [32, 48],
-  iconAnchor: [16, 48],
-  iconUrl: 'assets/images/pump-marker-2x.png',
-  shadowUrl: 'assets/marker-icons/marker-shadow.png'
+  iconSize: [16, 24],
+  iconAnchor: [8, 24],
+  iconUrl: 'assets/images/pump-marker-2x.png'
 });
 
 
