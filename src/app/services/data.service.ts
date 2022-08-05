@@ -45,7 +45,7 @@ export class DataService {
 
   public async getPumps(): Promise<any> {
     return this.http
-      .get('/assets/data/Pumps-OSM.geojson')
+      .get('/assets/data/Pumps.geojson')
       .toPromise();
   }
 
