@@ -1,0 +1,1435 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Eichplatz",
+        "type": "Till Eulenspiegel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.574007,
+          52.0900474
+        ]
+      },
+      "id": "1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Graubestraße 1/Osterweddinger Str.",
+        "type": "Alte Gößnitzer"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5722131,
+          52.0833449
+        ]
+      },
+      "id": "2"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Bahnhofsvorplatz",
+        "type": "Till Eulenspiegel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6287909,
+          52.1299249
+        ]
+      },
+      "id": "3"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Lüttgen-Ottersleben 6",
+        "type": "Alte Gößnitzer"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.573114,
+          52.0982515
+        ]
+      },
+      "id": "4"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Ambrosiusplatz 7",
+        "type": "Till Eulenspiegel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.598038,
+          52.109411
+        ]
+      },
+      "id": "5"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Eiskellerplatz/Rottersdorfer Straße 10",
+        "type": "Till Eulenspiegel",
+        "note": "Zurzeit wegen einer Baustelle nicht zugänglich"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.602031,
+          52.111006
+        ]
+      },
+      "id": "7"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Heidestraße 14",
+        "type": "Till Eulenspiegel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6030311,
+          52.1080384
+        ]
+      },
+      "id": "8"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Leipziger Straße 54",
+        "type": "Till Eulenspiegel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6199449,
+          52.1124289
+        ]
+      },
+      "id": "9"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Salvador-Allende-Straße 13/Am See Nordseite",
+        "type": "FSH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6379196,
+          52.1710527
+        ]
+      },
+      "id": "10"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Freie Straße/ Marienstraße",
+        "type": "FSH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6310722,
+          52.1052054
+        ]
+      },
+      "id": "11"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Porsestraße 2",
+        "type": "Alte Gößnitzer"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.630864,
+          52.112573
+        ]
+      },
+      "id": "13"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Sohlener Hauptstraße 9",
+        "type": "Alte Gößnitzer"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.639823,
+          52.048238
+        ]
+      },
+      "id": "14"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Schellingstraße/ Harnackstraße 11",
+        "type": "Till Eulenspiegel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.629245,
+          52.115665
+        ]
+      },
+      "id": "15"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Hegelstraße 22",
+        "type": "Lauchhammer"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6297166,
+          52.1188386
+        ]
+      },
+      "id": "16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Hegelstraße 15",
+        "type": "Lauchhammer"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6310681,
+          52.1205269
+        ]
+      },
+      "id": "17"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Breiter Weg 230/Einsteinstraße",
+        "type": "Till Eulenspiegel",
+        "note": "Sanierung bis 2023"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6288763,
+          52.1216971
+        ]
+      },
+      "id": "18"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Bahnhofstraße 49a/Einsteinstraße",
+        "type": "Till Eulenspiegel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.62645,
+          52.1220167
+        ]
+      },
+      "id": "19"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Sternstraße 4",
+        "type": "Till Eulenspiegel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6273881,
+          52.1196001
+        ]
+      },
+      "id": "21"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Domplatz 2",
+        "type": "Till Eulenspiegel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6357113,
+          52.1250178
+        ]
+      },
+      "id": "22"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Wallonerberg",
+        "type": "Till Eulenspiegel",
+        "note": "Sanierung bis 2023"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.64725,
+          52.1342833
+        ]
+      },
+      "id": "24"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Westernplan 1",
+        "type": "FSH",
+        "note": "Sanierung bis 2023"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.617357,
+          52.137124
+        ]
+      },
+      "id": "25"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Breiter Weg 22 (gegenüber Karstadt)",
+        "type": "Till Eulenspiegel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6369238,
+          52.1317412
+        ]
+      },
+      "id": "26"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Bei der Hauptwache (Nordseite Rathaus)",
+        "type": "Till Eulenspiegel",
+        "note": "Sanierung bis 2023"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6404193,
+          52.1315858
+        ]
+      },
+      "id": "27"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Tränsberg 13",
+        "type": "Till Eulenspiegel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6458718,
+          52.1366931
+        ]
+      },
+      "id": "29"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Wasserstraße 3 (vor dem Altenheim)",
+        "type": "Till Eulenspiegel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6547908,
+          52.1325784
+        ]
+      },
+      "id": "30"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Mittelstraße/Badestraße",
+        "type": "FSH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.650441,
+          52.128744
+        ]
+      },
+      "id": "31"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Brückenbreite/Zipkeleber Weg",
+        "type": "Alte Gößnitzer",
+        "note": "Zugänglich und funktionstüchtig "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6822229,
+          52.1119046
+        ]
+      },
+      "id": "34"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Merkurweg 30/32",
+        "type": "Alte Gößnitzer",
+        "note": "Zugänglich hinter Zaun, aber augenscheinlich Privatgrund"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.616123,
+          52.085376
+        ]
+      },
+      "id": "35"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Am Teich (Alt Olvenstedt)",
+        "type": "Alte Gößnitzer"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.567062,
+          52.157788
+        ]
+      },
+      "id": "38"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Denkmalplatz Calenberge",
+        "type": "Alte Gößnitzer"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7423937,
+          52.0622749
+        ]
+      },
+      "id": "39"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Lutherstraße/Langer Weg",
+        "type": "Till Eulenspiegel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.596933,
+          52.115214
+        ]
+      },
+      "id": "40"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Helmstedter Straße/Lutherstraße",
+        "type": "Till Eulenspiegel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6026711,
+          52.1149777
+        ]
+      },
+      "id": "41"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Schellheimerplatz",
+        "type": "Till Eulenspiegel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6087348,
+          52.1264779
+        ]
+      },
+      "id": "42"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Liebermannstraße/Alexander-Puschkin-Straße",
+        "type": "Till Eulenspiegel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6069742,
+          52.1328252
+        ]
+      },
+      "id": "44"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Große Diesdorfer Straße/Annastraße 19",
+        "type": "Alte Gößnitzer"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6092368,
+          52.1300151
+        ]
+      },
+      "id": "45"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Große Diesdorfer Straße/Maxim-Gorki-Straße",
+        "type": "Till Eulenspiegel",
+        "note": "Sanierung bis 2023"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6126573,
+          52.1305455
+        ]
+      },
+      "id": "46"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Gerhart- Hauptmann- Straße 15",
+        "type": "Till Eulenspiegel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6162167,
+          52.13245
+        ]
+      },
+      "id": "47"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Gerhart-Hauptmann-Straße/Große Diesdorfer Stra",
+        "type": "Till Eulenspiegel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.616484,
+          52.130201
+        ]
+      },
+      "id": "48"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Olvenstedter Straße 43/Immermannstraße 18",
+        "type": "Till Eulenspiegel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6085676,
+          52.1359257
+        ]
+      },
+      "id": "49"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Alt Diesdorf (vor der Feuerwehr)",
+        "type": "Alte Gößnitzer"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.565468,
+          52.1302252
+        ]
+      },
+      "id": "50"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Zerrennerstraße/Dietrichstraße",
+        "type": "Alte Gößnitzer"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.565466,
+          52.132053
+        ]
+      },
+      "id": "51"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Druxberger Weg 31",
+        "type": "Alte Gößnitzer",
+        "note": "Auf Privatgrundstück hinter Zaun"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5719971,
+          52.1197929
+        ]
+      },
+      "id": "53"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Haydnplatz",
+        "type": "Till Eulenspiegel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.638162,
+          52.141464
+        ]
+      },
+      "id": "55"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Pfälzer Platz",
+        "type": "Till Eulenspiegel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6477862,
+          52.1408796
+        ]
+      },
+      "id": "56"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Gutenbergstraße 24/Kühleweinstraße",
+        "type": "Till Eulenspiegel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6384312,
+          52.1448505
+        ]
+      },
+      "id": "57"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Am Weinhof 5",
+        "type": "FSH",
+        "note": "Sanierung bis 2023"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.645758,
+          52.144903
+        ]
+      },
+      "id": "58"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Ottenbergstraße/ Weinbergstraße",
+        "type": "Alte Gößnitzer"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6512279,
+          52.1477623
+        ]
+      },
+      "id": "59"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Sieverstorstraße 45",
+        "type": "FSH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.646922,
+          52.14938
+        ]
+      },
+      "id": "60"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Insleber Straße/Ecke Lübecker Straße",
+        "type": "FSH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.639189,
+          52.148107
+        ]
+      },
+      "id": "61"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Nicolaiplatz /Brüderstraße",
+        "type": "Till Eulenspiegel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6385336,
+          52.155927
+        ]
+      },
+      "id": "62"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Moritzplatz, nordöstlicher Bereich",
+        "type": "Till Eulenspiegel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.633161,
+          52.155533
+        ]
+      },
+      "id": "63"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Fabrikenstraße 2",
+        "type": "Till Eulenspiegel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.638079,
+          52.1586548
+        ]
+      },
+      "id": "64"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Alexanderstraße 25",
+        "type": "Till Eulenspiegel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6354545,
+          52.160575
+        ]
+      },
+      "id": "65"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Turmstraße 5",
+        "type": "Alte Gößnitzer"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6635806,
+          52.1837055
+        ]
+      },
+      "id": "66"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Kuckhoffplatz 5, Westseite",
+        "type": "FSH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.633207,
+          52.159388
+        ]
+      },
+      "id": "67"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Robert- Meyer- Straße 10",
+        "type": "Alte Gößnitzer",
+        "note": "Straßenname falsch geschrieben; richtig ist: Robert-Mayer-Straße, genaue Adressangabe wäre m.E: gegenüber Robert-Mayer-Straße 10/Pettenkoferstraße 4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.650662,
+          52.164846
+        ]
+      },
+      "id": "68"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Jakobstraße 2",
+        "type": "Till Eulenspiegel",
+        "note": "Sanierung bis 2023"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.642223,
+          52.131085
+        ]
+      },
+      "id": "69"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Heideweg (vor dem Pflegeheim)",
+        "type": "Alte Gößnitzer",
+        "note": "Korrekte Adresse: Heideweg 45, Aus Apple \"Karten\" + Google Maps"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6431675,
+          52.1708431
+        ]
+      },
+      "id": "72"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Hospitalstraße 6/Schmidtstraße",
+        "type": "Till Eulenspiegel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.640617,
+          52.154803
+        ]
+      },
+      "id": "75"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Randau, Zur Kreuzhorst 21",
+        "type": "Alte Gößnitzer"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7237668,
+          52.0606891
+        ]
+      },
+      "id": "77"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Morgenstraße 63",
+        "type": "Till Eulenspiegel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6408644,
+          52.1579452
+        ]
+      },
+      "id": "79"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Oebisfelder Straße 5/6",
+        "type": "Alte Gößnitzer"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6574801,
+          52.1838588
+        ]
+      },
+      "id": "80"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Friesenstraße/Schopenhauerstraße",
+        "type": "Till Eulenspiegel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6099448,
+          52.1379491
+        ]
+      },
+      "id": "84"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Olvenstedter Straße/Gerhart-Hauptmann-Straße",
+        "type": "Till Eulenspiegel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6171158,
+          52.1349317
+        ]
+      },
+      "id": "85"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Irenenplatz 8",
+        "type": "Alte Gößnitzer",
+        "note": "Schild: kein Trinkwasser; Pumpe funktioniert nicht, es kommt kein Wasser (04.08.2022)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6527018,
+          52.078701
+        ]
+      },
+      "id": "88"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Mittagstraße/Lübecker Straße 12",
+        "type": "Till Eulenspiegel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.636566,
+          52.15341
+        ]
+      },
+      "id": "89"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Welsleber Straße 2a, Bahnhof Südost",
+        "type": "Till Eulenspiegel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.668978,
+          52.070344
+        ]
+      },
+      "id": "90"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Am Dorfteich 5 (Ottersleben)",
+        "type": "Till Eulenspiegel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5716892,
+          52.0877449
+        ]
+      },
+      "id": "93"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Rotdornweg 15",
+        "type": "Alte Gößnitzer"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.631761,
+          52.093767
+        ]
+      },
+      "id": "95"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Kannenstieg 1",
+        "type": "FSH",
+        "note": "Eingezäunt auf dem Gelände einer Kita"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.62231,
+          52.1699073
+        ]
+      },
+      "id": "96"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Thiemplatz",
+        "type": "Till Eulenspiegel",
+        "note": "Außer Betrieb"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6400032,
+          52.1067699
+        ]
+      },
+      "id": "97"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Hellestraße/Halberstädter Straße 29a",
+        "type": "FSH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6144695,
+          52.116213
+        ]
+      },
+      "id": "98"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Uhlandstraße 14",
+        "type": "Till Eulenspiegel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6127651,
+          52.1345248
+        ]
+      },
+      "id": "99"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Beyendorfer Schulstraße/ Ecke Obere Siedlung",
+        "type": "Alte Gößnitzer"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.633186,
+          52.057287
+        ]
+      },
+      "id": "101"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Schulstraße 6/An der Kirche Beyendorf",
+        "type": "Alte Gößnitzer"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.635453,
+          52.056671
+        ]
+      },
+      "id": "102"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Sohlener Mittelstraße/Unter der Wiesche",
+        "type": "Alte Gößnitzer"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6395985,
+          52.0469532
+        ]
+      },
+      "id": "103"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Alt Salbke 65/Ecke Kreuzhorststraße",
+        "type": "Till Eulenspiegel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.670265,
+          52.0730125
+        ]
+      },
+      "id": "104"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Ottersleber Chaussee 45a",
+        "type": "Sonderpumpe",
+        "note": "nicht auffindbar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.636996,
+          52.078262
+        ]
+      },
+      "id": "105"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Hermann-Bruse-Platz 2a",
+        "type": "FSH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.620577,
+          52.1554248
+        ]
+      },
+      "id": "109"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Kirschweg 61",
+        "type": "FSH",
+        "note": "Schild: kein Trinkwasser; 04. 08. 2022 keine Entnahme möglich; Schwengel funktioniert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.613294,
+          52.09499
+        ]
+      },
+      "id": "110"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Braunschweiger Straße 74",
+        "type": "FSH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5936586,
+          52.1127831
+        ]
+      },
+      "id": "112"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Milchweg 5/6",
+        "type": "FSH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.621866,
+          52.16224
+        ]
+      },
+      "id": "114"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Kiefernweg 9",
+        "type": "Alte Gößnitzer",
+        "note": "Eingezäunt auf Privatgrund, Aus Apple \"Karten\" + Google Maps"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.632838,
+          52.092876
+        ]
+      },
+      "id": "117"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Zur Korngrube 3",
+        "type": "Alte Gößnitzer"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5645751,
+          52.1318576
+        ]
+      },
+      "id": "118"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Beyendorfer Dorfstraße 25",
+        "type": "Alte Gößnitzer"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6334288,
+          52.0579846
+        ]
+      },
+      "id": "120"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Lennéstraße 3a",
+        "type": "FSH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6220181,
+          52.115397
+        ]
+      },
+      "id": "121"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Sankt-Maria-Hilf-Straße 1",
+        "type": "FSH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.578972,
+          52.093645
+        ]
+      },
+      "id": "122"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Dachsbreite 4",
+        "type": "Alte Gößnitzer"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.623138,
+          52.085305
+        ]
+      },
+      "id": "123"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Herweghstraße 6",
+        "type": "FSH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6591178,
+          52.1230518
+        ]
+      },
+      "id": "124"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Fröbelstraße 100",
+        "type": "FSH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6019484,
+          52.1255403
+        ]
+      },
+      "id": "125"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Rubensweg 37",
+        "type": "Alte Gößnitzer"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.594188,
+          52.146977
+        ]
+      },
+      "id": "128"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Harzburger Straße 1",
+        "type": "FSH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.597178,
+          52.098409
+        ]
+      },
+      "id": "129"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Seestraße 11",
+        "type": "FSH",
+        "note": "korrekte Adresse: Seestr. 8c"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6621563,
+          52.1147795
+        ]
+      },
+      "id": "131"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Albert-Schweitzer-Straße 13",
+        "type": "FSH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6295561,
+          52.1730735
+        ]
+      },
+      "id": "132"
+    }
+  ]
+}

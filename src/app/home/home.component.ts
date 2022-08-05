@@ -273,7 +273,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
     return geoJSON(this.pumps, {
       pointToLayer: (point: Feature<Point, PumpFeature>, latlng: LatLng): Layer => {
-        const title = point.properties.title || point.properties.note || point.properties.name || 'Wasserpumpe';
+        const title = 'Wasserpumpe';
         const options: MarkerOptions = { icon: PUMP_ICON, title };
         const content = `<h5>${title}</h5>`;
         return marker(latlng, options).bindPopup(content);
