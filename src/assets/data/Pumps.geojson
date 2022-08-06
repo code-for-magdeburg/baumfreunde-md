@@ -643,6 +643,22 @@
     {
       "type": "Feature",
       "properties": {
+        "location": "Klosterhof 3",
+        "type": "Alte Gößnitzer",
+        "note": "Außer Betrieb"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.670244,
+          52.077904
+        ]
+      },
+      "id": "54"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "location": "Haydnplatz",
         "type": "Till Eulenspiegel"
       },
@@ -977,6 +993,22 @@
     {
       "type": "Feature",
       "properties": {
+        "location": "Sandgrubenweg 7",
+        "type": "Alte Gößnitzer",
+        "note": "Außer Betrieb"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.657161,
+          52.071022
+        ]
+      },
+      "id": "87"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "location": "Irenenplatz 8",
         "type": "Alte Gößnitzer",
         "note": "Schild: kein Trinkwasser; Pumpe funktioniert nicht, es kommt kein Wasser (04.08.2022)"
@@ -1252,6 +1284,22 @@
     {
       "type": "Feature",
       "properties": {
+        "location": "Am Kiebitzpfuhl 27",
+        "type": "FSH",
+        "note": "In Betrieb"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.616374,
+          52.151723
+        ]
+      },
+      "id": "115"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "location": "Kiefernweg 9",
         "type": "Alte Gößnitzer",
         "note": "Eingezäunt auf Privatgrund, Aus Apple \"Karten\" + Google Maps"
@@ -1279,6 +1327,22 @@
         ]
       },
       "id": "118"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Grenzweg 34",
+        "type": "Till Eulenspiegel",
+        "note": "In Betrieb"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.582818,
+          52.143603
+        ]
+      },
+      "id": "119"
     },
     {
       "type": "Feature",
@@ -1403,6 +1467,22 @@
     {
       "type": "Feature",
       "properties": {
+        "location": "St.-Josef-Straße 71",
+        "type": "FSH",
+        "note": "Außer Betrieb"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.583270,
+          52.151677
+        ]
+      },
+      "id": "130"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "location": "Seestraße 11",
         "type": "FSH",
         "note": "korrekte Adresse: Seestr. 8c"
@@ -1430,6 +1510,22 @@
         ]
       },
       "id": "132"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Hans-Grade-Straße 32, Parkweg",
+        "type": "FSH",
+        "note": "Außer Betrieb"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.587945,
+          52.153617
+        ]
+      },
+      "id": "133"
     }
   ]
 }
