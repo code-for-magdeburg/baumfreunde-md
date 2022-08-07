@@ -627,6 +627,22 @@
     {
       "type": "Feature",
       "properties": {
+        "location": "Schnarsleber Straße 6",
+        "type": "Alte Gößnitzer",
+        "note": "Außer Betrieb"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.567922,
+          52.130386
+        ]
+      },
+      "id": "52"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "location": "Druxberger Weg 31",
         "type": "Alte Gößnitzer",
         "note": "Auf Privatgrundstück hinter Zaun"
@@ -959,6 +975,22 @@
         ]
       },
       "id": "80"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Roseneck 7a",
+        "type": "Alte Gößnitzer",
+        "note": "Außer Betrieb"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5772450,
+          52.0848435
+        ]
+      },
+      "id": "82"
     },
     {
       "type": "Feature",
@@ -1526,6 +1558,22 @@
         ]
       },
       "id": "133"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Curiestraße vor 61",
+        "type": "FSH",
+        "note": "Außer Betrieb"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.658844,
+          52.162147
+        ]
+      },
+      "id": "134"
     }
   ]
 }
