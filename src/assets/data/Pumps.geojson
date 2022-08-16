@@ -627,6 +627,22 @@
     {
       "type": "Feature",
       "properties": {
+        "location": "Schnarsleber Straße 6",
+        "type": "Alte Gößnitzer",
+        "note": "Außer Betrieb"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.567922,
+          52.130386
+        ]
+      },
+      "id": "52"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "location": "Druxberger Weg 31",
         "type": "Alte Gößnitzer",
         "note": "Auf Privatgrundstück hinter Zaun"
@@ -639,6 +655,22 @@
         ]
       },
       "id": "53"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Klosterhof 3",
+        "type": "Alte Gößnitzer",
+        "note": "Außer Betrieb"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.670244,
+          52.077904
+        ]
+      },
+      "id": "54"
     },
     {
       "type": "Feature",
@@ -947,6 +979,22 @@
     {
       "type": "Feature",
       "properties": {
+        "location": "Roseneck 7a",
+        "type": "Alte Gößnitzer",
+        "note": "Außer Betrieb"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5772450,
+          52.0848435
+        ]
+      },
+      "id": "82"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "location": "Friesenstraße/Schopenhauerstraße",
         "type": "Till Eulenspiegel"
       },
@@ -973,6 +1021,22 @@
         ]
       },
       "id": "85"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Sandgrubenweg 7",
+        "type": "Alte Gößnitzer",
+        "note": "Außer Betrieb"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.657161,
+          52.071022
+        ]
+      },
+      "id": "87"
     },
     {
       "type": "Feature",
@@ -1252,6 +1316,38 @@
     {
       "type": "Feature",
       "properties": {
+        "location": "Am Kiebitzpfuhl 27",
+        "type": "FSH",
+        "note": "In Betrieb"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.616374,
+          52.151723
+        ]
+      },
+      "id": "115"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Breite Straße 18/Gemeindehof Pechau",
+        "type": "Alte Gößnitzer",
+        "note": "In Betrieb"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.717491,
+          52.089375
+        ]
+      },
+      "id": "116"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "location": "Kiefernweg 9",
         "type": "Alte Gößnitzer",
         "note": "Eingezäunt auf Privatgrund, Aus Apple \"Karten\" + Google Maps"
@@ -1279,6 +1375,22 @@
         ]
       },
       "id": "118"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Grenzweg 34",
+        "type": "Till Eulenspiegel",
+        "note": "In Betrieb"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.582818,
+          52.143603
+        ]
+      },
+      "id": "119"
     },
     {
       "type": "Feature",
@@ -1403,6 +1515,22 @@
     {
       "type": "Feature",
       "properties": {
+        "location": "St.-Josef-Straße 71",
+        "type": "FSH",
+        "note": "Außer Betrieb"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.583270,
+          52.151677
+        ]
+      },
+      "id": "130"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "location": "Seestraße 11",
         "type": "FSH",
         "note": "korrekte Adresse: Seestr. 8c"
@@ -1430,6 +1558,38 @@
         ]
       },
       "id": "132"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Hans-Grade-Straße 32, Parkweg",
+        "type": "FSH",
+        "note": "Außer Betrieb"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.587945,
+          52.153617
+        ]
+      },
+      "id": "133"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Curiestraße vor 61",
+        "type": "FSH",
+        "note": "Außer Betrieb"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.658844,
+          52.162147
+        ]
+      },
+      "id": "134"
     }
   ]
 }
