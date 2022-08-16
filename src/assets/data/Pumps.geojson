@@ -1332,6 +1332,22 @@
     {
       "type": "Feature",
       "properties": {
+        "location": "Breite Straße 18/Gemeindehof Pechau",
+        "type": "Alte Gößnitzer",
+        "note": "In Betrieb"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.717491,
+          52.089375
+        ]
+      },
+      "id": "116"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "location": "Kiefernweg 9",
         "type": "Alte Gößnitzer",
         "note": "Eingezäunt auf Privatgrund, Aus Apple \"Karten\" + Google Maps"
