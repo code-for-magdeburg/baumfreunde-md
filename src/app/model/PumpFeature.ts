@@ -1,5 +1,5 @@
 export type PumpFeature = {
-  title: string;
+  location: string;
   name: string;
-  note: string;
+  service: string;
 };
