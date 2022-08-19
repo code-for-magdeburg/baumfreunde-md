@@ -81,7 +81,8 @@
       "properties": {
         "location": "Eiskellerplatz/Rottersdorfer Straße 10",
         "type": "Till Eulenspiegel",
-        "note": "Zurzeit wegen einer Baustelle nicht zugänglich"
+        "note": "Zurzeit wegen einer Baustelle nicht zugänglich",
+        "service": "inaccessible"
       },
       "geometry": {
         "type": "Point",
@@ -232,7 +233,8 @@
       "properties": {
         "location": "Breiter Weg 230/Einsteinstraße",
         "type": "Till Eulenspiegel",
-        "note": "Sanierung bis 2023"
+        "note": "Sanierung bis 2023",
+        "service": "out_of_service"
       },
       "geometry": {
         "type": "Point",
@@ -293,7 +295,8 @@
       "properties": {
         "location": "Wallonerberg",
         "type": "Till Eulenspiegel",
-        "note": "Sanierung bis 2023"
+        "note": "Sanierung bis 2023",
+        "service": "out_of_service"
       },
       "geometry": {
         "type": "Point",
@@ -309,7 +312,8 @@
       "properties": {
         "location": "Westernplan 1",
         "type": "FSH",
-        "note": "Sanierung bis 2023"
+        "note": "Sanierung bis 2023",
+        "service": "out_of_service"
       },
       "geometry": {
         "type": "Point",
@@ -340,7 +344,8 @@
       "properties": {
         "location": "Bei der Hauptwache (Nordseite Rathaus)",
         "type": "Till Eulenspiegel",
-        "note": "Sanierung bis 2023"
+        "note": "Sanierung bis 2023",
+        "service": "out_of_service"
       },
       "geometry": {
         "type": "Point",
@@ -355,7 +360,8 @@
       "type": "Feature",
       "properties": {
         "location": "Tränsberg 13",
-        "type": "Till Eulenspiegel"
+        "type": "Till Eulenspiegel",
+        "service": "serviceable"
       },
       "geometry": {
         "type": "Point",
@@ -401,7 +407,8 @@
       "properties": {
         "location": "Brückenbreite/Zipkeleber Weg",
         "type": "Alte Gößnitzer",
-        "note": "Zugänglich und funktionstüchtig "
+        "note": "Zugänglich aber nicht funktionstüchtig",
+        "service": "out_of_service"
       },
       "geometry": {
         "type": "Point",
@@ -417,7 +424,8 @@
       "properties": {
         "location": "Merkurweg 30/32",
         "type": "Alte Gößnitzer",
-        "note": "Zugänglich hinter Zaun, aber augenscheinlich Privatgrund"
+        "note": "Zugänglich hinter Zaun, aber augenscheinlich Privatgrund",
+        "service": "inaccessible"
       },
       "geometry": {
         "type": "Point",
@@ -492,7 +500,8 @@
       "type": "Feature",
       "properties": {
         "location": "Schellheimerplatz",
-        "type": "Till Eulenspiegel"
+        "type": "Till Eulenspiegel",
+        "service": "serviceable"
       },
       "geometry": {
         "type": "Point",
@@ -538,7 +547,8 @@
       "properties": {
         "location": "Große Diesdorfer Straße/Maxim-Gorki-Straße",
         "type": "Till Eulenspiegel",
-        "note": "Sanierung bis 2023"
+        "note": "Sanierung bis 2023",
+        "service": "out_of_service"
       },
       "geometry": {
         "type": "Point",
@@ -629,7 +639,8 @@
       "properties": {
         "location": "Schnarsleber Straße 6",
         "type": "Alte Gößnitzer",
-        "note": "Außer Betrieb"
+        "note": "Außer Betrieb",
+        "service": "out_of_service"
       },
       "geometry": {
         "type": "Point",
@@ -645,7 +656,8 @@
       "properties": {
         "location": "Druxberger Weg 31",
         "type": "Alte Gößnitzer",
-        "note": "Auf Privatgrundstück hinter Zaun"
+        "note": "Auf Privatgrundstück hinter Zaun",
+        "service": "inaccessible"
       },
       "geometry": {
         "type": "Point",
@@ -661,7 +673,8 @@
       "properties": {
         "location": "Klosterhof 3",
         "type": "Alte Gößnitzer",
-        "note": "Außer Betrieb"
+        "note": "Außer Betrieb",
+        "service": "out_of_service"
       },
       "geometry": {
         "type": "Point",
@@ -722,7 +735,8 @@
       "properties": {
         "location": "Am Weinhof 5",
         "type": "FSH",
-        "note": "Sanierung bis 2023"
+        "note": "Sanierung bis 2023",
+        "service": "out_of_service"
       },
       "geometry": {
         "type": "Point",
@@ -871,7 +885,7 @@
     {
       "type": "Feature",
       "properties": {
-        "location": "Robert- Meyer- Straße 10",
+        "location": "Robert-Mayer-Straße 10",
         "type": "Alte Gößnitzer",
         "note": "Straßenname falsch geschrieben; richtig ist: Robert-Mayer-Straße, genaue Adressangabe wäre m.E: gegenüber Robert-Mayer-Straße 10/Pettenkoferstraße 4"
       },
@@ -889,7 +903,8 @@
       "properties": {
         "location": "Jakobstraße 2",
         "type": "Till Eulenspiegel",
-        "note": "Sanierung bis 2023"
+        "note": "Sanierung bis 2023",
+        "service": "out_of_service"
       },
       "geometry": {
         "type": "Point",
@@ -981,7 +996,8 @@
       "properties": {
         "location": "Roseneck 7a",
         "type": "Alte Gößnitzer",
-        "note": "Außer Betrieb"
+        "note": "Außer Betrieb",
+        "service": "out_of_service"
       },
       "geometry": {
         "type": "Point",
@@ -1027,7 +1043,8 @@
       "properties": {
         "location": "Sandgrubenweg 7",
         "type": "Alte Gößnitzer",
-        "note": "Außer Betrieb"
+        "note": "Außer Betrieb",
+        "service": "out_of_service"
       },
       "geometry": {
         "type": "Point",
@@ -1043,7 +1060,8 @@
       "properties": {
         "location": "Irenenplatz 8",
         "type": "Alte Gößnitzer",
-        "note": "Schild: kein Trinkwasser; Pumpe funktioniert nicht, es kommt kein Wasser (04.08.2022)"
+        "note": "Schild: kein Trinkwasser; Pumpe funktioniert nicht, es kommt kein Wasser (04.08.2022)",
+        "service": "out_of_service"
       },
       "geometry": {
         "type": "Point",
@@ -1119,7 +1137,8 @@
       "properties": {
         "location": "Kannenstieg 1",
         "type": "FSH",
-        "note": "Eingezäunt auf dem Gelände einer Kita"
+        "note": "Eingezäunt auf dem Gelände einer Kita",
+        "service": "inaccessible"
       },
       "geometry": {
         "type": "Point",
@@ -1135,7 +1154,8 @@
       "properties": {
         "location": "Thiemplatz",
         "type": "Till Eulenspiegel",
-        "note": "Außer Betrieb"
+        "note": "Außer Betrieb",
+        "service": "out_of_service"
       },
       "geometry": {
         "type": "Point",
@@ -1272,7 +1292,8 @@
       "properties": {
         "location": "Kirschweg 61",
         "type": "FSH",
-        "note": "Schild: kein Trinkwasser; 04. 08. 2022 keine Entnahme möglich; Schwengel funktioniert"
+        "note": "Schild: kein Trinkwasser; 04. 08. 2022 keine Entnahme möglich; Schwengel funktioniert",
+        "service": "out_of_service"
       },
       "geometry": {
         "type": "Point",
@@ -1318,7 +1339,8 @@
       "properties": {
         "location": "Am Kiebitzpfuhl 27",
         "type": "FSH",
-        "note": "In Betrieb"
+        "note": "In Betrieb",
+        "service": "serviceable"
       },
       "geometry": {
         "type": "Point",
@@ -1334,7 +1356,8 @@
       "properties": {
         "location": "Breite Straße 18/Gemeindehof Pechau",
         "type": "Alte Gößnitzer",
-        "note": "In Betrieb"
+        "note": "In Betrieb",
+        "service": "serviceable"
       },
       "geometry": {
         "type": "Point",
@@ -1350,7 +1373,8 @@
       "properties": {
         "location": "Kiefernweg 9",
         "type": "Alte Gößnitzer",
-        "note": "Eingezäunt auf Privatgrund, Aus Apple \"Karten\" + Google Maps"
+        "note": "Eingezäunt auf Privatgrund, Aus Apple \"Karten\" + Google Maps",
+        "service": "inaccessible"
       },
       "geometry": {
         "type": "Point",
@@ -1381,7 +1405,8 @@
       "properties": {
         "location": "Grenzweg 34",
         "type": "Till Eulenspiegel",
-        "note": "In Betrieb"
+        "note": "In Betrieb",
+        "service": "serviceable"
       },
       "geometry": {
         "type": "Point",
@@ -1517,7 +1542,8 @@
       "properties": {
         "location": "St.-Josef-Straße 71",
         "type": "FSH",
-        "note": "Außer Betrieb"
+        "note": "Außer Betrieb",
+        "service": "out_of_service"
       },
       "geometry": {
         "type": "Point",
@@ -1533,7 +1559,8 @@
       "properties": {
         "location": "Seestraße 11",
         "type": "FSH",
-        "note": "korrekte Adresse: Seestr. 8c"
+        "note": "korrekte Adresse: Seestr. 8c",
+        "service": "serviceable"
       },
       "geometry": {
         "type": "Point",
@@ -1564,7 +1591,8 @@
       "properties": {
         "location": "Hans-Grade-Straße 32, Parkweg",
         "type": "FSH",
-        "note": "Außer Betrieb"
+        "note": "Außer Betrieb",
+        "service": "out_of_service"
       },
       "geometry": {
         "type": "Point",
@@ -1580,7 +1608,8 @@
       "properties": {
         "location": "Curiestraße vor 61",
         "type": "FSH",
-        "note": "Außer Betrieb"
+        "note": "Außer Betrieb",
+        "service": "out_of_service"
       },
       "geometry": {
         "type": "Point",
