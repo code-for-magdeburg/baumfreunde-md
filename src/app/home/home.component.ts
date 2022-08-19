@@ -128,6 +128,26 @@ export class HomeComponent implements OnInit, AfterViewInit {
   private currentZoom: number;
 
 
+  private static getPumpServiceText(pumpService: string): string {
+    switch (pumpService) {
+      case 'serviceable': return 'In Betrieb';
+      case 'out_of_service': return 'Außer Betrieb';
+      case 'inaccessible': return 'Nicht zugänglich';
+      default: return 'Betriebszustand unbekannt';
+    }
+  }
+
+
+  private static getPumpServiceTextCssClass(pumpService: string): string {
+    switch (pumpService) {
+      case 'serviceable': return 'text-success';
+      case 'out_of_service':
+      case 'inaccessible': return 'text-danger';
+      default: return 'text-muted';
+    }
+  }
+
+
   constructor(private modalService: BsModalService, private dataService: DataService) {
   }
 
@@ -274,8 +294,15 @@ export class HomeComponent implements OnInit, AfterViewInit {
     return geoJSON(this.pumps, {
       pointToLayer: (point: Feature<Point, PumpFeature>, latlng: LatLng): Layer => {
         const title = 'Wasserpumpe';
+        const location = point.properties.location;
+        const service = HomeComponent.getPumpServiceText(point.properties.service);
+        const serviceTextCssClass = HomeComponent.getPumpServiceTextCssClass(point.properties.service);
         const options: MarkerOptions = { icon: PUMP_ICON, title };
-        const content = `<h5>${title}</h5>`;
+        const content = `
+            <h5>${title}</h5>
+            <span>${location}</span><br>
+            <span class="${serviceTextCssClass}">${service}</span>
+        `;
         return marker(latlng, options).bindPopup(content);
       }
     });
