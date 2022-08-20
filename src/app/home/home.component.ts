@@ -293,17 +293,26 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
     return geoJSON(this.pumps, {
       pointToLayer: (point: Feature<Point, PumpFeature>, latlng: LatLng): Layer => {
+
         const title = 'Wasserpumpe';
         const location = point.properties.location;
         const service = HomeComponent.getPumpServiceText(point.properties.service);
         const serviceTextCssClass = HomeComponent.getPumpServiceTextCssClass(point.properties.service);
-        const options: MarkerOptions = { icon: PUMP_ICON, title };
+        const sendMailHref = `mailto:jens.winter@gmail.com?subject=Hinweis%20zum%20Pumpenstandort%20Nr.%20${point.id}&body=Hallo%20Baumfreunde%20Magdeburg%21%0D%0A%0D%0AIch%20habe%20einen%20Hinweis%20zur%20Wasserpumpe%20%22${point.properties.location}%22:%0D%0A%0D%0A`;
         const content = `
-            <h5>${title}</h5>
-            <span>${location}</span><br>
-            <span class="${serviceTextCssClass}">${service}</span>
+            <div style="font-family: var(--bs-body-font-family); font-size: var(--bs-body-font-size); font-weight: var(--bs-body-font-weight); line-height: var(--bs-body-line-height);">
+              <h3>${title}</h3>
+              <strong class="text-reset">${location}</strong><br>
+              <span class="${serviceTextCssClass}">${service}</span><br>
+              <div class="mt-3">
+                  <a class="btn btn-sm btn-outline-primary user-info-button" href="${sendMailHref}" target="_blank">Hinweis melden</a>
+              </div>
+            </div>
         `;
+        const options: MarkerOptions = { icon: PUMP_ICON, title };
+
         return marker(latlng, options).bindPopup(content);
+
       }
     });
 
