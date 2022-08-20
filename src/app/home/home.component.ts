@@ -298,7 +298,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
         const location = point.properties.location;
         const service = HomeComponent.getPumpServiceText(point.properties.service);
         const serviceTextCssClass = HomeComponent.getPumpServiceTextCssClass(point.properties.service);
-        const sendMailHref = `mailto:jens.winter@gmail.com?subject=Hinweis%20zum%20Pumpenstandort%20Nr.%20${point.id}&body=Hallo%20Baumfreunde%20Magdeburg%21%0D%0A%0D%0AIch%20habe%20einen%20Hinweis%20zur%20Wasserpumpe%20%22${point.properties.location}%22:%0D%0A%0D%0A`;
+        const sendMailHref = `mailto:baumfreudemd@gmail.com?subject=Hinweis%20zum%20Pumpenstandort%20Nr.%20${point.id}&body=Hallo%20Baumfreunde%20Magdeburg%21%0D%0A%0D%0AIch%20habe%20einen%20Hinweis%20zur%20Wasserpumpe%20%22${point.properties.location}%22:%0D%0A%0D%0A`;
         const content = `
             <div style="font-family: var(--bs-body-font-family); font-size: var(--bs-body-font-size); font-weight: var(--bs-body-font-weight); line-height: var(--bs-body-line-height);">
               <h3>${title}</h3>
