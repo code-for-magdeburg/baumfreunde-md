@@ -13,4 +13,19 @@
     z-index: 500;
   }
 
+  .legend-container {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 500;
+
+    .legend-item-circle {
+      height: 15px;
+    }
+
+    .legend-item-pin {
+      height: 18px;
+    }
+  }
+
 }
