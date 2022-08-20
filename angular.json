@@ -45,7 +45,8 @@
             "buildOptimizer": false,
             "sourceMap": true,
             "optimization": false,
-            "namedChunks": true
+            "namedChunks": true,
+            "allowedCommonJsDependencies": ["leaflet"]
           },
           "configurations": {
             "production": {
@@ -126,5 +127,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
