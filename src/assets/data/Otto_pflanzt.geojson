@@ -121,7 +121,10 @@
       "type": "Feature",
       "properties": {
         "title": "Oebisfelder Nord 2",
-        "tree_species": ["Apfelbaum", "Birnbaun"],
+        "tree_species": [
+          "Apfelbaum",
+          "Birnbaun"
+        ],
         "sponsors": "Landeshaupstadt Magdeburg",
         "number_of_trees_and_bushes": 16,
         "more info": "www.ottopflanzt.de",
@@ -596,7 +599,7 @@
           "Viburnum pulus",
           "Viburnum lantana"
         ],
-        "sponsors": "Owner - Mr. Krueger",
+        "sponsors": "Owner - Hr. Krüger",
         "number_of_trees_and_bushes": 900,
         "more info": "www.ottopflanzt.de",
         "planted_on": "2021-11-20"
@@ -635,7 +638,8 @@
             [
               11.67198657989502,
               52.12706413254166
-            ]          ]
+            ]
+          ]
         ]
       }
     },
@@ -674,6 +678,582 @@
         "coordinates": [
           11.672405004501343,
           52.12708636219469
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.653911173343658,
+              52.14636105956421
+            ],
+            [
+              11.653586626052858,
+              52.14610758590015
+            ],
+            [
+              11.653777062892914,
+              52.14601870518278
+            ],
+            [
+              11.653929948806763,
+              52.14618659083332
+            ],
+            [
+              11.6547104716301,
+              52.14593147023209
+            ],
+            [
+              11.65476948022843,
+              52.14606314556365
+            ],
+            [
+              11.653911173343658,
+              52.14636105956421
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Mühlenwerke 1",
+        "tree_species": [
+          "Quercus robur",
+          "Prunus avium",
+          "Sorbus aucuparia",
+          "Mespilus germanica",
+          "Malus sylvestris",
+          "Pyrus pyraster",
+          "Euonymus europaeus",
+          "Crataegus monogyna",
+          "Cornus sanguineum",
+          "Lonicera xylosteum",
+          "Rosa canina",
+          "Rhamnus cathartica",
+          "Cytisus scoparius",
+          "Rhamnus frangula",
+          "Cornus mas",
+          "Sambucus nigra",
+          "Sambucus racemosa",
+          "Viburnum pulus",
+          "Viburnum lantana"
+        ],
+        "number_of_trees_and_bushes": 250,
+        "more info": "https://ottopflanzt.de/2021/11/30/noch-mehr-gruen-fuer-die-magdeburger-muehlenwerke/",
+        "planted_on": "2021-11-27"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6542249917984,
+          52.146183298963905
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.6535946726799,
+              52.14598414041142
+            ],
+            [
+              11.653538346290588,
+              52.14568457793599
+            ],
+            [
+              11.653718054294584,
+              52.1456170938035
+            ],
+            [
+              11.653806567192078,
+              52.14592817834382
+            ],
+            [
+              11.6535946726799,
+              52.14598414041142
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Mühlenwerke 2",
+        "tree_species": [
+          "Quercus robur",
+          "Prunus avium",
+          "Sorbus aucuparia",
+          "Mespilus germanica",
+          "Malus sylvestris",
+          "Pyrus pyraster",
+          "Euonymus europaeus",
+          "Crataegus monogyna",
+          "Cornus sanguineum",
+          "Lonicera xylosteum",
+          "Rosa canina",
+          "Rhamnus cathartica",
+          "Cytisus scoparius",
+          "Rhamnus frangula",
+          "Cornus mas",
+          "Sambucus nigra",
+          "Sambucus racemosa",
+          "Viburnum pulus",
+          "Viburnum lantana"
+        ],
+        "number_of_trees_and_bushes": 250,
+        "more info": "https://ottopflanzt.de/2021/11/30/noch-mehr-gruen-fuer-die-magdeburger-muehlenwerke/",
+        "planted_on": "2021-11-27"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.653661727905273,
+          52.14584752700502
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.588805913925171,
+              52.15683122358666
+            ],
+            [
+              11.588923931121826,
+              52.15619933129484
+            ],
+            [
+              11.590442061424255,
+              52.156321102903
+            ],
+            [
+              11.590195298194885,
+              52.15694970239274
+            ],
+            [
+              11.588805913925171,
+              52.15683122358666
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Humanas 1",
+        "tree_species": [
+          "Quercus robur",
+          "Prunus avium",
+          "Sorbus aucuparia",
+          "Mespilus germanica",
+          "Malus sylvestris",
+          "Pyrus pyraster",
+          "Euonymus europaeus",
+          "Crataegus monogyna",
+          "Cornus sanguineum",
+          "Lonicera xylosteum",
+          "Rosa canina",
+          "Rhamnus cathartica",
+          "Cytisus scoparius",
+          "Rhamnus frangula",
+          "Cornus mas",
+          "Sambucus nigra",
+          "Sambucus racemosa",
+          "Viburnum pulus",
+          "Viburnum lantana"
+        ],
+        "number_of_trees_and_bushes": 700,
+        "more info": "https://ottopflanzt.de/2021/12/07/die-letzte-pflanzung-des-jahres-mit-viel-magdeburger-prominenz/",
+        "planted_on": "2021-12-04"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5895676612854,
+          52.15667654244854
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.672429144382477,
+              52.140260831861
+            ],
+            [
+              11.672344654798508,
+              52.140237785703626
+            ],
+            [
+              11.672426462173462,
+              52.140143131717934
+            ],
+            [
+              11.672498881816864,
+              52.140165354845685
+            ],
+            [
+              11.672429144382477,
+              52.140260831861
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Hochschule Magdeburg-Stendal",
+        "tree_species": [
+          "Quercus robur",
+          "Prunus avium",
+          "Sorbus aucuparia",
+          "Mespilus germanica",
+          "Malus sylvestris",
+          "Pyrus pyraster",
+          "Euonymus europaeus",
+          "Crataegus monogyna",
+          "Cornus sanguineum",
+          "Lonicera xylosteum",
+          "Rosa canina",
+          "Rhamnus cathartica",
+          "Cytisus scoparius",
+          "Rhamnus frangula",
+          "Cornus mas",
+          "Sambucus nigra",
+          "Sambucus racemosa",
+          "Viburnum pulus",
+          "Viburnum lantana"
+        ],
+        "number_of_trees_and_bushes": 7,
+        "more info": null,
+        "planted_on": "2022-01-16"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.672431826591492,
+          52.14022955493023
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.657754778862,
+              52.07640361050606
+            ],
+            [
+              11.657797694206238,
+              52.076021153897
+            ],
+            [
+              11.657996177673338,
+              52.07604093621574
+            ],
+            [
+              11.657947897911072,
+              52.07626513521564
+            ],
+            [
+              11.658672094345093,
+              52.076314590725815
+            ],
+            [
+              11.658688187599182,
+              52.075965103946245
+            ],
+            [
+              11.658918857574463,
+              52.07597169806174
+            ],
+            [
+              11.658881306648254,
+              52.07643658074997
+            ],
+            [
+              11.657754778862,
+              52.07640361050606
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Familie Otto",
+        "tree_species": [
+          "Quercus robur",
+          "Prunus avium",
+          "Sorbus aucuparia",
+          "Mespilus germanica",
+          "Malus sylvestris",
+          "Pyrus pyraster",
+          "Euonymus europaeus",
+          "Crataegus monogyna",
+          "Cornus sanguineum",
+          "Lonicera xylosteum",
+          "Rosa canina",
+          "Rhamnus cathartica",
+          "Cytisus scoparius",
+          "Rhamnus frangula",
+          "Cornus mas",
+          "Sambucus nigra",
+          "Sambucus racemosa",
+          "Viburnum pulus",
+          "Viburnum lantana"
+        ],
+        "number_of_trees_and_bushes": 240,
+        "more info": "https://ottopflanzt.de/2022/03/13/otto-pflanzt-bei-otto/",
+        "planted_on": "2022-03-13"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.658393144607544,
+          52.07638382834803
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.66422963142395,
+              52.15939490288819
+            ],
+            [
+              11.663542985916136,
+              52.15859191780795
+            ],
+            [
+              11.667062044143677,
+              52.15782182834401
+            ],
+            [
+              11.667072772979736,
+              52.15889468437559
+            ],
+            [
+              11.66422963142395,
+              52.15939490288819
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Rasch-Reinigung",
+        "tree_species": [
+          "Quercus robur",
+          "Prunus avium",
+          "Sorbus aucuparia",
+          "Mespilus germanica",
+          "Malus sylvestris",
+          "Pyrus pyraster",
+          "Euonymus europaeus",
+          "Crataegus monogyna",
+          "Cornus sanguineum",
+          "Lonicera xylosteum",
+          "Rosa canina",
+          "Rhamnus cathartica",
+          "Cytisus scoparius",
+          "Rhamnus frangula",
+          "Cornus mas",
+          "Sambucus nigra",
+          "Sambucus racemosa",
+          "Viburnum pulus",
+          "Viburnum lantana"
+        ],
+        "number_of_trees_and_bushes": 640,
+        "more info": "https://ottopflanzt.de/2022/03/19/otto-pflanzt-ganz-rasch-bei-rasch/",
+        "planted_on": "2022-03-19"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.66548490524292,
+          52.15883544760049
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.718544363975523,
+              52.06191412917996
+            ],
+            [
+              11.719322204589842,
+              52.06205924515216
+            ],
+            [
+              11.719279289245604,
+              52.06211861064128
+            ],
+            [
+              11.718463897705078,
+              52.06197349486195
+            ],
+            [
+              11.718544363975523,
+              52.06191412917996
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Agrar Gmbh 1",
+        "tree_species": [
+          "Quercus robur",
+          "Prunus avium",
+          "Sorbus aucuparia",
+          "Mespilus germanica",
+          "Malus sylvestris",
+          "Pyrus pyraster",
+          "Euonymus europaeus",
+          "Crataegus monogyna",
+          "Cornus sanguineum",
+          "Lonicera xylosteum",
+          "Rosa canina",
+          "Rhamnus cathartica",
+          "Cytisus scoparius",
+          "Rhamnus frangula",
+          "Cornus mas",
+          "Sambucus nigra",
+          "Sambucus racemosa",
+          "Viburnum pulus",
+          "Viburnum lantana"
+        ],
+        "number_of_trees_and_bushes": 325,
+        "more info": "https://ottopflanzt.de/2022/04/02/pflanzen-und-befreien-doppelter-einsatz-am-letzten-tag-der-saison/",
+        "planted_on": "2022-04-04"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.71889841556549,
+          52.06204605281056
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.717814803123474,
+              52.062346177618544
+            ],
+            [
+              11.71814739704132,
+              52.06187785011325
+            ],
+            [
+              11.71788454055786,
+              52.06179869568354
+            ],
+            [
+              11.71793282032013,
+              52.06173603166058
+            ],
+            [
+              11.71828418970108,
+              52.06183992196651
+            ],
+            [
+              11.71790599822998,
+              52.06237256212058
+            ],
+            [
+              11.717814803123474,
+              52.062346177618544
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Agrar GmbH 2",
+        "tree_species": [
+          "Quercus robur",
+          "Prunus avium",
+          "Sorbus aucuparia",
+          "Mespilus germanica",
+          "Malus sylvestris",
+          "Pyrus pyraster",
+          "Euonymus europaeus",
+          "Crataegus monogyna",
+          "Cornus sanguineum",
+          "Lonicera xylosteum",
+          "Rosa canina",
+          "Rhamnus cathartica",
+          "Cytisus scoparius",
+          "Rhamnus frangula",
+          "Cornus mas",
+          "Sambucus nigra",
+          "Sambucus racemosa",
+          "Viburnum pulus",
+          "Viburnum lantana"
+        ],
+        "number_of_trees_and_bushes": 325,
+        "more info": "https://ottopflanzt.de/2022/04/02/pflanzen-und-befreien-doppelter-einsatz-am-letzten-tag-der-saison/",
+        "planted_on": "2022-04-04"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.718083024024963,
+          52.06209552407155
         ]
       }
     }
