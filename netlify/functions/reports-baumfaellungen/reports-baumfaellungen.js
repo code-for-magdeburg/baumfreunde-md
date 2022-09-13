@@ -6,6 +6,7 @@ const moment = require('moment');
 const mongoClient = new MongoClient(process.env.DATABASE_URL);
 const clientPromise = mongoClient.connect();
 
+
 const handler = async (event) => {
 
   try {
@@ -32,7 +33,7 @@ const handler = async (event) => {
     }
 
   }  catch (error) {
-    return { statusCode: 500, body: error.toString() }
+    return { statusCode: 500, body: error.toString() };
   }
 
 }
