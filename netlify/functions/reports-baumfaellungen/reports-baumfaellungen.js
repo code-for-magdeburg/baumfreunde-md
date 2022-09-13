@@ -8,8 +8,6 @@ const clientPromise = mongoClient.connect();
 
 const handler = async (event) => {
 
-  console.log(process.env);
-
   try {
 
     const db = (await clientPromise).db(process.env.DATABASE_NAME);
