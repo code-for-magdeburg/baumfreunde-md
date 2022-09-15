@@ -1,16 +1,17 @@
 
-const { MongoClient } = require('mongodb');
 const moment = require('moment');
-
-const mongoClient = new MongoClient(process.env.DATABASE_URL);
-const clientPromise = mongoClient.connect();
+const { connectToDatabase } = require('../db-connection');
 
 
-const handler = async (event) => {
+const handler = async (event, context) => {
+
+  // otherwise the connection will never complete, since
+  // we keep the DB connection alive
+  context.callbackWaitsForEmptyEventLoop = false;
 
   try {
 
-    const db = (await clientPromise).db(process.env.DATABASE_NAME);
+    const db = await connectToDatabase();
 
     const { year } = event.queryStringParameters;
 
