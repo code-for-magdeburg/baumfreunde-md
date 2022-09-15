@@ -4,8 +4,6 @@
 
 export const environment = {
   production: false,
-  //apiBaseUrl: 'http://localhost:3000/api/v1'
-  apiBaseUrl: 'https://baumfreunde-md.herokuapp.com/api/v1',
   fellingDocsBaseUrl: 'https://d3hvj74fstb0j2.cloudfront.net/baumfaellungen'
 };
 
