@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { environment } from '../../environments/environment';
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
@@ -31,11 +30,11 @@ export class FaellungenReportsComponent implements OnInit {
 
       if (this.reportId) {
         this.http
-          .get(`${environment.apiBaseUrl}/reports-baumfaellungen/${this.reportId}`)
+          .get(`/.netlify/functions/reports-baumfaellungen?reportId=${this.reportId}`)
           .subscribe(report => this.report = report);
       } else {
         this.http
-          .get(`${environment.apiBaseUrl}/reports-baumfaellungen`)
+          .get('/.netlify/functions/reports-baumfaellungen')
           .subscribe((reports: any[]) => this.reports = reports.sort((r1, r2) => r1.reportedDate > r2.reportedDate ? -1 : 0));
       }
 
