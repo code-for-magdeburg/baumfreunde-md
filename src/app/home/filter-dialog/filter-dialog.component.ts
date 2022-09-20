@@ -25,7 +25,11 @@ export class FilterDialogComponent implements OnInit {
   onConfirm: (updatedFilterSettings: FilterSettings) => void;
 
   constructor(public modalRef: BsModalRef) {
-    this.genera.sort((g1, g2) => g1.displayNamePlural < g2.displayNamePlural ? -1 : 0);
+    this.genera.sort(
+      (g1, g2) => (g1.displayNamePlural > g2.displayNamePlural)
+        ? 1
+        : ((g2.displayNamePlural > g1.displayNamePlural) ? -1 : 0)
+    );
   }
 
 
