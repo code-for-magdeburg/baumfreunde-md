@@ -1,5 +1,5 @@
 
-const ObjectId = require('mongodb').ObjectId;
+const { ObjectId } = require('mongodb');
 const moment = require('moment');
 const { connectToDatabase } = require('../db-connection');
 
@@ -17,7 +17,7 @@ const handler = async (event, context) => {
     const { reportId } = event.queryStringParameters;
     if (reportId) {
 
-      const report = await db.collection('report-baumfaellungen').findOne({ _id: ObjectId(reportId) });
+      const report = await db.collection('report-baumfaellungen').findOne({ _id: new ObjectId(reportId) });
 
       return { statusCode: 200, body: JSON.stringify(report) };
 

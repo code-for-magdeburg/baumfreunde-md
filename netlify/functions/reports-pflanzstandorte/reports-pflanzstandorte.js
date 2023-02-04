@@ -17,7 +17,7 @@ const handler = async (event, context) => {
     const { reportId } = event.queryStringParameters;
     if (reportId) {
 
-      const report = await db.collection('report-pflanzstandorte').findOne({ _id: ObjectId(reportId) });
+      const report = await db.collection('report-pflanzstandorte').findOne({ _id: new ObjectId(reportId) });
 
       return { statusCode: 200, body: JSON.stringify(report) };
 
