@@ -5,7 +5,7 @@ const axios = require('axios').default;
 
 const MAX_HEIGHT = 40;
 const MAX_CROWN = 40;
-const MAX_PLANTED = 2021;
+const MAX_PLANTED = new Date().getFullYear();
 
 const LAT_LON_ACCURACY_FACTOR = 10000000;
 
@@ -213,10 +213,10 @@ function mapToStandardTreeRecord(original: OriginalCsvRecord, classifications: C
     lat: Math.trunc(original.latitude * LAT_LON_ACCURACY_FACTOR) / LAT_LON_ACCURACY_FACTOR,
     lon: Math.trunc(original.longitude * LAT_LON_ACCURACY_FACTOR) / LAT_LON_ACCURACY_FACTOR,
     genusIndex: classifications.map(g => g.fullname).indexOf(original.Gattung),
-    height: original.Baumhoehe > 40 ? null : original.Baumhoehe, // height > 40 meters is considered invalid data (see #41)
-    crown: original.Kronendurc > 40 ? null : original.Kronendurc, // height > 40 meters is considered invalid data (see #41)
+    height: original.Baumhoehe > MAX_HEIGHT ? null : original.Baumhoehe,
+    crown: original.Kronendurc > MAX_CROWN ? null : original.Kronendurc,
     dbh: original.Stammumfan,
-    planted: original.Pflanzjahr > 2021 ? null : original.Pflanzjahr  // planted > 2021 is considered invalid data (see #41)
+    planted: original.Pflanzjahr > MAX_PLANTED ? null : original.Pflanzjahr
   };
 }
 
