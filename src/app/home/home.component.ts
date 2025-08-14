@@ -265,19 +265,27 @@ export class HomeComponent implements OnInit, AfterViewInit {
           icon: OTTO_PFLANZT_ICON,
           title: point.properties.title
         };
+        const placeLabel = `Ort: <strong>${point.properties.title}</strong>`;
+        const speciesLabel = point.properties.tree_species.length > 0
+          ? `Was: <strong>${point.properties.tree_species.length} versch. Arten</strong>`
+          : null;
+        const numberOfTreesLabel = `Wieviel: <strong>${point.properties.number_of_trees_and_bushes} Bäume und Sträucher</strong>`;
         const fmtOptions: Intl.DateTimeFormatOptions = {
           day: '2-digit',
           month: '2-digit',
           year: 'numeric'
         };
         const plantedOnStr = new Date(point.properties.planted_on).toLocaleDateString('de', fmtOptions);
-        const content = `
-            <h5>Otto pflanzt!</h5>
-            Ort: <strong>${point.properties.title}</strong><br>
-            Was: <strong>${point.properties.tree_species.length} versch. Arten</strong><br>
-            Wieviel: <strong>${point.properties.number_of_trees_and_bushes} Bäume und Sträucher</strong><br>
-            Wann: <strong>${plantedOnStr}</strong>
-        `;
+        const plantedOnLabel = `Wann: <strong>${plantedOnStr}</strong>`;
+
+        let content = '<h5>Otto pflanzt!</h5>';
+        content += `<div>${placeLabel}</div>`;
+        if (speciesLabel) {
+          content += `<div>${speciesLabel}</div>`;
+        }
+        content += `<div>${numberOfTreesLabel}</div>`;
+        content += `<div>${plantedOnLabel}</div>`;
+
         return marker(latlng, options).bindPopup(content);
       }
     });
