@@ -6,7 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 import { HomeComponent } from './home/home.component';
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { RegularTreeDetailsComponent } from './home/regular-tree-details/regular-tree-details.component';
 import { SearchTreeDialogComponent } from './home/search-tree-dialog/search-tree-dialog.component';
@@ -20,31 +20,24 @@ import { FilterDialogComponent } from './home/filter-dialog/filter-dialog.compon
 import { ViewSettingsComponent } from './home/view-settings/view-settings.component';
 
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    RegularTreeDetailsComponent,
-    SearchTreeDialogComponent,
-    ImpressumComponent,
-    PrivacyComponent,
-    FaellungenReportsComponent,
-    FilterDialogComponent,
-    ViewSettingsComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    FontAwesomeModule,
-    FormsModule,
-    HttpClientModule,
-    LeafletModule,
-    ModalModule.forRoot()
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
+@NgModule({ declarations: [
+        AppComponent,
+        HomeComponent,
+        RegularTreeDetailsComponent,
+        SearchTreeDialogComponent,
+        ImpressumComponent,
+        PrivacyComponent,
+        FaellungenReportsComponent,
+        FilterDialogComponent,
+        ViewSettingsComponent
+    ],
+    bootstrap: [AppComponent], imports: [BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        FontAwesomeModule,
+        FormsModule,
+        LeafletModule,
+        ModalModule.forRoot()], providers: [provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule {
 
 

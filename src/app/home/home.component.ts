@@ -97,7 +97,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   leafletOptions: MapOptions = {
     preferCanvas: true,
-    tap: false, // To prevent a second event when clicking a marker
     layers: [
       tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
         maxZoom: MAX_ZOOM,
