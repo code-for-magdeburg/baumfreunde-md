@@ -126,7 +126,7 @@
           "Birnbaun"
         ],
         "sponsors": "Landeshaupstadt Magdeburg",
-        "number_of_trees_and_bushes": 16,
+        "number_of_trees_and_bushes": 256,
         "more info": "www.ottopflanzt.de",
         "planted_on": "2020-11-14"
       },
@@ -265,7 +265,7 @@
     {
       "type": "Feature",
       "properties": {
-        "title": "Heinrich-Mundlos-Ring",
+        "title": "Spielplatz Heinrich-Mundlos-Ring",
         "tree_species": [
           "Sambucus racemosa",
           "Cornus mas",
@@ -276,9 +276,9 @@
           "Acer campestre"
         ],
         "sponsors": "Landeshaupstadt Magdeburg",
-        "number_of_trees_and_bushes": 20,
+        "number_of_trees_and_bushes": 36,
         "more info": "www.ottopflanzt.de",
-        "planted_on": "2021-03-20"
+        "planted_on": "2021-03-21"
       },
       "geometry": {
         "type": "Point",
@@ -450,7 +450,7 @@
           "Viburnum lantana"
         ],
         "sponsors": "Kubbutat-Bau;sushifreunde.de; https://www.dominos.de/filiale/de-magdeburgsd-33847",
-        "number_of_trees_and_bushes": 400,
+        "number_of_trees_and_bushes": 395,
         "more info": "www.ottopflanzt.de",
         "planted_on": "2021-03-20"
       },
@@ -519,7 +519,7 @@
           "Viburnum lantana"
         ],
         "sponsors": "mdth.de",
-        "number_of_trees_and_bushes": 513,
+        "number_of_trees_and_bushes": 950,
         "more info": "www.ottopflanzt.de",
         "planted_on": "2021-11-13"
       },
@@ -646,7 +646,7 @@
     {
       "type": "Feature",
       "properties": {
-        "title": "MDCC-Arena",
+        "title": "FCM-Stadion",
         "tree_species": [
           "Quercus robur",
           "Prunus avium",
@@ -669,7 +669,7 @@
           "Viburnum lantana"
         ],
         "sponsors": "1. FC Magdeburg",
-        "number_of_trees_and_bushes": 750,
+        "number_of_trees_and_bushes": 700,
         "more info": "www.ottopflanzt.de",
         "planted_on": "2021-11-07"
       },
@@ -1171,7 +1171,7 @@
         ],
         "number_of_trees_and_bushes": 325,
         "more info": "https://ottopflanzt.de/2022/04/02/pflanzen-und-befreien-doppelter-einsatz-am-letzten-tag-der-saison/",
-        "planted_on": "2022-04-04"
+        "planted_on": "2022-04-02"
       },
       "geometry": {
         "type": "Point",
@@ -1247,13 +1247,542 @@
         ],
         "number_of_trees_and_bushes": 325,
         "more info": "https://ottopflanzt.de/2022/04/02/pflanzen-und-befreien-doppelter-einsatz-am-letzten-tag-der-saison/",
-        "planted_on": "2022-04-04"
+        "planted_on": "2022-04-02"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           11.718083024024963,
           52.06209552407155
+        ]
+      }
+    },
+
+
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Villa Wertvoll",
+        "tree_species": [],
+        "number_of_trees_and_bushes": 240,
+        "more info": null,
+        "planted_on": "2022-02-04"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6353763,
+          52.1529233
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "SKET Industriepark GmbH",
+        "tree_species": [],
+        "number_of_trees_and_bushes": 500,
+        "more info": null,
+        "planted_on": "2022-03-05"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6402515,
+          52.0890093
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Humanas 2",
+        "tree_species": [],
+        "number_of_trees_and_bushes": 270,
+        "more info": null,
+        "planted_on": "2022-11-19"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5830321,
+          52.1507853
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Hochschule Magdeburg-Stendal II",
+        "tree_species": [],
+        "number_of_trees_and_bushes": 260,
+        "more info": null,
+        "planted_on": "2022-11-26"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.679417,
+          52.140367
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Dormann/Claus",
+        "tree_species": [],
+        "number_of_trees_and_bushes": 600,
+        "more info": null,
+        "planted_on": "2022-12-03"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.566583,
+          52.125798
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Mutter Teresa",
+        "tree_species": [],
+        "number_of_trees_and_bushes": 300,
+        "more info": null,
+        "planted_on": "2023-01-28"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.656753,
+          52.126273
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "esparma Pharma",
+        "tree_species": [],
+        "number_of_trees_and_bushes": 1000,
+        "more info": null,
+        "planted_on": "2023-02-18"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.572955,
+          52.056873
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Bördegarten Gewächshaus",
+        "tree_species": [],
+        "number_of_trees_and_bushes": 1000,
+        "more info": null,
+        "planted_on": "2023-02-25"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.551517,
+          52.067377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Schlosspark Königsborn",
+        "tree_species": [],
+        "number_of_trees_and_bushes": 1050,
+        "more info": null,
+        "planted_on": "2023-03-11"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.774295,
+          52.134077
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Kita Traumzauberbaum",
+        "tree_species": [],
+        "number_of_trees_and_bushes": 123,
+        "more info": null,
+        "planted_on": "2023-03-18"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.614255,
+          52.112067
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "FAM",
+        "tree_species": [],
+        "number_of_trees_and_bushes": 1050,
+        "more info": null,
+        "planted_on": "2023-03-25"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.591291,
+          52.118269
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "KGV An der Windmühle Ebendorf",
+        "tree_species": [],
+        "number_of_trees_and_bushes": 712,
+        "more info": null,
+        "planted_on": "2023-11-04"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.572381,
+          52.188036
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Trilinguale Kita",
+        "tree_species": [],
+        "number_of_trees_and_bushes": 525,
+        "more info": null,
+        "planted_on": "2023-11-11"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6493668,
+          52.1365035
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "EGLO Rothensee",
+        "tree_species": [],
+        "number_of_trees_and_bushes": 500,
+        "more info": null,
+        "planted_on": "2023-11-18"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.657161,
+          52.203287
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Zoo",
+        "tree_species": [],
+        "number_of_trees_and_bushes": 100,
+        "more info": null,
+        "planted_on": "2023-11-18"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.638031,
+          52.168541
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Kita \"Waldmäuse\" Menz",
+        "tree_species": [],
+        "number_of_trees_and_bushes": 132,
+        "more info": null,
+        "planted_on": "2023-11-23"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.775895,
+          52.117595
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Evangelische Sekundarschule Schule Buckau",
+        "tree_species": [],
+        "number_of_trees_and_bushes": 161,
+        "more info": null,
+        "planted_on": "2023-11-25"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.630554,
+          52.105432
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Freie Waldorfschule",
+        "tree_species": [],
+        "number_of_trees_and_bushes": 161,
+        "more info": null,
+        "planted_on": "2023-12-09"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.589552,
+          52.111027
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Kita Bunte Biberbande",
+        "tree_species": [],
+        "number_of_trees_and_bushes": 270,
+        "more info": null,
+        "planted_on": "2024-02-10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.657528,
+          52.119087
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Gerwischer Gemüsegarten",
+        "tree_species": [],
+        "number_of_trees_and_bushes": 1800,
+        "more info": null,
+        "planted_on": "2024-03-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.743662,
+          52.175731
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Grundschule Pechauer Platz",
+        "tree_species": [],
+        "number_of_trees_and_bushes": 750,
+        "more info": null,
+        "planted_on": "2024-03-09"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.671958,
+          52.114298
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Ginkgo - Askanischer Platz",
+        "tree_species": [],
+        "number_of_trees_and_bushes": 1,
+        "more info": null,
+        "planted_on": "2024-08-06"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.650977,
+          52.137343
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Dreisprachige Internationale Grundschule",
+        "tree_species": [],
+        "number_of_trees_and_bushes": 225,
+        "more info": null,
+        "planted_on": "2024-11-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.649783,
+          52.145224
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Stiftungsgymnasium",
+        "tree_species": [],
+        "number_of_trees_and_bushes": 200,
+        "more info": null,
+        "planted_on": "2024-11-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.643952,
+          52.146658
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Kita Drachenland",
+        "tree_species": [],
+        "number_of_trees_and_bushes": 253,
+        "more info": null,
+        "planted_on": "2024-11-09"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.664212,
+          52.181945
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Familie Schrader",
+        "tree_species": [],
+        "number_of_trees_and_bushes": 1500,
+        "more info": null,
+        "planted_on": "2024-11-23"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.636282,
+          52.047648
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Tiny Forest \"Tiny Hainy\"",
+        "tree_species": [],
+        "number_of_trees_and_bushes": 1115,
+        "more info": null,
+        "planted_on": "2024-11-30"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.586438,
+          52.148077
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Streuobstwiese Salbke",
+        "tree_species": [],
+        "number_of_trees_and_bushes": 180,
+        "more info": null,
+        "planted_on": "2024-12-14"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.668588,
+          52.082113
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Ottos grünes Klassenzimmer",
+        "tree_species": [],
+        "number_of_trees_and_bushes": 11,
+        "more info": null,
+        "planted_on": "2025-02-21"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.594498,
+          52.132953
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Famile Arnold",
+        "tree_species": [],
+        "number_of_trees_and_bushes": 570,
+        "more info": null,
+        "planted_on": "2025-03-08"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.607990,
+          52.100453
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Kita Ohana",
+        "tree_species": [],
+        "number_of_trees_and_bushes": 256,
+        "more info": null,
+        "planted_on": "2025-03-14"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.614243,
+          52.111403
         ]
       }
     }
