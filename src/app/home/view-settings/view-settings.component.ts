@@ -4,9 +4,10 @@ import { ViewSettings } from '../home.component';
 
 
 @Component({
-  selector: 'app-view-settings',
-  templateUrl: './view-settings.component.html',
-  styleUrls: ['./view-settings.component.scss']
+    selector: 'app-view-settings',
+    templateUrl: './view-settings.component.html',
+    styleUrls: ['./view-settings.component.scss'],
+    standalone: false
 })
 export class ViewSettingsComponent implements OnInit {
 

@@ -5,9 +5,10 @@ import { CityTree } from '../../model/CityTree';
 
 
 @Component({
-  selector: 'app-search-tree-dialog',
-  templateUrl: './search-tree-dialog.component.html',
-  styleUrls: ['./search-tree-dialog.component.scss']
+    selector: 'app-search-tree-dialog',
+    templateUrl: './search-tree-dialog.component.html',
+    styleUrls: ['./search-tree-dialog.component.scss'],
+    standalone: false
 })
 export class SearchTreeDialogComponent implements AfterViewInit {
 
