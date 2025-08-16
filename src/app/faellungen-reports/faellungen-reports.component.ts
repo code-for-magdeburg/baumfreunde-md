@@ -5,9 +5,10 @@ import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
-  selector: 'app-faellungen-reports',
-  templateUrl: './faellungen-reports.component.html',
-  styleUrls: ['./faellungen-reports.component.scss']
+    selector: 'app-faellungen-reports',
+    templateUrl: './faellungen-reports.component.html',
+    styleUrls: ['./faellungen-reports.component.scss'],
+    standalone: false
 })
 export class FaellungenReportsComponent implements OnInit {
 

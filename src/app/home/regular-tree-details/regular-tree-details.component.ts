@@ -14,9 +14,10 @@ type FellingDocumentationType = {
 
 
 @Component({
-  selector: 'app-regular-tree-details',
-  templateUrl: './regular-tree-details.component.html',
-  styleUrls: ['./regular-tree-details.component.scss']
+    selector: 'app-regular-tree-details',
+    templateUrl: './regular-tree-details.component.html',
+    styleUrls: ['./regular-tree-details.component.scss'],
+    standalone: false
 })
 export class RegularTreeDetailsComponent implements OnInit {
 
