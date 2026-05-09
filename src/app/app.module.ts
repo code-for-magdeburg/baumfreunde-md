@@ -7,7 +7,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { LeafletModule } from '@bluehalo/ngx-leaflet';
 import { HomeComponent } from './home/home.component';
 import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
-import { ModalModule } from 'ngx-bootstrap/modal';
+import { ModalModule, BsModalService } from 'ngx-bootstrap/modal';
 import { RegularTreeDetailsComponent } from './home/regular-tree-details/regular-tree-details.component';
 import { SearchTreeDialogComponent } from './home/search-tree-dialog/search-tree-dialog.component';
 import { FormsModule } from '@angular/forms';
@@ -37,7 +37,7 @@ import { ViewSettingsComponent } from './home/view-settings/view-settings.compon
         FontAwesomeModule,
         FormsModule,
         LeafletModule,
-        ModalModule.forRoot()], providers: [provideHttpClient(withInterceptorsFromDi())] })
+        ModalModule], providers: [provideHttpClient(withInterceptorsFromDi()), BsModalService] })
 export class AppModule {
 
 
