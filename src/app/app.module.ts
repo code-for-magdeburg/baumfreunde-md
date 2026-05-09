@@ -33,7 +33,6 @@ import { ViewSettingsComponent } from './home/view-settings/view-settings.compon
     ],
     bootstrap: [AppComponent], imports: [BrowserModule,
         AppRoutingModule,
-        BrowserAnimationsModule,
         FontAwesomeModule,
         FormsModule,
         LeafletModule,
