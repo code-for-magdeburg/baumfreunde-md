@@ -8,7 +8,9 @@
   <label for="genusSelect" class="form-label">Gattungen</label>
   <select class="form-select" id="genusSelect" [(ngModel)]="selectedGenus">
     <option value="">Alle</option>
-    <option *ngFor="let genus of genera" [value]="genus.genus">{{ genus.displayNamePlural }}</option>
+    @for (genus of genera; track genus) {
+      <option [value]="genus.genus">{{ genus.displayNamePlural }}</option>
+    }
   </select>
 
   <div class="mt-3">

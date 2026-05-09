@@ -2,18 +2,17 @@
   <div>
     <h5 class="modal-title">{{ treeDetails.common }}</h5>
 
-    <ng-container *ngIf="treeDetails.fellingInfo; else notFelled">
+    @if (treeDetails.fellingInfo) {
       <h6 class="text-muted mt-1 d-flex align-items-center">{{ treeDetails.ref }} <span class="badge bg-danger ms-2">Fällung</span></h6>
       <h6 class="mt-1 mb-0">
         <a [href]="felling.url" target="_blank">
           Gemeldet am {{ felling.reportedDate | date: 'dd.MM.yyyy' }}<fa-icon class="ms-2" [icon]="faExternalLinkAlt"></fa-icon>
         </a>
       </h6>
-    </ng-container>
-
-    <ng-template #notFelled>
+    } @else {
       <h6 class="text-muted mt-1 mb-0">{{ treeDetails.ref }}</h6>
-    </ng-template>
+    }
+
 
   </div>
   <button type="button" class="btn-close" aria-label="Close" (click)="modalRef?.hide()"></button>
@@ -31,13 +30,21 @@
   </div>
   <div class="mt-2">
     <span class="small">Baumhöhe</span><br>
-    <div *ngIf="treeDetails.height" class="fw-bold">{{ treeDetails.height | number: '0.2':'de' }}m</div>
-    <div *ngIf="!treeDetails.height" class="fw-bold">?</div>
+    @if (treeDetails.height) {
+      <div class="fw-bold">{{ treeDetails.height | number: '0.2':'de' }}m</div>
+    }
+    @if (!treeDetails.height) {
+      <div class="fw-bold">?</div>
+    }
   </div>
   <div class="mt-2">
     <span class="small">Kronendurchmesser</span><br>
-    <div *ngIf="treeDetails.crown" class="fw-bold">{{ treeDetails.crown | number: '0.2':'de' }}m</div>
-    <div *ngIf="!treeDetails.crown" class="fw-bold">?</div>
+    @if (treeDetails.crown) {
+      <div class="fw-bold">{{ treeDetails.crown | number: '0.2':'de' }}m</div>
+    }
+    @if (!treeDetails.crown) {
+      <div class="fw-bold">?</div>
+    }
   </div>
   <div class="mt-2">
     <span class="small">Stammumfang</span><br>
@@ -48,9 +55,11 @@
     <div class="fw-bold">{{ treeDetails.scientific }}</div>
   </div>
 
-  <div *ngIf="treeDetails.wikipediaPageUrl" class="mt-2">
-    <a [href]="treeDetails.wikipediaPageUrl" target="_blank">Zur Wikipedia-Seite</a>
-  </div>
+  @if (treeDetails.wikipediaPageUrl) {
+    <div class="mt-2">
+      <a [href]="treeDetails.wikipediaPageUrl" target="_blank">Zur Wikipedia-Seite</a>
+    </div>
+  }
 
 </div>
 
