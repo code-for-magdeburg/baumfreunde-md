@@ -58,7 +58,7 @@
     "@types/papaparse": "^5.3.1",
     "angular-eslint": "21.3.1",
     "axios": "^1.16.0",
-    "eslint": "^9.29.0",
+    "eslint": "^10.0.0",
     "jasmine-core": "^5.0.0",
     "jasmine-spec-reporter": "~7.0.0",
     "karma": "^6.3.16",
