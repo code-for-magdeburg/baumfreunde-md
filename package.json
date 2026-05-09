@@ -59,7 +59,7 @@
     "angular-eslint": "21.3.1",
     "axios": "^1.16.0",
     "eslint": "^9.29.0",
-    "jasmine-core": "^5.0.0",
+    "jasmine-core": "^6.0.0",
     "jasmine-spec-reporter": "~7.0.0",
     "karma": "^6.3.16",
     "karma-chrome-launcher": "~3.2.0",
